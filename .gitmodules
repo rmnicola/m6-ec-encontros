@@ -1,0 +1,6 @@
+[submodule "encontro1"]
+	path = encontro1
+	url = git@github.com:rmnicola/m6-ec-encontro1.git
+[submodule "encontro2"]
+	path = encontro2
+	url = git@github.com:rmnicola/m6-ec-encontro2.git
