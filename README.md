@@ -14,5 +14,7 @@ Dentro de cada um dos submódulos deste multirepositório você vai encontrar:
 * Um README resumindo o conteúdo do encontro
 
 Encontros:
-[Encontro 1: Introdução à robótica móvel](./encontro1)
-[Encontro 2: Tipos abstratos de dados](./encontro1)
+* Encontro 1: Introdução à robótica móvel.
+* Encontro 2: Tipos abstratos de dados
+
+Para acessar o conteúdo dos encontros, basta clicar nas pastas acima.
