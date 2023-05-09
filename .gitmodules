@@ -7,3 +7,6 @@
 [submodule "encontro3"]
 	path = encontro3
 	url = git@github.com:rmnicola/m6-ec-encontro3.git
+[submodule "encontro4"]
+	path = encontro4
+	url = git@github.com:rmnicola/m6-ec-encontro4
