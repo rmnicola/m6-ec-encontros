@@ -50,8 +50,8 @@ Este é um multirepositório. Isso significa que cada pasta é um submódulo que
 ### Manipulando o Turtlesim
 * [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro3.git)
 * [Vídeo 1: Criando um subscriber simples em ROS com Turtlesim](https://www.youtube.com/watch?v=7CkcfUkLMWQ)
-* [Vídeo 2: Criando uma fila de comandos para o Turtlesim](https://www.youtube.com/watch?v=c9F0yM7PLKs)
-* [Vídeo 3: Controle de posição para o Turtlesim](https://www.youtube.com/watch?v=pDDB2E7CWUI)
+* [Vídeo 2: Controle de posição para o Turtlesim](https://www.youtube.com/watch?v=pDDB2E7CWUI)
+* [Vídeo 3: Criando uma fila de comandos para o Turtlesim](https://www.youtube.com/watch?v=c9F0yM7PLKs)
 
 ## Semana 4
 
