@@ -74,7 +74,11 @@ Este é um multirepositório. Isso significa que cada pasta é um submódulo que
 * [Atividade ponderada 3](https://github.com/Murilo-ZC/Questoes-Trabalhos-Inteli-M6/tree/main/ponderada3)
 
 ### Detecção de objetos
+* [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro6.git)
+* [Slides do encontro](https://docs.google.com/presentation/d/1XMke9emAHBl4S-WmPQn4F_Sta20ays1teAjzJB67e_A/edit?usp=sharing)
+
 
 ## Semana 6
 
 ### Interagindo com o Turtlebot3
+* [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro7.git)
