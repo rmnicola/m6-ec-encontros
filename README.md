@@ -25,6 +25,9 @@ Este é um multirepositório. Isso significa que cada pasta é um submódulo que
   - [Detecção de objetos](#detecção-de-objetos)
 - [Semana 6](#semana-6)
   - [Interagindo com o Turtlebot3](#interagindo-com-o-turtlebot3)
+- [Semana 7](#semana-7)
+  - [Introdução à sistemas de controle](#introdução-à-sistemas-de-controle)
+  - [Integração de sistemas](#integração-de-sistemas)
 
 
 ## Semana 1
@@ -82,3 +85,13 @@ Este é um multirepositório. Isso significa que cada pasta é um submódulo que
 
 ### Interagindo com o Turtlebot3
 * [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro7.git)
+* [Slides do encontro](https://docs.google.com/presentation/d/1NlFkP1K25yQsRZBQLrV1fTKc_ULElPtNEp4husyPmJ0/edit?usp=sharing)
+
+## Semana 7
+
+### Introdução à sistemas de controle
+* [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro8.git)
+* [Atividade ponderada 4](https://github.com/Murilo-ZC/Questoes-Trabalhos-Inteli-M6/tree/main/ponderada4)
+
+### Integração de sistemas
+* [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro9.git)
