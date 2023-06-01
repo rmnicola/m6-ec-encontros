@@ -25,3 +25,6 @@
 [submodule "encontro9"]
 	path = encontro9
 	url = https://github.com/rmnicola/m6-ec-encontro9.git
+[submodule "encontro10"]
+	path = encontro10
+	url = https://github.com/rmnicola/m6-ec-encontro10

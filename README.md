@@ -91,7 +91,9 @@ Este é um multirepositório. Isso significa que cada pasta é um submódulo que
 
 ### Introdução à sistemas de controle
 * [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro8.git)
-* [Atividade ponderada 4](https://github.com/Murilo-ZC/Questoes-Trabalhos-Inteli-M6/tree/main/ponderada4)
+* [Slides do encontro](https://docs.google.com/presentation/d/1FzeB0AyhBjmmfDiMadeUGeJ5HmZxjO8s_3NpIn5e9cU/edit?usp=sharing)
 
 ### Integração de sistemas
 * [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro9.git)
+* [Slides do encontro](https://docs.google.com/presentation/d/1VtnrtCBYfnshpjvH4YVvVnnpEZbDWSG-A0Bo6QHzoPc/edit?usp=sharing)
+* [Atividade ponderada 4](https://github.com/Murilo-ZC/Questoes-Trabalhos-Inteli-M6/tree/main/ponderada4)
