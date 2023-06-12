@@ -28,6 +28,10 @@ Este é um multirepositório. Isso significa que cada pasta é um submódulo que
 - [Semana 7](#semana-7)
   - [Introdução à sistemas de controle](#introdução-à-sistemas-de-controle)
   - [Integração de sistemas](#integração-de-sistemas)
+- [Semana 8](#semana-8)
+  - [Integração de sistemas 2](#integração-de-sistemas-2)
+- [Semana 9](#semana-9)
+  - [Controlador PID](#controlador-pid)
 
 
 ## Semana 1
@@ -96,4 +100,17 @@ Este é um multirepositório. Isso significa que cada pasta é um submódulo que
 ### Integração de sistemas
 * [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro9.git)
 * [Slides do encontro](https://docs.google.com/presentation/d/1VtnrtCBYfnshpjvH4YVvVnnpEZbDWSG-A0Bo6QHzoPc/edit?usp=sharing)
+* [Exemplo supabase](https://github.com/Murilo-ZC/Supabase-Testes)
 * [Atividade ponderada 4](https://github.com/Murilo-ZC/Questoes-Trabalhos-Inteli-M6/tree/main/ponderada4)
+
+## Semana 8
+
+### Integração de sistemas 2
+* [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro10.git)
+
+
+## Semana 9
+
+### Controlador PID
+* [Repositório do encontro](https://github.com/rmnicola/m6-ec-encontro11.git)
+* [Slides do encontro]()
