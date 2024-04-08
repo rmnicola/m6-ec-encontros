@@ -59,7 +59,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/assets/m6-social.card.png',
       navbar: {
         title: 'Módulo 6 - EC',
         logo: {
