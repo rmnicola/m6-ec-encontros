@@ -119,47 +119,42 @@ padronizados. Em cada seção de conteúdo, você vai ver um **ícone à esquerd
 título da seção**. Aqui estão os ícones que você vai encontrar e o que eles
 significam:
 
-<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',
-margin: '0' }}>
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '0' }}>
     <table>
         <tr>
             <th>Ícone</th>
             <th>Descrição</th>
         </tr>
         <tr>
-            <td style={{textAlign: "center", verticalAlign: "middle"}}>
-                <img src="icons/artefato.svg"/>
+            <td style={{textAlign: "center", verticalAlign: "middle", height: "10vh"}}>
+                <img src="icons/artefato.svg" style={{height: "5vh", maxWidth: "75%"}}/>
             </td>
-            <td style={{textAlign: "left", verticalAlign: 'top', paddingTop:
-            '25px' }}>
+            <td style={{textAlign: "left", verticalAlign: 'top', paddingTop: '3.5vh' }}>
                 Significa que a seção vai conter o detalhamento de um ou mais
                 **artefatos** do metaprojeto.
             </td>
         </tr>
         <tr>
-            <td style={{textAlign: "center", verticalAlign: "middle"}}>
-                <img src="icons/autoestudo.svg"/>
+            <td style={{textAlign: "center", verticalAlign: "middle", height: "10vh"}}>
+                <img src="icons/autoestudo.svg" style={{height: "4vh"}}/>
             </td>
-            <td style={{textAlign: "left", verticalAlign: 'top', paddingTop:
-            '25px' }}>
+            <td style={{textAlign: "left", verticalAlign: 'top', paddingTop: '3.5vh' }}>
                 Significa que a seção é um autoestudo **obrigatório**.
             </td>
         </tr>
         <tr>
-            <td style={{textAlign: "center", verticalAlign: "middle"}}>
-                <img src="icons/opcional.svg"/>
+            <td style={{textAlign: "center", verticalAlign: "middle", height: "10vh"}}>
+                <img src="icons/opcional.svg" style={{height: "4vh"}}/>
             </td>
-            <td style={{textAlign: "left", verticalAlign: 'top', paddingTop:
-            '25px' }}>
+            <td style={{textAlign: "left", verticalAlign: 'top', paddingTop: '3.5vh' }}>
                 Significa que a seção é um autoestudo **opcional**.
             </td>
         </tr>
         <tr>
-            <td style={{textAlign: "center", verticalAlign: "middle"}}>
-                <img src="icons/ponderada.svg"/>
+            <td style={{textAlign: "center", verticalAlign: "middle", height: "10vh"}}>
+                <img src="icons/ponderada.svg" style={{height: "4vh"}}/>
             </td>
-            <td style={{textAlign: "left", verticalAlign: 'top', paddingTop:
-            '25px' }}>
+            <td style={{textAlign: "left", verticalAlign: 'top', paddingTop: '3.5vh' }}>
                 Significa que a seção descreve o enunciado de uma atividade que
                 **vale nota**.
             </td>
