@@ -6,6 +6,7 @@ slug: /
 
 # Robótica móvel e visão computacional
 
+
 <img 
   src="https://i0.wp.com/beneaththetangles.com/wp-content/uploads/2020/12/spacebrothers_14.gif?resize=500%2C300&ssl=1"
   alt="Muta says hi" 

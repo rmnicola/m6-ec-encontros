@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** Global variables **/
 const organizationName = 'rmnicola'; // Usually your GitHub org/user name.
-const projectName = 'm9-ec-encontros'; // Usually your repo name.
+const projectName = 'm6-ec-encontros'; // Usually your repo name.
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
