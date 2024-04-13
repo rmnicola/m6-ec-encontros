@@ -8,7 +8,7 @@ slug: /
 
 
 <img 
-  src="https://i0.wp.com/beneaththetangles.com/wp-content/uploads/2020/12/spacebrothers_14.gif?resize=500%2C300&ssl=1"
+  src="https://media1.tenor.com/m/2Fpxuz_VTKcAAAAC/mutta-nanba-nanba-mutta.gif"
   alt="Muta says hi" 
   style={{ 
     display: 'block',
@@ -19,19 +19,36 @@ slug: /
 />
 <br/>
 
-Olá! Seja bem-vindo à página que abriga o conteúdo de computação do módulo 6 do
-curso de Engenharia de Computação do Inteli. Aqui você vai encontrar tudo o que
-precisa para compreender os desafios relacionados à hiperconectividade aplicada
-a cidades inteligentes e atender aos requisitos do projeto do módulo. Esta
-seção em específico serve para você entender como esse material foi organizado
-e ter uma visão geral do módulo e do metaprojeto. Sendo assim, aqui você poderá
-consultar:
+> "本気の失敗には、価値がある"
+>
+> "An earnest mistake has value."
+>
+> — Nanba Mutta (Space Brothers)
 
-* Descrição geral do módulo e especificação do metaprojeto;
-* Organização do material;
-* Principais assuntos abordados;
-* Artefatos e itens de entrega por sprint; e
-* Bibliografia.
+*Um erro cometido com esforço tem valor*. 
+
+É com esse pensamento que dou as boas vindas ao material de computação do
+**módulo 6** do curso de **Engenharia de Computação** do Inteli. Esse é o lugar
+em que você vai encontrar tudo o que precisa saber sobre os desafios
+relacionados a esse módulo, cujo tema é **robótica móvel e visão
+computacional**. O que significa ter **tudo** o que você precisa saber?
+Significa que aqui você vai encontrar:
+
+* A descrição geral do módulo e **especificações do metaprojeto**;
+* Um descritivo detalhado dos **artefatos** de cada sprint, assim como seu **padrão de qualidade**;
+* Guias para **configurar** o seu **sistema** com as **ferramentas** sugeridas para o desafio do módulo;
+* Todo o **material** dos **encontros de orientação**, assim como os seus **autoestudos**;
+* Todo o **material** dos **encontros de programação**, assim como os seus **autoestudos**; e
+* Os **enunciados** detalhados das **atividades ponderadas** de **computação** propostas no decorrer do módulo.
+
+O objetivo dessa seção em que estamos agora é dar a descrição geral do módulo e
+te ensinar a encontrar todas as outras informações prometidas acima. Sendo
+assim, essa seção subdivide-se em:
+
+1. Descrição do módulo e assuntos abordados;
+2. Organização do material;
+3. Descrição dos entregáveis por sprint; e
+4. Bibliografia.
 
 Antes de seguirmos em frente com o conteúdo principal dessa seção, vou
 aproveitar que tenho sua atenção para fazer um **anúncio** de **extrema
@@ -62,6 +79,16 @@ Beleza, agora podemos seguir em frente.
 
 ### 1.1. Ementa do módulo
 
+:::warning
+
+Essa é a **ementa oficial** do módulo. O texto é sucinto e formal pois ele faz
+parte de um documento **apresentado ao MEC** no momento em que o curso é
+reconhecido e que **obrigatoriamente** deve ser **mostrado aos alunos**. O que
+estou fazendo agora? Mostrando a ementa do módulo para vocês. Sem mais dúvidas,
+certo?
+
+:::
+
 Este módulo aborda o desenvolvimento de um sistema integrando robôs móveis
 controlados de forma remota e visão computacional. Para tal, são apresentados
 os assuntos de simulação de sistemas eletromecânicos para aplicações de
@@ -87,6 +114,156 @@ sistemas operacionais.
 
 ### 1.2. Descrição do projeto
 
+<img 
+  src="https://satchiikoma.files.wordpress.com/2013/02/here-he-comes-to-save-the-day.jpg"
+  alt="Hibito sendo puxado pelo rover" 
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '60vh',
+    marginRight: 'auto'
+  }} 
+/>
+<br/>
+
+O projeto deste módulo tem como objetivo o uso de um robô móvel para navegar em
+ambientes cujo **acesso** para seres humanos seja **difícil** ou
+**impossível**. O robô deve ser **operado à distância**, enviando um **vídeo em
+tempo real** para o operador. O sistema deve ser capaz de **processar as
+imagens** geradas, detectando e enviando ao operador situações que podem ser de
+seu interesse (e.g. detectar falhas estruturas, princípios de incêndio,
+detritos)
+
+Para entender o valor do projeto proposto nesse módulo, acho fundamental
+respondermos algumas perguntas:
+
+1. O que é um robô móvel?
+2. Por quê substituir um humano por um robô?
+3. Como um humano pode operar um robô à distância?
+4. Qual o ganho de fazer o robô identificar padrões e analisar as imagens antes
+   de enviar ao operador humano?
+
+Como estamos firmemente na **era das IAs generativas**, vou perguntar
+diretamente ao nosso amigo **Gepeto** e ver se a resposta é razoável. Tá aqui o
+[link do
+chat](https://chat.openai.com/share/387ec7a8-4023-4bbb-a070-17d4ab1c82ca) que
+não me deixa mentir.
+
+**O que é um robô móvel?**
+
+> Um robô móvel é basicamente uma máquina equipada com rodas ou outro tipo de
+> locomoção que lhe permite mover-se autonomamente, ou seja, sem precisar de
+> controle humano direto. Ele é programado para realizar tarefas específicas,
+> como transportar itens em uma fábrica, fazer limpezas em ambientes domésticos
+> ou até explorar locais que seriam perigosos ou inacessíveis para humanos, como
+> o fundo do oceano ou outros planetas.
+> 
+> Esses robôs possuem sensores e sistemas computacionais que lhes permitem
+> entender e interagir com o ambiente ao redor. Eles podem detectar obstáculos,
+> seguir rotas mapeadas e até responder a mudanças no ambiente, adaptando-se para
+> continuar realizando suas funções de maneira eficiente. Essa capacidade de
+> navegação e adaptação faz dos robôs móveis ferramentas valiosas em muitas
+> áreas, incluindo indústria, pesquisa científica e vida cotidiana.
+
+Agora, vou fazer o que vocês **sempre deveriam fazer** ao receber uma resposta
+de uma IA generativa: vou usar o meu **senso crítico** e **checar** para ver se
+tem alguma coisa errada nessa resposta.
+
+Primeiro, vamos desempacotar a resposta do GPT e identificar os pontos
+principais:
+
+1. Um robô móvel é uma máquina capaz de se locomover;
+2. O robô móvel é autônomo e não precisa de controle humano;
+3. Ele é usado em tarefas específicas, geralmente para tarefas simples; e
+4. Ele possui sistemas computacionais e sensores para "ver" e responder ao
+   ambiente em que está inserido.
+
+Agora, vamos fazer a nossa pesquisa para validar esses pontos. Fazendo uma
+[pesquisa simples](https://www.igi-global.com/dictionary/?p=Mobile+Robot) pelo
+termo "Mobile robot" em uma ferramenta de definição de termos científicos
+baseada em diversos artigos quase que imediatamente corrobora os pontos **1, 3
+e 4**. O ponto **2**, no entanto, só é corroborado por artigos que mencionam de
+forma específica o termo "autonomous mobile robot", ou seja, há motivos para
+imaginar que **nem todo robô móvel é autônomo**. Uma segunda pesquisa, agora no
+google, pelo termo "operated mobile robot" nos mostra diversos exemplos de
+robôs móveis operados por seres humanos. Um exemplo é o uso de **drones de
+resgate**:
+
+<img 
+  src="https://sn4.scholastic.com/content/dam/classroom-magazines/sn4/issues/2022-23/011623/drones-to-the-rescue/SN4-12-011623-P04-DronesToTheRescue-TN_.jpg"
+  alt="Drone de resgate" 
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '30vh',
+    marginRight: 'auto'
+  }} 
+/>
+<br/>
+
+
+Pronto! Agora usamos o GPT de forma consciente e temos nossa definição de robô
+móvel.
+
+**Por quê substituir um humano por um robô?**
+
+> Substituir um humano por um robô móvel é vantajoso principalmente porque robôs
+> podem realizar tarefas repetitivas, perigosas ou que exigem precisão constante
+> sem cansaço, erro ou risco para a saúde humana. Eles aumentam a eficiência e
+> segurança nos processos, trabalhando ininterruptamente e em condições que
+> seriam adversas ou nocivas para pessoas, como ambientes com substâncias tóxicas
+> ou extremos de temperatura.
+
+Essa resposta é bem menos opinionada que a última, portanto não há muito o que
+verificar. A única afirmação que tipicamente mereceria uma citação é de que
+**robôs móveis aumentam a eficiência e segurança nos processos**. Uma pesquisa
+rápida no google scholar me levou a [esse
+artigo](https://www.sciencedirect.com/science/article/abs/pii/S0301479723021291)
+que corrobora a afirmação ao menos para o caso de descarte de detritos de
+obras.
+
+**Como um humano pode operar um robô à distância?**
+
+> Um humano pode operar um robô à distância usando controles remotos ou
+> interfaces digitais que permitem enviar comandos através de conexões sem fio
+> como Wi-Fi, Bluetooth ou mesmo via internet. Essas interfaces podem variar
+> desde simples joysticks até softwares sofisticados instalados em computadores
+> ou aplicativos em smartphones. Além disso, algumas interfaces incluem telas que
+> mostram vídeo em tempo real do ponto de vista do robô, oferecendo ao operador
+> uma visão detalhada do ambiente ao redor do robô, o que facilita a navegação e
+> a execução de tarefas específicas com maior precisão.
+
+Acho que vocês já entenderam o que precisam fazer agora, né? Verifique você
+mesmo se a resposta acima é verdadeira.
+
+**Qual o ganho de fazer o robô identificar padrões e analisar as imagens antes
+de enviar ao operador humano?**
+
+> O ganho de fazer o robô identificar padrões e analisar imagens antes de enviar
+> ao operador humano é significativo, pois permite uma operação mais eficiente e
+> autônoma. Primeiramente, reduz a quantidade de dados que precisam ser
+> transmitidos ao operador, enviando apenas informações relevantes e filtradas, o
+> que é crucial em ambientes com limitações de largura de banda ou conexões
+> instáveis. Além disso, a análise prévia pelo robô possibilita respostas mais
+> rápidas a situações críticas, pois o sistema pode identificar e reagir a
+> elementos ou alterações importantes no ambiente sem atraso na comunicação
+> humana. Isso também diminui a carga cognitiva sobre o operador, permitindo que
+> ele se concentre em decisões mais complexas e estratégicas, aumentando assim a
+> segurança e a eficácia das operações.
+
+**Conclusão**
+
+Agora que respondemos às perguntas propostas, podemos concluir que:
+
+1. Vamos usar um mecanismo capaz de se locomover para entrar em espaços que
+   podem ser nocivos ao ser humano;
+2. O que faz com que possamos eliminar um risco para a pessoa que executava
+   aquela tarefa ao substituí-la por um robô;
+3. Para que esse operador possa pilotar o robô à distância, precisamos que uma
+   imagem seja transmitida em tempo real; e
+4. Ao pré-processar essa imagem e identificar padrões antes de mostrar para o
+   operador, podemos tirar a sua carga cognitiva e garantir que as situações de
+   interesse sejam sempre detectadas.
 
 ### 1.3. Assuntos abordados
 
@@ -172,18 +349,13 @@ Existem quatro grandes seções que dividem esse material. São elas:
 3. Setup das ferramentas; e
 4. Conteúdo dos encontros
 
-A seção de **introdução** é, bem, essa aqui. Ela é a página inicial do material e
-deve ser o ponto de partida para qualquer um que não tenha visto esse material
-antes. Tendo dito isso, se você nunca leu esse material antes e não está lendo
-isso, não tem muito o que eu possa fazer =-(
+A seção de **introdução** é, bem, essa aqui. Ela é a página inicial do material
+e deve ser o ponto de partida para qualquer um que não tenha visto esse
+material antes. Tendo dito isso, se você nunca leu esse material antes e não
+está lendo isso, não tem muito o que eu possa fazer =-(
 
-A seção dos **artefatos** contem uma descrição **detalhada** de todos os artefatos
-do metaprojeto que competem à area de computação. Aqui você não vai encontrar a
-descrição dos artefatos de UX ou Negócios. Para isso, visite a
-[Adalove](https://adalove.inteli.edu.br/). Na subseção de artefatos dentro da
-seção de introdução (de novo, é essa aqui em que estamos agora =D) você vai
-encontrar um resumo de cada sprint e um link para a página que detalha os
-artefatos.
+A seção dos **artefatos** contem uma descrição **detalhada** de todos os
+artefatos do metaprojeto que competem à area de computação. 
 
 A seção de **setup das ferramentas** contem todos os autoestudos que não são
 exatamente o cerne do módulo, mas são tutoriais úteis para que você possa
@@ -195,8 +367,8 @@ as linguagens principais vistas por aqui.
 A seção de **conteúdo dos encontros** é, na verdade, um conjunto de seções.
 Elas aparecem por último no menu que fica aqui à esquerda (`<<`). Você vai
 conseguir perceber que se trata de uma seção de material do encontro pois todas
-elas tem "EXX" em seu título, sendo o `XX` substituído por algum número. Por
-exemplo: `E1 - Modelos de comunicação e MQTT`.
+elas tem "EXX" ou "OXX" em seu título, sendo o `XX` substituído por algum
+número. Por exemplo: `E1 - Modelos de comunicação e MQTT`.
 
 O que é esse barulho, você está ouvindo? Ah, é só mais um **ALERTA DE EXTREMA
 IMPORTÂNCIA** chegando:
@@ -218,7 +390,7 @@ mas faça alguma coisa pelo menos. Combinado? Combinado.
 :::
 
 
-## 3. Artefatos
+## 3. Descrição dos entregáveis
 
 ### 3.1. [Sprint 1](/sprint1) 
 
