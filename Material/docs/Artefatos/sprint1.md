@@ -5,24 +5,90 @@ sidebar_class_name: artefato
 slug: /sprint1
 ---
 
-# Artefatos Sprint 1 (Computação)
+# Artefatos Sprint 1
 
-## 1. Simulador MQTT
+O primeiro passo de qualquer projeto deve ser de prospecção. A razão de existir
+da engenharia é a solução metódica dos problemas das pessoas através do
+conhecimento da ciência aplicada. Sendo assim, a prospecção deve primeiro focar
+nas pessoas, para depois entender como entregar valor e, por fim, definir um
+escopo para o projeto.
+
+Para finalidade de avaliação, divide-se essa etapa inicial em:
+
+1. Proposta de design;
+2. Proposta de negócios; e
+3. Proposta de arquitetura.
+
+A seguir, é possível ver com detalhes o que se espera em cada uma dessas
+entregas.
+
+## 1. Proposta de design
 
 ### 1.1. Enunciado
 
-O grupo deverá implementar um cliente MQTT que se comunica com um broker
-público. O intuito é a capacidade de simular a comunicação gerada pelos
-dispositivos do parceiro, demonstrando a compatibilidade com o protocolo de
-comunicação por ele utilizado assim como as especificações dos componentes em
-si. Testes deverão ser especificados, e seus resultados devem ser registrados
-para mostrar o correto funcionamento deste primeiro protótipo.
+A proposta de design do projeto foca na arquitetura da informação e na
+experiência do usuário para a interface do sistema. Uma análise detalhada do
+perfil do usuário final é crucial para essa fase. Os seguintes elementos são
+esperados neste entregável:
 
-**Tecnologias sugeridas**
+**Definição das personas**
 
-* [Paho MQTT](https://eclipse.dev/paho/)
-* [Lib paho-mqtt para Python](https://pypi.org/project/paho-mqtt/)
-* [Lib paho-mqtt para Go](https://github.com/eclipse/paho.mqtt.golang)
+Descrever, com base em pesquisas sólidas (incluindo artigos científicos e
+relatórios de mercado), o perfil completo de, no mínimo, duas personas que
+utilizarão o sistema. Esta descrição deve abordar:
+1. Dados demográficos (nome, idade, gênero, escolaridade);
+2. Perfil profissional (cargo/função, habilidades/capacidades, nível de letramento digital);
+3. Dores/necessidades/desejos, com insights comportamentais que expliquem esses aspectos;
+4. Cenários de uso, incluindo interações entre personas para entender como diferentes perfis interagem com o sistema.
+
+**Definição das user stories**
+
+Elaborar pelo menos duas user stories para cada persona (totalizando no mínimo
+quatro user stories distintas), que devem seguir a estrutura "Como [persona],
+quero [necessidade] para [objetivo]". Exemplos devem ser variados e refletir
+necessidades reais que orientem o design do sistema.
+
+**Arquitetura da informação**
+
+Desenvolver diagramas de relação e de sequência detalhados que mostrem como as
+informações serão organizadas e acessadas pelas personas. Responder a pergunta:
+que tipo de informação cada persona buscará no sistema e como ela irá
+encontrá-la? Os diagramas devem claramente categorizar e facilitar a navegação
+e interação do usuário com a interface.
+
+### 1.1. Enunciado
+
+A proposta de design do projeto contempla a arquitetura da informação prevista
+para a interface do usuário. Para isso, deve-se realizar uma análise detalhada
+para compreender o perfil do usuário final. Sendo assim, para esse entregável,
+espera-se:
+
+**Definição das personas**
+
+Descrever o perfil completo de, no mínimo, duas personas que utilizarão o
+sistema em desenvolvimento. As descrições devem ser fundamentadas em uma
+pesquisa utilizando artigos científicos, relatórios de mercado, entre outros
+materiais. A descrição das personas deve incluir:
+1. dados demográficos (nome, idade, gênero, escolaridade);
+2. perfil profissional (cargo/função ocupado atualmente,
+   habilidades/capacidades, nível de letramento digital);
+3. dores/necessidades/desejos;
+4. cenário(s) de uso.
+
+**Definição das user stories**
+
+Descrever pelo menos duas user stories para cada persona (totalizando pelo
+menos quatro user stories diferentes), seguindo a estrutura "Pessoas +
+necessidade + objetivo", por exemplo: "Como engenheiro, quero operar um robô
+móvel para inspecionar tubulações, tanques ou outras estruturas em locais de
+difícil acesso, como em alturas elevadas ou em espaços confinados, sem precisar
+entrar nesses locais e me colocar em risco."
+
+**Arquitetura da informação**
+
+Projetar a arquitetura da informação prevista para a interface em diagramas de
+relação e de sequência. O objetivo é responder a seguinte pergunta: que tipo de
+informação cada persona irá buscar no sistema e como ela irá encontrá-la?
 
 ### 1.2. Padrão de entrega
 
@@ -30,64 +96,121 @@ para mostrar o correto funcionamento deste primeiro protótipo.
 
 O padrão de entrega do artefato contempla uma série de requisitos para que a
 atividade seja considerada concluída. Embora não haja atribuição direta de
-pontuação aos itens aqui descritos, entenda-se que o **não cumprimento de
-qualquer dos requisitos** pode, no melhor dos casos, acarretar em um **desconto
-de nota** e, no pior caso, **invalidar a entrega por completo**. Fique atento!
+pontuação aos itens aqui descritos, entenda-se que o não cumprimento de
+qualquer dos requisitos pode, no melhor dos casos, acarretar em um desconto de
+nota e, no pior caso, invalidar a entrega por completo. Fique atento!
 
 :::
 
-1. O código fonte da solução deve estar disponível no repositório do grupo no
-   Github (na branch `main`), em um diretório denominado `src`. É provável que
-   a sua solução não seja monolítica. Se esse for o caso, os módulos que compõe
-   o seu código-fonte devem ser divididos em subdiretórios.
-2. Os testes desenvolvidos devem estar disponíveis no diretório `tests` e,
-   quando possível, aplicados de forma automatizada. Os testes realizados sem
-   automatização devem ter seu procedimento de execução e resultados claramente
-   descritos em um arquivo contido dentro do diretório de testes.
-3. As instruções para que o parceiro possa executar o projeto devem estar
-   claramente discriminadas na documentação, com um link no README para que a
-   seção possa ser prontamente acessada.
-4. O projeto em seu estado atual deve estar disponível em um release do Github
-   cujo nome deve incluir a numeração da sprint (e.g. release-sprint-1).
-5. As questões centrais de desenvolvimento da sprint e os testes devem ser
-   apresentadas de forma clara durante o review com o parceiro.
+1. O texto desenvolvido pelo grupo deve estar disponível em uma página estática
+   gerada pelo framework Docusaurus. Para tal, deve haver um diretório no
+   repositório denominado `docs`, onde ficará a raíz do Docusaurus;
+2. A documentação da sprint 1 deve estar inteiramente contida em uma seção
+   denominada `Sprint 1`. Cada um dos artefatos deve ter sua descrição contida
+   em uma página ou subseção dentro da seção `Sprint 1`; e
+3. As figuras utilizadas no documento devem sempre ser referenciadas no texto,
+   com descrições textuais que estimulem a coesão entre o que é apresentado
+   visualmente e o restante do texto.
 
 ### 1.3. Padrão de qualidade
 
-**[0,0 - 3,0]**
-A implementação do simulador apresenta inconsistências técnicas
-e/ou está substancialmente desalinhada com os requisitos especificados pelo
-parceiro.
+#### 1.3.1. Definição das personas (até 3,0 pontos)
 
-**[3,0 - 5,0]**
-Implementação aparentemente correta de um simulador de dispositivos IoT, mas
-sem evidências de funcionamento e adequação às especificações do parceiro
-através de testes objetivos.
+**[0,0 - 0,5]**
+As personas estão incompletas ou não alinhadas com o contexto do projeto.
 
-**[5,0 - 7,0]**
-Simulador de dispositivos IoT funcional e com testes bem definidos para
-evidenciar seu funcionamento e adequação, porém apresenta falhas em testes (de
-forma intermitente ou não). Os testes propostos refletem ao menos parcialmente
-os requisitos não funcionais especificados para essa etapa do projeto.
+**[0,5 - 2,0]**
+As personas são completas e coerentes com o contexto do projeto, mas as
+descrições carecem de detalhamento ou profundidade na pesquisa.
 
-**[7,0 - 9,0]**
-Simulador funcional com testes bem definidos e que refletem os requisitos não
-funcionais do projeto. O sistema passa em todos os testes de forma consistente.
+**[2,0 - 3,0]**
+As personas são detalhadas, baseadas em pesquisas profundas e bem documentadas,
+mostrando clara coerência com o projeto e os objetivos do parceiro.
 
-**[9,0 - 10,0]**
-Além de um simulador comprovadamente funcional, o sistema desenvolvido conta
-com abstrações para que seja possível adequar o simulador para outros
-dispositivos IoT (diferentes daqueles especificados pelo parceiro) sem a
-necessidade de um refatoramento substancial.
+#### 1.3.2. Definição das user stories (até 2,0 pontos)
 
-## 2. Documentação 
+**[0,0 - 1,0]**
+As user stories estão incompletas ou não refletem as necessidades das personas
+ou do projeto.
+
+**[1,0 - 2,0]**
+As user stories são completas, claramente formuladas e alinhadas com as
+personas e o contexto do projeto.
+
+#### 1.3.3. Arquitetura da informação (até 4,0 pontos)
+
+**[0,0 - 1,0]**
+A arquitetura da informação é incompleta ou incoerente com o projeto.
+
+**[1,0 - 2,0]**
+A arquitetura da informação está completa e contextualizada, mas alguns
+elementos ainda são vagos ou pouco informados pela pesquisa.
+
+**[2,0 - 3,0]**
+A arquitetura da informação é coerente, com decisões bem informadas pela
+pesquisa, mas faltam detalhes nos diagramas.
+
+**[3,0 - 4,0]**
+A arquitetura da informação é detalhada, clara e totalmente informada pela
+pesquisa, com diagramas que refletem de forma resumida e clara a disposição dos
+dados.
+
+#### 1.3.4. Inovação (até 1,0 ponto)
+
+**[0,0 - 0,5]**
+O projeto não apresenta elementos claros de inovação ou os elementos não são
+adequadamente justificados.
+
+**[0,5 - 1,0]**
+O projeto inclui elementos de inovação claramente justificados que demonstram
+impacto e valor significativos para o avanço do projeto.
+
+## 2. Proposta de negócios
 
 ### 2.1. Enunciado
 
-O grupo deverá especificar requisitos funcionais, não funcionais e restrições,
-testes relacionados e propor uma arquitetura inicial para o projeto. Pelo menos
-um requisito deve estar relacionado à segurança e pelo menos um requisito deve
-estar relacionado à escalabilidade.
+Para que um projeto seja bem sucedido, não basta que ele resolva o problema de
+pessoas; é necessário que ele seja viável também. Para isso, deve-se realizar
+uma análise de negócios com a finalidade de compreender qual o valor do projeto
+a ser desenvolvido e quais são os seus potenciais riscos. Sendo assim para este
+artefato pede-se:
+
+1. Value proposition canvas; e
+2. Matriz de risco.
+
+**Value proposition canvas**
+
+O Value Proposition Canvas é uma ferramenta estratégica de modelagem de
+negócios, criada por Alex Osterwalder, para ajudar organizações a alinhar seus
+produtos ou serviços com as expectativas e necessidades reais de seus clientes.
+Ele se divide em dois componentes principais: o perfil do cliente e a proposta
+de valor. O perfil do cliente detalha as tarefas que os clientes tentam
+realizar, suas dores e o que eles ganham ao realizar essas tarefas, enquanto a
+proposta de valor mapeia os produtos e serviços, aliviadores de dor e criadores
+de ganho que a empresa oferece. O objetivo principal é garantir que a proposta
+de valor de uma empresa ressoe de maneira clara e eficiente com o perfil e as
+demandas de seus clientes, criando um ajuste ideal entre o que o cliente
+precisa e o que a empresa oferece.
+
+[Template do value proposition
+canvas](https://drive.google.com/drive/u/3/folders/1lTqisJ_gxxtc5J5aXM8ula2kQ4MsII_M)
+
+**Matriz de risco**
+
+A matriz de risco é uma ferramenta utilizada no gerenciamento de riscos para
+avaliar e priorizar riscos com base em sua probabilidade de ocorrência e
+impacto potencial. Essa ferramenta visual ajuda as organizações a identificar
+quais riscos requerem atenção imediata e quais podem ser monitorados com menos
+urgência. Tipicamente, a matriz é organizada em um formato de grade com a
+probabilidade de um lado e o impacto no outro, criando quadrantes que
+categorizam os riscos como baixos, moderados, altos ou extremos. Isso permite
+que gerentes e equipes de projeto tomem decisões informadas sobre onde
+concentrar recursos e esforços para mitigação de riscos, contribuindo para uma
+gestão mais eficaz e proativa dos desafios potenciais.
+
+[Template da matriz de
+risco](https://drive.google.com/drive/u/3/folders/1lTqisJ_gxxtc5J5aXM8ula2kQ4MsII_M)
+
 
 ### 2.2. Padrão de entrega
 
@@ -110,71 +233,204 @@ nota e, no pior caso, invalidar a entrega por completo. Fique atento!
 3. As figuras utilizadas no documento devem sempre ser referenciadas no texto,
    com descrições textuais que estimulem a coesão entre o que é apresentado
    visualmente e o restante do texto; e 
-4. Todas as figuras utilizadas na documentação devem estar salvas dentro do
-   diretório `docs`, em um subdiretório chamado `static`.
 
 ### 2.3. Padrão de qualidade
 
-#### 2.3.1 Qualidade textual (até 5,0 pontos)
+#### 2.3.1. Value proposition canvas (até 6,0 pontos)
+
+##### 2.3.1.1. Perfil do cliente (até 3,0 pontos)
 
 **[0,0 - 1,0]**
-A documentação desenvolvida foge do contexto do projeto/está consideravelmente
-incompleta.
+O perfil do cliente apresentado está fora de contexto do projeto/personas
+mapeadas.
 
 **[1,0 - 2,0]**
-A documentação desenvolvida aborda todos os temas obrigatórios (artefatos), mas
-não apresenta-os de forma coesa, de modo que não seja possível vislumbrar o
-objetivo conjunto do projeto. O documento apresenta uma linguagem
-consistentemente inadequada para um documento de cunho técnico e/ou apresenta
-mais de um estilo textual de forma dissonante (colcha de retalhos).
+O perfil do cliente está parcialmente alinhado com o contexto do
+projeto/personas, mas falta detalhamento em aspectos críticos como as dores,
+tarefas e ganhos dos clientes.
 
-**[2,0 - 4,0]**
-Documentação aborda todos os temas e apresenta-os com alguma coesão, dando um
-entendimento ao menos parcial do projeto como um todo. Há poucas ou nenhuma
-ocorrência de linguagem inadequada e o texto apresenta alguma consistência de
-estilo.
+**[2,0 - 3,0]**
+O perfil do cliente é bem detalhado e completamente alinhado com o contexto do
+projeto/personas. As tarefas, dores e ganhos estão claramente identificados e
+são consistentes com as necessidades e comportamentos das personas mapeadas.
 
-**[4,0 - 5,0]**
-Documentação completa e coesa do projeto desenvolvido. A linguagem utilizada é
-condizente com o tipo de documento produzido.
+##### 2.3.1.2. Proposta de valor (até 3,0 pontos)
 
-#### 2.3.2 Requisitos (até 3,0 pontos)
+**[0,0 - 1,0]**
+A proposta de valor apresentada está fora de contexto do projeto/parceiro.
+
+**[1,0 - 2,0]**
+A proposta de valor está parcialmente alinhada com as necessidades e
+expectativas das personas. Alguns elementos, como aliviadores de dor ou
+criadores de ganho, são mencionados, mas não são suficientemente desenvolvidos
+ou específicos para o contexto do projeto.
+
+**[2,0 - 3,0]**
+A proposta de valor é altamente específica e totalmente alinhada com as
+necessidades e expectativas das personas do projeto. Todos os elementos,
+incluindo produtos e serviços, aliviadores de dor e criadores de ganho, são
+claramente definidos e demonstram um entendimento profundo do que os clientes
+valorizam e necessitam.
+
+#### 2.3.2. Matriz de risco (até 4,0 pontos)
+
+**[0,0 - 1,0]**
+Os riscos mapeados estão fora do contexto do projeto.
+
+**[1,0 - 2,0]**
+Os riscos mapeados apresentam ao menos uma correlação com as necessidades do
+parceiro, mas ainda não são suficientemente específicos, tendo um ou mais
+riscos definidos de forma genérica (e.g., "Risco de não dar tempo de terminar o
+projeto").
+
+**[2,0 - 3,0]**
+Os riscos mapeados são todos relevantes para o projeto e as necessidades do
+parceiro. Cada risco é analisado em termos de sua probabilidade de ocorrência e
+impacto potencial, porém não há estratégias definidas para evitar/mitigar os
+riscos.
+
+**[3,0 - 4,0]**
+Os riscos mapeados são todos ressonantes com o projeto e representam
+adequadamente os aspectos mais críticos de sua realização. Além disso, foram
+apresentadas estratégias adequadas e eficazes para evitar/mitigar cada um dos
+riscos mapeados, incluindo detalhes sobre implementação e acompanhamento dessas
+medidas.
+
+## 3. Proposta de arquitetura
+
+### 3.1. Enunciado
+
+A definição do escopo técnico é a última etapa do planejamento por uma razão
+essencial: a arquitetura e os requisitos do sistema devem ser derivados
+diretamente do valor que o projeto se propõe a entregar. Antes de escolher as
+tecnologias ou ferramentas, é crucial saber qual objetivo se deseja alcançar.
+Optar por uma tecnologia sem compreender plenamente os requisitos e o contexto
+do projeto pode levar a escolhas inadequadas e ineficientes.
+
+Neste estágio do projeto, você irá:
+
+1. Definir os requisitos do sistema.
+2. Elaborar uma proposta inicial da arquitetura do sistema.
+
+**Definição de Requisitos**
+
+Com base nos insights obtidos nas fases de design e negócios do projeto,
+identifique e documente os requisitos essenciais para o sistema:
+
+1. **Requisitos Funcionais:** Descreva as funcionalidades específicas que o
+   sistema deve oferecer, detalhando as ações que os usuários poderão executar.
+2. **Requisitos Não Funcionais:** Especifique padrões de desempenho e outras
+   métricas de qualidade que o sistema deve atender, explicando como essas
+   características influenciam a usabilidade, a eficiência e a segurança do
+   sistema.
+
+**Proposta Inicial da Arquitetura**
+
+Esta proposta de arquitetura serve como um esboço inicial e não como um plano
+definitivo. O objetivo é esclarecer o design básico do sistema, facilitando a
+estimativa de recursos e prazos para o desenvolvimento:
+
+1. **Descrição dos Módulos:** Identifique e descreva os principais sistemas ou
+   módulos do projeto, explicando a função de cada um dentro do contexto geral
+   do sistema.
+2. **Integração entre Módulos:** Defina as interfaces de comunicação entre os
+   módulos, incluindo uma descrição em alto nível dos protocolos e métodos de
+   integração.
+3. **Diagrama de Arquitetura:** Elabore um diagrama que visualize a estrutura e
+   as conexões entre os módulos, facilitando a compreensão da configuração e
+   interações do sistema.
+
+**Importância da Flexibilidade**
+
+Reconheça que esta arquitetura inicial pode evoluir à medida que novos
+requisitos e desafios emergem durante o desenvolvimento do projeto. A
+flexibilidade e a adaptação são essenciais para responder efetivamente às
+necessidades que podem surgir ao longo do processo.
+
+### 3.2. Padrão de entrega
+
+:::warning
+
+O padrão de entrega do artefato contempla uma série de requisitos para que a
+atividade seja considerada concluída. Embora não haja atribuição direta de
+pontuação aos itens aqui descritos, entenda-se que o não cumprimento de
+qualquer dos requisitos pode, no melhor dos casos, acarretar em um desconto de
+nota e, no pior caso, invalidar a entrega por completo. Fique atento!
+
+:::
+
+1. O texto desenvolvido pelo grupo deve estar disponível em uma página estática
+   gerada pelo framework Docusaurus. Para tal, deve haver um diretório no
+   repositório denominado `docs`, onde ficará a raíz do Docusaurus;
+2. A documentação da sprint 1 deve estar inteiramente contida em uma seção
+   denominada `Sprint 1`. Cada um dos artefatos deve ter sua descrição contida
+   em uma página ou subseção dentro da seção `Sprint 1`.
+3. As figuras utilizadas no documento devem sempre ser referenciadas no texto,
+   com descrições textuais que estimulem a coesão entre o que é apresentado
+   visualmente e o restante do texto; e 
+
+### 3.3. Padrão de qualidade
+
+#### 3.3.1 Qualidade textual (até 2,0 pontos)
 
 **[0,0 - 0,5]**
-Os requisitos levantados estão fora de contexto e/ou não refletem os objetivos
-do parceiro e do projeto.
-
-**[0,5 - 1,5]**
-Os requisitos estão contextualizados com o objetivo do projeto, mas há poucas
-ou nenhuma métrica e/ou planejamento de teste para aferir se foram atingidos.
-
-**[1,5 - 2,5]**
-Requisitos contextualizados e com métricas aferíveis em todos os requisitos não
-funcionais. Falta detalhamento no planejamento dos testes.
-
-**[2,5 - 3,0]**
-Requisitos contextualizados, com métricas bem definidas e com o planejamento de
-testes devidamente documentado e coerente com os requisitos.
-
-
-#### 2.3.3 Instruções para execução (até 2,0 pontos)
-
-**[0,0 - 0,5]**
-Há pouca ou nenhuma instrução para execução do projeto em sua versão atual.
+A documentação é substancialmente incompleta ou irrelevante para o contexto do
+projeto, falhando em cobrir os temas essenciais requeridos.
 
 **[0,5 - 1,0]**
-As instruções estão presentes e abordam de modo geral o que deve ser feito para
-a execução do projeto, porém faltam detalhes que não podem ser facilmente
-inferidos pelo leitor. As instruções apresentam uma falta de exemplos com
-comandos claros para execução. Não há informações sobre compatibilidade do
-software com versões de linguagens de programação, bibliotecas ou sistemas
-operacionais.
+A documentação aborda todos os temas obrigatórios mas falta coesão,
+dificultando a compreensão do projeto como um todo. A linguagem é inconsistente
+ou inapropriada para um documento técnico, resultando em uma leitura desconexa.
 
 **[1,0 - 1,5]**
-Instruções completas e com comandos detalhados de execução, porém com poucos ou
-nenhum dos exemplos mais comuns de utilização. Informações incompletas sobre
-compatibilidade.
+A documentação é completa e apresenta os temas com coesão suficiente para
+entender o projeto em geral. O texto tem poucas ocorrências de linguagem
+inadequada e mantém consistência de estilo na maior parte do documento.
 
 **[1,5 - 2,0]**
-Instruções completas, com exemplos mais comuns, comandos detalhados de execução
-e informações robustas de compatiblidade.
+A documentação é completamente coesa e clara, com uso de linguagem técnica
+adequada e consistente ao longo do texto, facilitando a compreensão integral do
+projeto.
+
+#### 3.3.2 Requisitos (até 4,0 pontos)
+
+**[0,0 - 0,5]**
+Os requisitos documentados são inapropriados para o contexto do projeto, não
+refletindo as necessidades do parceiro ou os objetivos estabelecidos.
+
+**[0,5 - 1,5]**
+Os requisitos estão alinhados com os objetivos do projeto, mas faltam métricas
+de aferição de desempenho e/ou planos detalhados para testes, limitando a
+verificação de sua implementação.
+
+**[1,5 - 3,0]**
+Os requisitos estão bem contextualizados e incluem métricas aferíveis para
+todos os requisitos não funcionais. No entanto, os planos de teste precisam de
+mais detalhes para garantir a eficácia da verificação.
+
+**[3,0 - 4,0]**
+Requisitos completamente alinhados com o projeto, detalhadamente métricos e com
+um plano de testes robusto e bem documentado, assegurando a viabilidade de sua
+implementação.
+
+#### 3.3.3. Detalhamento da arquitetura (até 4,0 pontos)
+
+**[0,0 - 0,5]**
+A arquitetura proposta é inadequada, não refletindo as necessidades ou os
+objetivos do projeto, ou é excessivamente vaga.
+
+**[0,5 - 1,5]**
+A arquitetura reflete os requisitos e análises realizadas, com módulos bem
+definidos e justificativas técnicas claras para a estrutura escolhida. Contudo,
+a integração entre módulos é descrita de forma superficial.
+
+**[1,5 - 3,0]**
+A arquitetura é detalhada e alinhada com os requisitos. Os módulos estão
+claramente descritos e a comunicação entre eles é explicada através de
+protocolos especificados. O diagrama, porém, ainda não captura totalmente a
+arquitetura descrita.
+
+**[3,0 - 4,0]**
+A arquitetura é detalhada, coesa e reflete perfeitamente os requisitos. Todos
+os módulos e suas integrações são claramente descritos, e o diagrama sintetiza
+eficazmente a arquitetura completa de forma visualmente acessível.
