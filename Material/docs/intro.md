@@ -83,9 +83,9 @@ Beleza, agora podemos seguir em frente.
 
 Essa é a **ementa oficial** do módulo. O texto é sucinto e formal pois ele faz
 parte de um documento **apresentado ao MEC** no momento em que o curso é
-reconhecido e que **obrigatoriamente** deve ser **mostrado aos alunos**. O que
-estou fazendo agora? Mostrando a ementa do módulo para vocês. Sem mais dúvidas,
-certo?
+reconhecido. A ementa é um dos itens que **obrigatoriamente** deve ser
+**mostrado aos alunos**. O que estou fazendo agora? Mostrando a ementa do
+módulo para vocês. Sem mais dúvidas, certo?
 
 :::
 
@@ -492,6 +492,21 @@ técnica já esteja finalizada. Não menospreze o esforço necessário para faze
 ajustes finos em um projeto.
 
 ## 4. Bibliografia
+
+:::warning
+
+Sou eu novamente. Só vim avisar que mostrar a bibliografia do módulo para vocês
+também é **obrigatório** de acordo com o MEC. O que estou fazendo aqui? Estou
+mostrando a bibliografia para vocês.
+
+:::
+
+O material disponibilizado nessa página deve ser o suficiente para que você
+seja capaz de entregar o projeto proposto, mas não se engane; não há a menor
+chance do material aqui contido ser tão detalhado quanto um livro a respeito
+dos diversos assuntos abordados nesse módulo. Sendo assim, essa seção apresenta
+quais foram os livros utilizados para gerar o conteúdo focado dessa página.
+Quer se aprofundar em algum assunto que viu no módulo? procure pelo livro aqui.
 
 ### 4.1. Bibliografia básica
 
