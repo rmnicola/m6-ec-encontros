@@ -392,15 +392,104 @@ mas faça alguma coisa pelo menos. Combinado? Combinado.
 
 ## 3. Descrição dos entregáveis
 
+A descrição completa e precisa dos artefatos você vai conseguir encontrar na
+[Adalove](https://adalove.inteli.edu.br) ou nas seções de artefatos desse
+material. No entanto, eu sei o que acontece quando vocês encontram um bloco de
+texto maior do que 10 linhas:
+
+<img 
+  src="https://media1.tenor.com/m/Zuar_NDXOxMAAAAC/mutta-nanba-nanba-mutta.gif"
+  alt="Muta is not amused"
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '30vh',
+    marginRight: 'auto'
+  }} 
+/>
+<br/>
+
+E eu também sei que é muito importante que **todos** tenham a capacidade de
+explicar de forma simples o que precisa ser alcançado em cada sprint. Por isso,
+eu vou escrever de forma **clara** e com uma linguagem **acessível** o que
+vocês precisam fazer em cada um dos sprints.
+
 ### 3.1. [Sprint 1](/sprint1) 
+
+Aqui vocês precisam **entender o problema**. Não, isso não significa sair
+fazendo matriz de risco, personas e user stories sem nem pensar. Isso significa
+seguir uma **série** de **etapas investigativas** para que o **escopo** do seu
+projeto **reflita** uma **necessidade** real de **pessoas**:
+
+1. Entenda as **pessoas** e a sua dor. Todo o resto emana disso. Se você não se
+   esforçar para entender **para quem** e **por quê** você está fazendo o que
+   está fazendo, o seu trabalho corre um **grande risco** de ser **inútil**.
+2. Estude o **negócio** e monte sua **proposta de valor**. Agora que você
+   conhece as pessoas, pode pensar no ambiente em que estão inseridas e o que
+   significa valor nesse ambiente. Aqui é que você deixa executivos felizes.
+3. Sem **perder de vista** o que fez nas etapas anteriores, monte o **escopo**
+   do seu projeto. Defina os seus **requisitos funcionais** e **não
+   funcionais**. Defina **métricas** para validar o que significa
+   **sucesso** ou **fracasso**. Sem fazer essa etapa do projeto, você vai
+   depender de *feeling* para saber se está indo no caminho certo. Você
+   **não quer** depender de *feeling*.
+4. Pesquise as tecnologias envolvidas e monte uma **proposta de arquitetura**.
+   Sim, você vai mudar ela. Não, isso não significa que você não deve se
+   esforçar para fazer uma arquitetura que faça sentido já nessa etapa do
+   projeto. *Um erro cometido com esforço tem valor*. Se você fizer essa etapa
+   de qualquer jeito, seu projeto vai virar uma bagunça.
 
 ### 3.2. [Sprint 2](/sprint2) 
 
+Monte a sua primeira versão da **prova de conceito**. Já? Já. O que isso
+significa? Que um **usuário** tem que ser capaz de **operar o robô** à
+distância. Faça o **mínimo** para que essa funcionalidade seja **viável**.
+
+Todo começo de projeto costuma ter mais perguntas do que respostas. Um erro
+cometido com esforço tem valor pois ele traz respostas. Conclusão? Se esforce e
+erre mais rápido. 
+
+Nessa sprint, vocês vão precisar aprender a usar o **robô**, o **ROS** e
+**configurar a comunicação** para que um usuário possa pilotar o seu robô.
+Precisa de câmera? Ainda não. Precisa de visão computacional? Ainda não.
+
 ### 3.3. [Sprint 3](/sprint3) 
+
+Agora que tiveram a primeira **interação do usuário com o sistema**, tá na hora
+de organizar as informações que foi possível extrair desse teste e **melhorar o
+projeto**. Como? Pensando melhor na **interface de usuário** e adicionando o
+**feed de imagem de uma câmera**.
+
+Aqui também vamos voltar para a **proposta de negócios** e montar uma **análise
+financeira**. Por que agora e não antes? Pois agora que vocês já montaram um
+MVP, vão poder estimar com muito mais propriedade o custo de implementação e
+operação do **projeto final**.
 
 ### 3.4. [Sprint 4](/sprint4) 
 
+Duas palavras: **visão computacional**. Chegou a hora. Procure um dataset
+relevante (idealmente fornecido pelo parceiro) e treine um modelo para detectar
+um padrão que seja útil para o operador do sistema.
+
+Aqui também vamos voltar para os **requisitos**. Lembra que falei que você
+precisava definir bem os requisitos para conseguir discernir o que é
+**fracasso** e **sucesso**? Pois bem, agora é a hora de bolar e implementar os
+**roteiros de testes** que vão trazer à tona se o seu projeto está encaminhado
+para atender os requisitos levantados.
+
 ### 3.5. [Sprint 5](/sprint5) 
+
+Tudo ao mesmo tempo o tempo todo. Pode parecer que o sprint 5 são duas semanas
+de férias após a conclusão dos requisitos técnicos de um projeto, mas na
+verdade o sprint 5 é uma **oportunidade** de melhorar **tudo**. A **análise de
+negócios** não reflete mais o projeto após mudanças de rumo? Modifique. Os
+**testes** ainda não estão dando os resultados esperados? Melhore sua
+implementação. Sua **análise financeira** ainda não reflete o sistema final?
+Refaça.
+
+Tem muita coisa para fazer e é por isso que sugere-se que a implementação
+técnica já esteja finalizada. Não menospreze o esforço necessário para fazer
+ajustes finos em um projeto.
 
 ## 4. Bibliografia
 
