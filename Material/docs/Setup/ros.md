@@ -1,5 +1,5 @@
 ---
-title: ROS
+title: Instalando o ROS
 sidebar_position: 2
 sidebar_class_name: autoestudo
 slug: /ros

@@ -1,6 +1,6 @@
 ---
 title: Desenhando com o turtlesim
-sidebar_position: 1
+sidebar_position: 5
 sidebar_class_name: ponderada
 slug: /ponderada2
 ---
