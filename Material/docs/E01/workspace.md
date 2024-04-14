@@ -5,6 +5,8 @@ sidebar_class_name: autoestudo
 slug: /workspaces
 ---
 
+import Admonition from '@theme/Admonition';
+
 ## 1. Criando um workspace em ROS 
 
 O workspace de ROS é basicamente uma pasta onde se concentram um ou mais pacotes 

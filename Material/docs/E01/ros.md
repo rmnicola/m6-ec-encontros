@@ -2,7 +2,6 @@
 title: Instalando o ROS
 sidebar_position: 2
 sidebar_class_name: autoestudo
-slug: /ros
 ---
 
 import Tabs from '@theme/Tabs';

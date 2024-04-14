@@ -2,7 +2,6 @@
 title: Linux (Ubuntu)
 sidebar_position: 1
 sidebar_class_name: autoestudo
-slug: /ubuntu
 ---
 
 # Instalação do Ubuntu
