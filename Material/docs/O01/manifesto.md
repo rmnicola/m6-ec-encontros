@@ -1,6 +1,6 @@
 ---
 title: O manifesto ágil
-sidebar_position: 1
+sidebar_position: 3
 sidebar_class_name: autoestudo
 slug: /manifesto
 ---

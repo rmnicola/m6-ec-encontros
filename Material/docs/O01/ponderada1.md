@@ -1,6 +1,6 @@
 ---
 title: Criando RNFs com testes
-sidebar_position: 3
+sidebar_position: 4
 sidebar_class_name: ponderada
 slug: /ponderada1
 ---
