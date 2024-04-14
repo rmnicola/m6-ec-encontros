@@ -19,9 +19,17 @@ conexões entre eles.
 
 ## 1. Nós 
 
-![](/gifs/nos.gif)
-
-[fonte](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html)
+<img 
+  src="https://docs.ros.org/en/humble/_images/Nodes-TopicandService.gif"
+  alt="ROS nodes" 
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '70vh',
+    marginRight: 'auto'
+  }} 
+/>
+<br/>
 
 Um "nó" é um dos principais elementos do ROS 2. Cada nó deve ser responsável por
 uma única função modular. Por exemplo, um nó pode ser responsável por controlar
@@ -58,9 +66,17 @@ __node:=my_turtle`.
 
 ## 2. Tópicos
 
-![](/gifs/topicos.gif)
-
-[fonte](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)
+<img 
+  src="https://docs.ros.org/en/humble/_images/Topic-MultiplePublisherandMultipleSubscriber.gif"
+  alt="ROS nodes" 
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '70vh',
+    marginRight: 'auto'
+  }} 
+/>
+<br/>
 
 O ROS 2 utiliza tópicos como um dos principais meios de comunicação entre nós. 
 Os tópicos permitem que os dados sejam transmitidos entre nós, possibilitando a 
