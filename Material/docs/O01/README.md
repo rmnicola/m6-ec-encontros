@@ -1,5 +1,5 @@
 ---
-title: O1 - Onboarding e sprint planning 1
+title: O1 - Sprint planning 1
 sidebar_position: 4
 slug: /o1
 ---

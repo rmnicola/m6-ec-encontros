@@ -1,5 +1,5 @@
 ---
-title: E8 - Multi layer perceptrons e torch
+title: E8 - MLP e torch
 sidebar_position: 21
 slug: /e8
 ---

@@ -1,10 +1,10 @@
 ---
-title: E2 - Estruturas de dados com ROS
+title: E2 - Estruturas de dados
 sidebar_position: 7
 slug: /e2
 ---
 
-# Estruturas de dados com ROS
+# Estruturas de dados
 
 **Encontro em 25/04/2024**
 

@@ -1,5 +1,5 @@
 ---
-title: E1 - Configurando e usando o ROS
+title: E1 - Introdução ao ROS
 sidebar_position: 5
 slug: /e1
 ---
