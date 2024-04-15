@@ -120,7 +120,7 @@ Para poder seguir esse tutorial, você vai precisar de:
 
 O site do Ubuntu fornece a imagem necessaria para criar esse pen drive de boot
 [nesse
-link](https://releases.ubuntu.com/22.04.3/ubuntu-22.04.3-desktop-amd64.iso). 
+link](https://ubuntu.com/download/desktop/thank-you?version=22.04.4&architecture=amd64). 
 Essa imagem conta com uma versão portátil do Ubuntu com uma ferramenta de
 instalação que é capaz de particionar e instalar o sistema operacional no
 dispositivo de armazenamento de sua escolha. Sendo assim, ao ter esse pen drive
