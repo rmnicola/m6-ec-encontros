@@ -171,28 +171,28 @@ impacto e valor significativos para o avanço do projeto.
 
 Para que um projeto seja bem sucedido, não basta que ele resolva o problema de
 pessoas; é necessário que ele seja viável também. Para isso, deve-se realizar
-uma análise de negócios com a finalidade de compreender qual o valor do projeto
-a ser desenvolvido e quais são os seus potenciais riscos. Sendo assim para este
-artefato pede-se:
+uma análise do moelo de negócios com a finalidade de compreender qual o valor
+do projeto a ser desenvolvido e quais são os seus potenciais riscos. Sendo
+    assim para este artefato pede-se:
 
-1. Value proposition canvas; e
+1. Business model canvas; e
 2. Matriz de risco.
 
-**Value proposition canvas**
+**Business model canvas**
 
-O Value Proposition Canvas é uma ferramenta estratégica de modelagem de
-negócios, criada por Alex Osterwalder, para ajudar organizações a alinhar seus
-produtos ou serviços com as expectativas e necessidades reais de seus clientes.
-Ele se divide em dois componentes principais: o perfil do cliente e a proposta
-de valor. O perfil do cliente detalha as tarefas que os clientes tentam
-realizar, suas dores e o que eles ganham ao realizar essas tarefas, enquanto a
-proposta de valor mapeia os produtos e serviços, aliviadores de dor e criadores
-de ganho que a empresa oferece. O objetivo principal é garantir que a proposta
-de valor de uma empresa ressoe de maneira clara e eficiente com o perfil e as
-demandas de seus clientes, criando um ajuste ideal entre o que o cliente
-precisa e o que a empresa oferece.
+O Business Model Canvas é uma ferramenta estratégica de gestão e planejamento
+que permite visualizar as principais funções de um negócio em um único quadro.
+Criado por Alexander Osterwalder, este modelo é dividido em nove blocos
+principais que cobrem os elementos cruciais de um negócio: Segmentos de
+Clientes, Propostas de Valor, Canais, Relacionamento com Clientes, Fontes de
+Receita, Recursos Principais, Atividades-chave, Parcerias Principais e
+Estrutura de Custos. A utilização do Canvas facilita a compreensão, design e
+inovação de modelos de negócios, ajudando empreendedores e empresas a alinhar
+suas atividades por meio de uma visão clara e compartilhada, garantindo que
+todas as partes do negócio trabalhem em harmonia para alcançar seus objetivos
+estratégicos.
 
-[Template do value proposition
+[Template do business model
 canvas](https://drive.google.com/drive/u/3/folders/1lTqisJ_gxxtc5J5aXM8ula2kQ4MsII_M)
 
 **Matriz de risco**
@@ -236,41 +236,68 @@ nota e, no pior caso, invalidar a entrega por completo. Fique atento!
 
 ### 2.3. Padrão de qualidade
 
-#### 2.3.1. Value proposition canvas (até 6,0 pontos)
+#### 2.3.1. Business model canvas (até 6,0 pontos)
 
-##### 2.3.1.1. Perfil do cliente (até 3,0 pontos)
+##### 2.3.1.1. Oferta (até 1,5 pontos)
+**Componentes: Proposta de Valor, Segmentos de Clientes**
 
-**[0,0 - 1,0]**
-O perfil do cliente apresentado está fora de contexto do projeto/personas
-mapeadas.
+**[0,0 - 0,5]** 
+A oferta não é clara ou relevante para os segmentos de clientes identificados;
+falta alinhamento entre a proposta de valor e as necessidades dos clientes.
 
-**[1,0 - 2,0]**
-O perfil do cliente está parcialmente alinhado com o contexto do
-projeto/personas, mas falta detalhamento em aspectos críticos como as dores,
-tarefas e ganhos dos clientes.
+**[0,5 - 1,0]** 
+A oferta é relevante, mas a descrição é genérica; falta detalhamento sobre como
+a proposta de valor satisfaz especificamente as necessidades dos segmentos de
+clientes.
 
-**[2,0 - 3,0]**
-O perfil do cliente é bem detalhado e completamente alinhado com o contexto do
-projeto/personas. As tarefas, dores e ganhos estão claramente identificados e
-são consistentes com as necessidades e comportamentos das personas mapeadas.
+**[1,0 - 1,5]** 
+A oferta é bem definida, claramente alinhada com os segmentos de clientes, e
+detalhadamente adaptada às suas necessidades e desejos.
 
-##### 2.3.1.2. Proposta de valor (até 3,0 pontos)
+##### 2.3.1.2. Clientes (até 1,5 pontos)
+**Componentes: Canais, Relacionamento com Clientes**
 
-**[0,0 - 1,0]**
-A proposta de valor apresentada está fora de contexto do projeto/parceiro.
+**[0,0 - 0,5]** 
+Estratégias de comunicação e relacionamento são inapropriadas ou mal definidas,
+com canais mal escolhidos que não atingem os clientes efetivamente.
 
-**[1,0 - 2,0]**
-A proposta de valor está parcialmente alinhada com as necessidades e
-expectativas das personas. Alguns elementos, como aliviadores de dor ou
-criadores de ganho, são mencionados, mas não são suficientemente desenvolvidos
-ou específicos para o contexto do projeto.
+**[0,5 - 1,0]** 
+Canais e estratégias de relacionamento estão identificados, mas não há uma
+estratégia clara que fortaleça a relação de forma significativa.
 
-**[2,0 - 3,0]**
-A proposta de valor é altamente específica e totalmente alinhada com as
-necessidades e expectativas das personas do projeto. Todos os elementos,
-incluindo produtos e serviços, aliviadores de dor e criadores de ganho, são
-claramente definidos e demonstram um entendimento profundo do que os clientes
-valorizam e necessitam.
+**[1,0 - 1,5]** 
+Canais e estratégias de relacionamento com clientes são detalhados, focados e
+efetivos na construção e manutenção de um relacionamento forte e benéfico.
+
+##### 2.3.1.3. Infraestrutura (até 1,5 pontos)
+**Componentes: Recursos Principais, Atividades-chave, Parcerias Principais**
+
+**[0,0 - 0,5]** 
+Falta clareza ou relevância nos recursos, atividades-chave e parcerias, ou eles
+não são adequados para apoiar a oferta ou operação do negócio.
+
+**[0,5 - 1,0]** 
+Recursos, atividades e parcerias são identificados, mas a descrição de como
+eles suportam a proposta de valor e a operação do negócio é superficial.
+
+**[1,0 - 1,5]** 
+Recursos, atividades e parcerias são bem alinhados com a proposta de valor,
+detalhadamente descritos e fundamentais para o sucesso operacional do negócio.
+
+##### 2.3.1.4. Viabilidade Financeira (até 1,5 pontos)
+**Componentes: Fontes de Receita, Estrutura de Custos**
+
+**[0,0 - 0,5]** 
+As fontes de receita e a estrutura de custos não são viáveis ou adequadas, ou
+não estão claramente conectadas com a proposta de valor.
+
+**[0,5 - 1,0]** 
+Fontes de receita e estrutura de custos estão identificadas, mas a descrição de
+como eles suportam a sustentabilidade financeira do negócio é insuficiente.
+
+**[1,0 - 1,5]** 
+Fontes de receita e estrutura de custos são detalhadas, claramente conectadas à
+proposta de valor e fundamentais para a viabilidade financeira do negócio.
 
 #### 2.3.2. Matriz de risco (até 4,0 pontos)
 
