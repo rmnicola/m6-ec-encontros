@@ -11,61 +11,103 @@ import Admonition from '@theme/Admonition';
 
 ## 1. Requisitos funcionais
 
-Requisitos funcionais são especificações detalhadas que descrevem as funções,
-características e interações que um sistema ou software deve possuir. Eles
-definem o que o sistema deve fazer em resposta a entradas específicas ou em
-condições determinadas. Em outras palavras, os requisitos funcionais descrevem
-as funcionalidades que o sistema deve oferecer para atender às necessidades e
-expectativas dos usuários e dos
-stakeholders.
+O que o seu programa **faz**? Essa é a simples pergunta que deve ser respondida
+pelos seus requisitos **funcionais**. Essa pergunta **sempre** vai ser guiada
+pelo usuário do seu sistema. Ainda não fez o dever de casa de identificar
+**quem** é o seu usuário final? Volte duas casas. Já **decidiu** que tecnologia
+quer utilizar antes mesmo de ler esse texto ou definir quem é o usuário? Vá
+para a cadeia. Só volte aqui quando fizer as coisas na **ordem certa**.
 
-Por exemplo, para um sistema de vendas online, um requisito funcional pode ser:
+Opa, voltou? Legal. Vamos voltar a falar de requisitos funcionais com uma
+definição um pouco mais formal:
+
+Requisitos funcionais são **especificações** detalhadas que descrevem as
+**funções**, **características** e **interações** que um sistema ou software
+deve possuir. Eles definem o que o sistema deve fazer em resposta a entradas
+específicas ou em condições determinadas. Em outras palavras, os requisitos
+funcionais descrevem as funcionalidades que o sistema deve oferecer para
+atender às necessidades e expectativas dos usuários e dos stakeholders.
+
+**Exemplo**
+
+Para um sistema de vendas online, um requisito funcional pode ser:
+
 "O sistema deve permitir que os usuários adicionem produtos ao carrinho de
-compras e realizem o checkout para finalizar a
-compra".
+compras e realizem o checkout para finalizar a compra".
 
 ### 1.1. Como Definir Requisitos Funcionais
 
-1. **Entendimento do Negócio:** Antes de tudo, é crucial entender o domínio do
-negócio e os objetivos do projeto. Isso fornece um contexto para a definição dos
-requisitos.
- 
-2. **Reuniões e Workshops:** Organize sessões de brainstorming com stakeholders,
-incluindo gerentes de projeto, desenvolvedores, designers e, claro,
-representantes dos usuários finais.
+Se você está aqui, é pois já sabe **quem é** o seu usuário. Não sabe ainda?
+Como você chegou até aqui!? Volte duas casas!
 
-3. **Use Casos e Histórias de Usuários:** Descreva cenários específicos de como
-os usuários interagirão com o sistema. Isso ajuda a visualizar as
-funcionalidades necessárias e a identificar possíveis lacunas.
+Voltou? Calma que ainda não acabou. Já fez a sua análise de negócios? Não? Como
+você quer definir requisitos funcionais de um projeto que você ainda nem sabe
+se tem **valor**, é **viável** e se encaixa no **modelo de negócios** do seu
+cliente? Volte uma casa!
 
-4. **Prototipagem:** Crie protótipos ou mockups do sistema para visualizar como
-ele funcionará. Isso pode ajudar a identificar requisitos adicionais e a obter
-feedback antecipado.
+Opa, já fez o dever de casa? Então tenho uma boa notícia; você já tem **tudo**
+o que precisa para definir os requisitos funcionais. Se você fez **user
+stories** bem feitas e que cobrem bem o escopo de utilização das suas personas,
+significa que é só sentar com o seu grupo e analisar essas user stories. Os
+requisitos funcionais mais óbvios vão estar logo ali, quase dando um beijo em
+vocês de tão na cara que eles estavam. Quer um exemplo? Então toma um user
+story em formato de [haiku](https://edtl.fcsh.unl.pt/encyclopedia/haiku):
 
-### 1.2. Importância do Cliente na Definição de Requisitos Funcionais
+```bash
+Operador atento,
+Explora vãos com destreza —
+Tubos sem segredo.
+```
 
-O cliente, seja ele um usuário final ou um representante de uma organização
-cliente, é fundamental na definição de requisitos funcionais. Aqui estão as
-razões:
+:::tip
 
-1. **Perspectiva do Usuário:** O cliente oferece uma perspectiva única, a do
-usuário. Eles podem fornecer insights sobre o que realmente precisam e esperam
-do sistema.
+<img 
+  src="https://64.media.tumblr.com/7ee84119b2a167d95b1f19810b908a4d/tumblr_inline_nqkkc1pfiN1qeyssh_500.gifv"
+  alt="Apo shitposting"
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '20vh',
+    marginRight: 'auto'
+  }} 
+/>
+<br/>
 
-2. **Validação:** Ao envolver o cliente no processo de definição, é possível
-validar os requisitos à medida que são desenvolvidos, garantindo que o sistema
-atenda às suas necessidades.
+Formatar os seus user stories como haikus não é uma boa prática. Só estou
+fazendo uma graça pra arrancar um sorrisinho seu durante esse autoestudo
 
-3. **Priorização:** O cliente pode ajudar a priorizar requisitos com base em sua
-importância e valor para o negócio.
+:::
 
-4. **Redução de Riscos:** Ao entender e documentar corretamente os requisitos do
-cliente desde o início, reduz-se o risco de retrabalho, custos adicionais e
-insatisfação do cliente no final do projeto.
+Um bom user story deve responder **quem** é o usuário, **qual** a sua
+**necessidade** e qual seu **objetivo**. O meu haiku não é tão claro, então não
+é um bom user story (mas tem o valor do entretenimento). No entanto, podemos
+extrair essas informações para nosso exemplo:
 
-5. **Relacionamento e Confiança:** Envolver o cliente no processo fortalece o
-relacionamento e constrói confiança, pois eles veem que suas opiniões e
-necessidades são valorizadas.
+* **Quem**: operador atento;
+* **Necessidade**: explorar vãos com destreza
+* **Para quê**: ...tubos sem segredo? (Ok, vou adicionar uma info a mais aqui:
+  verificar tubulações que ele **não consegue acessar**)
+
+A partir disso, podemos focar na exploração **com destreza** para definir como um requisito funcional:
+
+```
+O sistema deve permitir a teleoperação de um robô móvel de forma responsiva.
+```
+
+Viu? Tem muita informação nesses user stories. Vai olhar para eles com cuidado!
+
+Beleza, mas tudo vai sair dos user stories? Idealmente, sim. O problema é que
+isso dependeria de user stories **perfeitos** que falam sobre **todas** as
+necessidades do usuário. Nem o usuário sabe todas as necessidades do usuário.
+Sendo assim, use o seu **bom senso** para cobrir funcionalidades que você
+consegue inferir que são necessárias. Exemplo? *O sistema deve ter uma forma de
+controle de acesso*. Pode ser que isso não apareça no seu estudo de usuário,
+mas é absolutamente necessário para a segurança do sistema.
+
+Sério? Só bom senso. Não exatamente. Nessa primeira etapa sim, é bom senso e
+estimativa. A partir do momento em que você tiver um protótipo funcional, você
+precisa **testar** esse protótipo com os olhos bem atentos, pois outros
+requisitos funcionais ainda não mapeados podem começar a se manifestar.
 
 ## 2. Requisitos não funcionais
 
@@ -174,31 +216,3 @@ podem atender?
 - **Autonomia:** 
   - Qual é a duração da bateria do robô?
   - O robô pode se auto-carregar ou precisa ser carregado manualmente?
-
-### 2.2. Criação de Testes para Validar RNFs de um robô de serviço
-
-- **Testes de Performance:** 
-  - Simule várias cargas de trabalho no chatbot e LLM para garantir que eles
-possam lidar com múltiplas solicitações simultaneamente.
-  - Teste a velocidade de movimento e resposta do robô em diferentes cenários.
-
-- **Testes de Portabilidade:** 
-  - Faça o robô operar em diferentes superfícies e ambientes para verificar sua
-adaptabilidade.
-
-- **Testes de Confiabilidade:** 
-  - Execute o robô continuamente por longos períodos para identificar possíveis
-falhas ou problemas de desempenho.
-
-- **Testes de Usabilidade:** 
-  - Realize testes com usuários reais para obter feedback sobre a interface e a
-experiência do usuário.
-  - Avalie a precisão e relevância das respostas do chatbot e LLM.
-
-- **Testes de Manutenibilidade:** 
-  - Implemente atualizações fictícias para o software do chatbot e LLM e
-verifique a facilidade e eficácia do processo.
-
-- **Testes de Autonomia:** 
-  - Monitore a duração da bateria do robô em diferentes condições de uso.
-  - Teste o processo de carregamento, seja manual ou autônomo.
