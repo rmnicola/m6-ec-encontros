@@ -6,16 +6,19 @@ sidebar_class_name: autoestudo
 
 # Instalação do Ubuntu
 
-Vou começar essa seção logo de cara endereçando uma dúvida muito comum:
-**precisa** usar Linux para ser um desenvolvedor? **NÃO**. É perfeitamente
-possível seguir sua carreira toda sem enconstar em um sistema baseado em Unix.
-Na verdade, para algumas áreas é até melhor que não encoste (e.g. game dev,
-stack .net, mobile). No entanto, também é verdade que Linux/Unix é o **padrão**
-quando se fala de sistemas operacionais para **servidores**. 
+Usar ou não Linux acaba sendo um ponto muito debatido na comunidade de
+desenvolvedores, portanto vou começar essa seção logo de cara endereçando uma
+dúvida muito comum: **precisa** usar Linux para ser um desenvolvedor? **NÃO**.
+É perfeitamente possível seguir sua carreira toda sem enconstar em um sistema
+baseado em Unix. Na verdade, para algumas áreas é até melhor que não encoste
+(e.g. game dev, stack .net, mobile). No entanto, também é verdade que
+Linux/Unix é o **padrão** quando se fala de sistemas operacionais para
+**servidores**. 
 
 Neste módulo em específico, vamos utilizar o **ROS**, que é um sistema feito
-para conversar especificamente com o **Ubuntu**, especificamente a versão
-**22.04**. 
+usando como base especificamente com o **Ubuntu 22.04**. Eu já estou ouvindo ao
+fundo algumas das perguntas que vocês podem ter agora:
+
 * Tem como usar ROS em containers? Tem. 
 * Tem como usar o WSL? Tem. 
 * Tem como usar outra distro e compilar o ROS da fonte? Tem.
@@ -24,15 +27,16 @@ para conversar especificamente com o **Ubuntu**, especificamente a versão
 
 Tem como fazer tudo isso, mas seguir por qualquer um desses caminhos
 alternativos vai minar a sua capacidade de encontrar soluções para os seus
-problemas online, pois sempre vão assumir que você está no Ubuntu. Essa
-documentação também vai assumir que você está no Ubuntu. Sendo assim, nossa
-recomendação é que **instalem o Ubuntu em um cartão SD**.
+problemas online, pois as fontes mais comuns são cheias de pessoas que vão
+assumir que você está no Ubuntu. Essa documentação também vai assumir que você
+está no Ubuntu. Sendo assim, nossa recomendação é que **instalem o Ubuntu em um
+cartão SD**.
 
 Antes de começarmos a instalação, vou usar essa oportunidade para dar uma visão
-super rasa de como se dá a relação do seu computador com o sistema operacional
-no que diz respeito ao `boot`. A figura abaixo demonstra os passos que são
-executados desde o momento em que você aperta o botão de ligar até a tela de
-login:
+geral de como o firmware da sua placa mãe inicializa o seu hardware e "passa o
+bastão" para o seu sistema operacional, o que é conhecido como o processo de
+`boot`. A figura abaixo demonstra os passos que são executados desde o momento
+em que você aperta o botão de ligar até a tela de login:
 
 <img 
   src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*wjWc0sSBV1VWRr374WHm7g.jpeg"
@@ -53,11 +57,12 @@ sistema operacional a sequência de etapas é mais ou menos a mesma:
 1. **Power-On Self-Test (POST):** Quando o computador é ligado, a primeira
    etapa é o POST. Neste momento, a BIOS (Basic Input/Output System - apenas em
    sistemas **legado**) ou o UEFI (Unified Extensible Firmware Interface - o
-   padrão atual) - dependendo do tipo de firmware que o computador usa -
-   verifica o hardware básico para garantir que tudo esteja funcionando
-   corretamente. Isso inclui a memória RAM, o processador, o teclado, o disco
-   rígido, e outros componentes essenciais. Se algum problema for detectado, o
-   computador emite bipes ou códigos de erro.
+   padrão atual) verifica o hardware básico para garantir que tudo esteja
+   funcionando corretamente. Isso inclui a memória RAM, o processador, o
+   teclado, o disco rígido, e outros componentes essenciais. Se algum problema
+   for detectado, o computador emite bipes ou códigos de erro (sim, aqueles
+   barulhos quando o PC não liga e aquele display que fica mostrando um
+   monte de códigos de 2 dígitos tem uma função além de te confundir).
 
 2. **Detecção de Dispositivos de Armazenamento:** A BIOS/UEFI verifica os
    dispositivos de armazenamento disponíveis, como HDDs (Hard Disk Drives),
@@ -91,8 +96,8 @@ sistema operacional a sequência de etapas é mais ou menos a mesma:
    interface gráfica de usuário (GUI), permitindo que o usuário interaja com o
    sistema.
 
-7. **Logon do Usuário:** Finalmente, o sistema operacional exibe uma tela de
-   logon (se configurado para fazê-lo), onde o usuário pode entrar com suas
+7. **Login do Usuário:** Finalmente, o sistema operacional exibe uma tela de
+   login (se configurado para fazê-lo), onde o usuário pode entrar com suas
    credenciais para acessar o ambiente de trabalho. Após o login bem-sucedido,
    o sistema está pronto para uso, com programas e arquivos do usuário
    disponíveis para acesso e execução.
@@ -140,6 +145,15 @@ resume-se em:
 2. Escolher o pen drive na lista de drives do sistema; e 
 3. Clicar em `flash`.
 
+:::tip
+
+O vídeo abaixo demonstra o processo de gravar uma iso em um pen drive
+utilizando o Balena Etcher. Se você quer instalar o Ubuntu 22.04, converse com
+o André. Deixamos pen drives prontos com o ambiente de instalação para vocês
+usarem =D
+
+:::
+
 <div style={{ textAlign: 'center' }}>
     <iframe 
         style={{
@@ -154,7 +168,7 @@ resume-se em:
     </iframe>
 </div>
 
-## 2. Bootando no pen drive 
+## 2. Entrando no ambiente de instalação
 
 Vimos lá em cima que o processo de boot de um computador envolve uma etapa em
 que o firmware da placa mãe busca por dispositivos de armazenamento que
@@ -177,11 +191,12 @@ navegar para **escolher** qual dispositivo será usado para boot naquele boot em
 específico (a configuração não é persistente). Esse menu pode ser acessado
 apertando uma outra tecla durante o processo de boot (para notebooks Dell é o
 `F12`. Para outros fabricantes, consulte o Dr. Google). A imagem abaixo mostra
-a variante desse menu para sistema Dell:
+a variante desse menu para sistemas Dell mais antigos (o do Inteli tem uma
+carinha um *pouco* mais moderna):
 
 <img 
   src="https://i0.wp.com/accatech.com/wp-content/uploads/Boot-from-USB.jpg?w=800&ssl=1"
-  alt="Boot selection screen" 
+  alt="Boot selection menu" 
   style={{ 
     display: 'block',
     marginLeft: 'auto',
@@ -210,6 +225,14 @@ opção, que é a instalação customizada.
 
 Se tudo deu certo, você vai ser levado direto para a tela de instalação do 
 Ubuntu. A partir daí, siga as instruções abaixo:
+
+:::tip
+
+O vídeo abaixo demonstra o processo completo de instalação do Ubuntu, deixando
+claro os principais pontos de atenção. Assistam, deu trabalho de gravar (tive
+que baixar um programa de captura de tela na mídia de instalação).
+
+:::
 
 <div style={{ textAlign: 'center' }}>
     <iframe 
