@@ -118,6 +118,37 @@ sudo go-install
 
 Ao final da instalação, modifique seu `bashrc`, adicionando o seguinte:
 
+:::tip DICA
+
+O que é o **bashrc**?
+
+Na origem dos computadores, a primeira forma de criar **sistemas
+multiusuários** foi o uso de **terminais**. Neles, era possível que vários
+usuários enfileirassem comandos para execução no mainframe.
+
+Hoje em dia não precisamos mais utilizar teleterminais para interagir com
+nossos sistemas, mas uma herança dessa época é o uso de **emuladores de
+terminal**. Eles são basicamente os programas que usamos em nossas interfaces
+gráficas para interagir com o sistema por linha de comando.
+
+Onde eu quero chegar com isso? Bom, esses emuladores de terminal precisam
+utilizar alguma **linguagem** para entender os comandos do usuário. A linguagem
+mais comum para esses comandos se chama Bourne Again SHell, ou bash para os
+íntimos. Isso significa que sempre que você abre um terminal, você está
+inicializando uma sessão interativa com uma linguagem scriptada chamada bash.
+
+O que isso tem a ver com o `bashrc`? Simples; toda vez que essa sessão
+interativa é inicializada, o sistema busca por um arquivo especial de
+**configuração** para essa sessão. Esse arquivo é... o `bashrc`.
+
+O que estamos fazendo agora? Configurando no `bashrc` para que ele identifique
+a instalação de golang e disponibilize para nós comandos como o `go install`.
+
+Onde fica o `bashrc`? Na sua **HOME**. É um arquivo **escondido** (o caminho
+real é `.bashrc`), portanto utilize `ls -a` para conseguir enxergá-lo.
+
+:::
+
 ```bash
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
