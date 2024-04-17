@@ -81,25 +81,25 @@ sudo ./install.sh
 O output desse script deve ser algo como:
 
 ```bash
-Symlink for charm-cli-install already exists
-Symlink for dotfiles-link already exists
-Symlink for flatpak-install already exists
-Symlink for go-install already exists
-Symlink for starship-install already exists
-Symlink for zsh-install already exists
-Symlink for fonts-install already exists
-Symlink for gnome-pull already exists
-Symlink for gnome-push already exists
-Symlink for generate-ssh-key already exists
-Symlink for git-configure already exists
-Symlink for node-install already exists
-Symlink for rust-install already exists
-Symlink for ilovecandy already exists
-Symlink for neovim-install already exists
-Symlink for ros-install already exists
-Symlink for ros-start already exists
-Symlink for configure-bt-autosuspend already exists
-Symlink for logiops-install already exists
+Symlink created for charm-cli-install
+Symlink created for dotfiles-link
+Symlink created for flatpak-install
+Symlink created for go-install
+Symlink created for starship-install
+Symlink created for zsh-install
+Symlink created for fonts-install
+Symlink created for gnome-pull
+Symlink created for gnome-push
+Symlink created for generate-ssh-key
+Symlink created for git-configure
+Symlink created for node-install
+Symlink created for rust-install
+Symlink created for ilovecandy
+Symlink created for neovim-install
+Symlink created for ros-install
+Symlink created for ros-start
+Symlink created for configure-bt-autosuspend
+Symlink created for logiops-install
 ```
 
 Agora temos os scripts todos instalados. Quais vamos precisar usar? Em ordem de
