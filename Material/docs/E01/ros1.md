@@ -9,13 +9,23 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Admonition from '@theme/Admonition';
 
-# Entendendo nós e tópicos
+# Introdução ao ROS
 
-O sistema ROS 2 (Robot Operating System) é composto por uma série de conceitos
-fundamentais que, juntos, formam a estrutura de grafo do ROS (2). Este
-grafo é uma rede de elementos ROS 2 que processam dados simultaneamente. Se
-fossemos visualizar este grafo, ele englobaria todos os executáveis e as
-conexões entre eles.
+O ROS nada mais é do que um sistema capaz de provisionar a comunicação entre
+nós dentro de uma rede (tipicamente em uma rede local, mas é possível
+configurá-lo para acesso através da internet). O seu motivo de existir é para
+que seja possível promover uma arquitetura **desacoplada** para códigos de
+aplicações de robótica. Essa decisão arquitetural faz com que seja possível o
+compartilhamento de algoritmos de difícil implementação de uma forma que seja
+fácil integrá-los a qualquer projeto sem nem ao menos entender profundamente
+como se dá seu funcionamento. 
+
+Quer um exemplo? Pesquise sobre **filtros de kalmann** ou **slam**. Esses
+algoritmos estão sob seu alcance ao utilizar o ROS e seriam bastante onerosos
+para implementar do zero.
+
+As únidades fundamentais do ROS são os **nós** e os **tópicos**. A seguir,
+vamos ver um pouco melhor como eles funcionam.
 
 ## 1. Nós 
 
@@ -58,6 +68,7 @@ interagem com aquele
 nó.
 
 ### 1.2. Remapeamento (Remapping)
+
 O remapeamento permite reatribuir propriedades padrão do nó, como nomes de nós,
 nomes de tópicos, nomes de serviços, etc., para valores personalizados. Por
 exemplo, você pode reatribuir o nome do nó "/turtlesim" para "/my_turtle" usando
