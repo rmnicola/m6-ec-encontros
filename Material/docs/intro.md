@@ -6,7 +6,6 @@ slug: /
 
 # Robótica móvel e visão computacional
 
-
 <img 
   src="https://media1.tenor.com/m/2Fpxuz_VTKcAAAAC/mutta-nanba-nanba-mutta.gif"
   alt="Muta says hi" 
