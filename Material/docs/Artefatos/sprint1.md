@@ -22,40 +22,6 @@ Para finalidade de avaliação, divide-se essa etapa inicial em:
 A seguir, é possível ver com detalhes o que se espera em cada uma dessas
 entregas.
 
-## 1. Proposta de design
-
-### 1.1. Enunciado
-
-A proposta de design do projeto foca na arquitetura da informação e na
-experiência do usuário para a interface do sistema. Uma análise detalhada do
-perfil do usuário final é crucial para essa fase. Os seguintes elementos são
-esperados neste entregável:
-
-**Definição das personas**
-
-Descrever, com base em pesquisas sólidas (incluindo artigos científicos e
-relatórios de mercado), o perfil completo de, no mínimo, duas personas que
-utilizarão o sistema. Esta descrição deve abordar:
-1. Dados demográficos (nome, idade, gênero, escolaridade);
-2. Perfil profissional (cargo/função, habilidades/capacidades, nível de letramento digital);
-3. Dores/necessidades/desejos, com insights comportamentais que expliquem esses aspectos;
-4. Cenários de uso, incluindo interações entre personas para entender como diferentes perfis interagem com o sistema.
-
-**Definição das user stories**
-
-Elaborar pelo menos duas user stories para cada persona (totalizando no mínimo
-quatro user stories distintas), que devem seguir a estrutura "Como [persona],
-quero [necessidade] para [objetivo]". Exemplos devem ser variados e refletir
-necessidades reais que orientem o design do sistema.
-
-**Arquitetura da informação**
-
-Desenvolver diagramas de relação e de sequência detalhados que mostrem como as
-informações serão organizadas e acessadas pelas personas. Responder a pergunta:
-que tipo de informação cada persona buscará no sistema e como ela irá
-encontrá-la? Os diagramas devem claramente categorizar e facilitar a navegação
-e interação do usuário com a interface.
-
 ### 1.1. Enunciado
 
 A proposta de design do projeto contempla a arquitetura da informação prevista
@@ -193,7 +159,7 @@ todas as partes do negócio trabalhem em harmonia para alcançar seus objetivos
 estratégicos.
 
 [Template do business model
-canvas](https://drive.google.com/drive/u/3/folders/1lTqisJ_gxxtc5J5aXM8ula2kQ4MsII_M)
+canvas](https://upload.wikimedia.org/wikipedia/commons/1/10/Business_Model_Canvas.png)
 
 **Matriz de risco**
 
