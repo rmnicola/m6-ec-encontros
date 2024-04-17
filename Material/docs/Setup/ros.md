@@ -68,35 +68,88 @@ A estrutura do diretório é essa:
 └── README.md
 ```
 
-Note que eu dividi os scripts em seções. Na seção de Ubuntu é onde guardo dois scripts que uso para o ROS:
-
-* O ros-install, que serve para instalar o ROS; e
-* O ros-start, que uso pois não gosto de deixar as configurações de ROS na
-  inicialização do meu shell (fica lento). Então rodo esse comando toda vez que
-  vou utilizar o ROS em uma sessão de terminal.
-
-Embora seja possível rodar os scripts individualmente, sugiro que usem o script
-de instalação localizado na pasta raíz do repositório. Ele é responsável por
-buscar todos os arquivos `sh` dentro do repositório e criar um link simbólico
-para a pasta `/usr/local/bin`. Isso significa que o sistema passa a tratar
-esses scripts como arquivos binários. Sendo assim, não é mais necessário fazer:
+Note que eu dividi os scripts em seções. Na seção de Ubuntu é onde guardo dois
+scripts que uso para o ROS. Mas **CALMA**, antes de usar os scripts de ROS você
+vai precisar usar alguns outros scripts. Antes de mais nada, vamos instalar os
+scripts para que fique mais fácil rodar eles. Para isso, garanta que você está
+dentro do diretório `Scripts` e rode:
 
 ```bash
-./Scripts/General/ros-install.sh 
-```
-
-Bastando, em vez disso, fazer:
-
-```bash
-install-ros 
-```
-
-Como fazer isso? Basta executar como admin o script de instalação:
-
-```bash
-cd Scripts 
 sudo ./install.sh
 ```
+
+O output desse script deve ser algo como:
+
+```bash
+Symlink for charm-cli-install already exists
+Symlink for dotfiles-link already exists
+Symlink for flatpak-install already exists
+Symlink for go-install already exists
+Symlink for starship-install already exists
+Symlink for zsh-install already exists
+Symlink for fonts-install already exists
+Symlink for gnome-pull already exists
+Symlink for gnome-push already exists
+Symlink for generate-ssh-key already exists
+Symlink for git-configure already exists
+Symlink for node-install already exists
+Symlink for rust-install already exists
+Symlink for ilovecandy already exists
+Symlink for neovim-install already exists
+Symlink for ros-install already exists
+Symlink for ros-start already exists
+Symlink for configure-bt-autosuspend already exists
+Symlink for logiops-install already exists
+```
+
+Agora temos os scripts todos instalados. Quais vamos precisar usar? Em ordem de
+uso:
+
+1. go-install
+2. charm-cli-install
+3. instalação do figlet
+4. instalação do ROS
+
+Portanto, instale o golang com:
+
+```bash
+sudo go-install
+```
+
+Ao final da instalação, modifique seu `bashrc`, adicionando o seguinte:
+
+```bash
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+```
+
+Onde fica o `bashrc`? No seu home. Utilize o caminho `~/.bashrc`. Caso você
+utilize zsh, confio que já está em um nível para saber onde está seu arquivo
+`zshrc`.
+
+Após isso, vamos instalar o charm cli com:
+
+```bash
+charm-cli-install
+```
+
+Vamos instalar o figlet com:
+
+```bash
+sudo apt install figlet
+```
+
+E, por fim, podemos instalar o ROS com:
+
+```bash
+ros-install
+```
+
+Você vai ver um menu para selecionar o que quer configurar do ROS. Caso não
+saiba o que são as opções, o mais provável é que você queira **todas**. Utilize
+as setas do teclado para navegar nas opções e o espaço para selecionar cada
+opção.
 
 Após a instalação, não se esqueça de adicionar `source
 /opt/ros/humble/setup.xxx` ao arquivo de configuração do seu shell,
