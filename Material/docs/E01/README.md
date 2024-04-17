@@ -48,19 +48,23 @@ Esse encontro serve para o aluno que:
 *Obs: o encontro começa aos 15 min pois deve-se realizar a daily sempre no
 começo da instrução*
 
-**Demonstração: configuração do Ubuntu** (15 - 45 min)
+**Apresentação do conteúdo de computação** (15 - 25 min)
+
+Apresentação do planejamento de encontros e ponderadas de computação do módulo.
+
+**Demonstração: configuração do Ubuntu** (25 - 45 min)
 
 A demonstração feita será de configuração do Ubuntu. Nesse momento, o professor
 deve conversar com os alunos sobre algumas das ferramentas comuns utilizadas no
 Linux. Além disso, será instalado o ROS e feito o teste inicial da instalação.
 
-**Questão: relembrando o MQTT** (45 - 75 min)
+**Questão: relembrando o MQTT** (45 - 60 min)
 
 Utilizando uma ferramenta de questionário ao vivo, o professor apresentará uma
 série de perguntas de multipla escolha sobre o MQTT. O objetivo é fazer com que
 os alunos relembrem o protocolo e considerem suas vantagens e desvantagens.
 
-**Comparando MQTT com ROS** (75 - 90 min)
+**Comparando MQTT com ROS** (60 - 75 min)
 
 Após discussão e revisão do MQTT, serão apresentadas as características do ROS
 e a comparação com o MQTT ficará evidente. Após isso, será feita uma discussão
@@ -68,17 +72,17 @@ aberta sobre as vantagens de se utilizar o ROS.
 
 ### 3.2. Entendendo nós, tópicos e tipos de mensagens
 
-**Demonstração: criando um workspace** (90 - 100 min)
+**Demonstração: criando um workspace** (75 - 90 min)
 
 O professor retoma a demonstração criando um workspace, que é a maneira
 sugerida para gerenciar projetos utilizando o ROS.
 
-**Demonstração: criando um publisher e um subscriber** (100 - 110 min)
+**Demonstração: criando um publisher e um subscriber** (90 - 100 min)
 
 Modificação do workspace criado para apresentação de um publisher e um
 subscriber simples.
 
-**Turtlesim e tipos de mensagens** (110 - 120 min)
+**Turtlesim e tipos de mensagens** (100 - 120 min)
 
 Para finalizar o encontro, o professor apresenta o turtlesim para os estudantes
 e apresenta o desafio proposto na ponderada. Para isso, o aluno deve investigar
