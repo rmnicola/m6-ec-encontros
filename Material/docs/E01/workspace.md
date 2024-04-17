@@ -7,15 +7,67 @@ slug: /workspaces
 
 import Admonition from '@theme/Admonition';
 
-## 1. Criando um workspace em ROS 
+Quando trabalhamos com Python, aprendemos a criar pacotes utilizando o `pip`.
 
-O workspace de ROS é basicamente uma pasta onde se concentram um ou mais pacotes 
-ROS. Ela é útil pois podemos juntar vários pacotes e compilá-los com apenas um
-comando e também dar apenas um `source` para adicionar os comandos de
-run/launch ao nosso sistema. 
+Quando trabalhamos em javascript, aprendemos a gerenciar pacotes utilizando o
+`npm`.
 
-Para criar um workspace ROS, basta criar uma pasta qualquer e, dentro dela,
+Quando trabalhamos em rust, utilizamos o `cargo`. 
+
+Com ROS não é diferente. Ele oferece os conceitos de **workspaces** e
+**pacotes**. Para isso, é preciso utilizar o gerenciador de pacotes do ROS, o
+`colcon`. 
+
+## 1. Workspaces ROS
+
+Um workspace ROS nada mais é do que um **diretório** onde é possível encontrar
+**um ou mais pacotes ROS**. A utilidade dessa organização é que com um
+workspace é possível instalar vários pacotes de uma vez só e também cada
+workspace conta com um script de setup similar ao do ROS em si, mas esse serve
+para configurar as definições de executáveis dos pacotes contidos no workspace.
+
+**Exemplo**
+
+Os pacotes relacionados ao Turtlebot (o robô utilizado no módulo) estão
+organizados em um workspace. Nesse workspace podemos encontrar, entre outras
+coisas:
+
+* O pacote que define as mensages básicas para interagir com o turtlebot;
+* Um pacote que implementa o algoritmo de mapeamento e navegação simultânea do
+  turtlebot;
+* Arquivos de configuração que definem a cadeia cinemática (oi Geraldo s2) do
+  robô.
+
+Se você precisar compilar todos esses pacotes ao mesmo tempo, basta entrar na
+raíz do workspace e rodar:
+
+```bash
+colcon build
+```
+
+Após compilar, você pode configurar todos os executáveis (comandos para se usar
+com `ros2 run`) com um simples:
+
+```bash
+# obs: esse comando precisa ser rodado a partir da raíz do workspace
+source install/local_setup.bash
+```
+
+Beleza, mas como podemos criar um workspace?
+
+### 1.1. Criando um workspace
+
+Para criar um workspace ROS, basta criar um diretório qualquer e, dentro dela,
 adicionar uma subpasta `src`, que é onde vão ficar os nossos pacotes.
+
+:::tip dica
+
+O argumento `-p` do comando `mkdir` faz com que seja possível criar todos os
+diretórios no caminho até o diretório final. No exemplo abaixo queremos criar
+`meu_workspace/src`, mas o diretório `meu_workspace` ainda não existe. Com esse
+argumento é possível criar os dois diretórios ao mesmo tempo.
+
+:::
 
 ```bash
 mkdir -p meu_workspace/src
@@ -43,6 +95,9 @@ comandos em sequência:
 
 ```bash 
 sudo rosdep init
+```
+
+```bash
 rosdep update
 ```
 
@@ -50,6 +105,9 @@ Feito isso, basta resolver nossas dependências com:
 
 ```bash 
 cd meu_workspace #voltando para a pasta raíz do ws
+```
+
+```bash
 rosdep install -i --from-path src --rosdistro humble -y
 ```
 
@@ -65,6 +123,9 @@ Para executar o comando abaixo você precisa, antes, instalar o seguinte pacote:
 ```bash
 sudo apt install python3-colcon-common-extensions
 ```
+
+Caso tenha utilizado meu script `ros-install` com todas as opções selecionadas,
+esse pacote já vai ter sido instalado.
 
 :::
 
@@ -90,10 +151,31 @@ de configuração do workspace. Fazemos isso com:
 source install/local_setup.bash #se estiver usando zsh, mude para setup.zsh
 ```
 
-Pronto! Seu workspace ROS está configurado e com um pacote funcionar. Vamos
+Pronto! Seu workspace ROS está configurado e com um pacote funcional. Vamos
 criar o nosso próprio pacote agora?
 
-## 2. Criando pacotes em ROS
+## 2. Pacotes em ROS
+
+Agora que já vimos como funcionam os workspaces em ROS, vamos conversar sobre o
+que é um pacote.
+
+O pacote em ROS serve precisamente ao mesmo propósito que os pacotes em Python
+ou em Node ou em Rust. A ideia é simplesmente criar um sistema de distribuição
+de código de terceiros com definições de dependências clarar para que uma
+ferramenta consiga automatizar o processo de instalação desse código no
+sistema.
+
+O que vale a pena discutir mesmo é por que o ROS utiliza um gerenciador de
+pacotes próprio (colcon). O motivo disso é que o ROS é inteiramente feito em
+C++, que é uma linguagem que carece de gerenciadores de pacotes. Isso significa
+que, para ter essa funcionalidade, o time de desenvolvimento do ROS precisou
+criar esse gerenciador.
+
+Na transição do ROS1 para o ROS2 houve uma mudança no sistema de gerenciamento
+de pacotes (de catkin mudou para colcon). O motivo disso foi para que fosse
+possível criar pacotes ROS utilizando Python com mais facilidade. O efeito é
+que hoje podemos escolher se vamos criar um pacote em C++ ou em Python
+utilizando o `colcon`.
 
 ### 2.1. Criando um pacote pré-preenchido
 
@@ -110,7 +192,7 @@ poder rodar alguma coisa dele:
 colcon build
 ```
 
-Como nosso ws tem dois pacotes, às vezes podemos querer especificar para
+Como nosso workspace tem dois pacotes, às vezes podemos querer especificar para
 compilar apenas um (ou mais) pacotes em vez de compilar tudo o que está lá.
 Podemos fazer isso com: 
 
@@ -158,7 +240,7 @@ if __name__ == "__main__":
 
 Agora, vamos configurar os metadados do pacote para conseguir rodar usando o
 `ros2 run`. Primeiro, vamos mexer no arquivo `package.xml`, localizado na raíz
-do projeto `teste`. Nele, você deve editar os campos `<name>`, `<version>`,
+do projeto. Nele, você deve editar os campos `<name>`, `<version>`,
 `<description>`, `<maintainer>` e `<license>`. Aqui, você também pode
 adicionar dependências de execução (controladas pelo `rosdep`). Exemplo:
 
@@ -205,15 +287,16 @@ setup(
 ```
 
 Note essa parte:
+
 ```python
 'console_scripts': [
     "ola = ola_mundo.ola:main",
 ],
 ```
 
-Aqui é onde você define os entry points do seu pacote. No caso, há um script de
-console chamado `ola`, que aciona o arquivo `ola` dentro do pacote `ola_mundo`,
-especificamente a função `main`.
+Aqui é onde você define os **entry points** do seu pacote. No caso, há um
+script de console chamado `ola`, que aciona o arquivo `ola` dentro do pacote
+`ola_mundo`, especificamente a função `main`.
 
 Agora, volte para a raíz do seu workspace e rode `colcon build` e de `source`
 no script de setup do workspace. A seguir, rode:
