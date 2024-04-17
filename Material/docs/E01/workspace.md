@@ -370,7 +370,7 @@ ros2 launch test_launch.py
 Se tudo deu certo, você conseguiu seguir o exemplo básico do turtlesim sem
 precisar de duas sessões de terminal.
 
-## 3. Integrando launch files a pacotes ROS
+### 3.1. Integrando launch files a pacotes ROS
 
 <Admonition 
     type="info" 
