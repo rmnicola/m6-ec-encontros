@@ -8,44 +8,58 @@ slug: /e2
 
 **Encontro em 25/04/2024**
 
-## 1. Para que/quem serve esse encontro?
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+## 1. Resultados desejados
 
-## 2. Objetivos
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+### 1.1. Objetivos estabelecidos
 
-## 3. Roteiro 
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+Estruturas de dados estão por toda a parte no mundo da computação. É impossível
+chegar longe e evoluir nesse ramo sem considerar com mais cuidado as diferentes
+estruturas de dados existentes e as implicações de sua utilização. Sendo assim,
+esse é um assunto que deve ser abordado de forma transversal no curso. 
+
+O objetivo desse encontro é fazer com que os alunos aprofundem o seu
+conhecimento sobre estruturas de dados e considerem aspectos de performance e
+abstração relacionados com a sua escolha.
+
+### 1.2. Questões centrais do encontro
+
+1. Quais são as principais estruturas de dados que utilizamos sem perceber ao
+   usar uma linguagem de alto nível como o Python?
+2. Quais são as diversas formas de implementar estruturas array-like? Quando
+   devo utilizar cada uma delas?
+3. Qual a importância das filas e pilhas? Quais são as principais aplicações
+   que utilizam essas estruturas de dados? 
+4. Por quê o dicionário de Python é mais performático que a lista? Que tipo de
+   estrutura de dados existe por trás dele?
+5. O que diabos acontece com o array de Javascript?
+6. O que são arvores binárias e por que as big techs **amam** perguntar sobre
+   elas em processos seletivos?
+
+### 1.3. O que o aluno deve compreender?
+
+* O aluno deve compreender que estruturas de dados nada mais são do que
+  abstrações criadas para que seres humanos possam compreender os dados
+  armazenados em computadores e, assim, bolar algoritmos para manipulá-los de
+  forma mais simples.
+* O aluno deve compreender que, mesmo utilizando linguagens de alto nível, há
+  uma implicação importante no uso de memória para cada estrutura de dados que
+  ele escolhe. Ele deve ser capaz de compreender a implementação dessas
+  estruturas de dados com alguma pesquisa e determinar se ela utiliza o *stack*
+  ou o *heap*.
+* O aluno deve compreender... 
+
+### 1.4. O que o aluno deve ser capaz de fazer?
+
+* O aluno deve ser capaz de escolher de forma consciente as estruturas de dados
+  para um projeto;
+
+## 2. Evidências de aprendizado
+
+### 2.1. Evidências de desempenho
+
+## 3. Plano de aprendizagem
+
+**Daily** (0 - 15 min)
 
 ## 4. Slides 
 
