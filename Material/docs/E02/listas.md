@@ -1,14 +1,16 @@
 ---
 title: Listas
-sidebar_position: 2
+sidebar_position: 3
 sidebar_class_name: autoestudo
 slug: /listas
 ---
 
 # Estruturas de dados array-like (ou listas)
 
-## 1. Listas ligadas
+## 1. O problema dos arrays
 
-## 2. ArrayList
+## 2. Listas ligadas
 
-## 3. A lista do Python
+## 3. ArrayList
+
+## 4. A lista do Python
