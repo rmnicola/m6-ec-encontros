@@ -8,6 +8,26 @@ slug: /e2
 
 **Encontro em 25/04/2024**
 
+:::tip TUUUUUDO BEM COM VOCÊS??
+
+<img 
+  src="https://static.wikia.nocookie.net/victoryroad/images/2/2c/LGPEArt_Carvalho.png"
+  alt="Prof. Oak" 
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '20vh',
+    marginRight: 'auto'
+  }} 
+/>
+<br/>
+
+
+Essa instrução será ministrada pelo nosso golden retriever favorito, o prof.
+Carvalho! Tratem-no com carinho.
+
+:::
+
 ## 1. Resultados desejados
 
 ### 1.1. Objetivos estabelecidos
