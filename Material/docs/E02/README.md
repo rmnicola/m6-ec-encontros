@@ -111,7 +111,7 @@ aprendizado do aluno.
 ## 4. Slides 
 
 <div style={{ textAlign: 'center' }}>
-    <iframe 
+    <!-- <iframe 
         style={{
             display: 'block',
             margin: 'auto',
@@ -121,5 +121,6 @@ aprendizado do aluno.
         src="https://slides.com/rodrigomangoninicola/m6-ec-encontros/embed#/encontro2"
         frameborder="0" 
         allowFullScreen>
-    </iframe>
+    </iframe> -->
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQAU3ANYKRSsKWmTEqDPNV0oR_EDranGnTlKSIFvAIZ0UDn1tr_6lVMVbbBfcb2WKpklUUJ1NCfPXdd/embed?start=false&loop=false&delayms=3000" frameborder="0" width="2560" height="1469" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
