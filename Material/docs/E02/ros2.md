@@ -25,20 +25,20 @@ recebam atualizações contínuas, os serviços fornecem dados apenas quando sã
 especificamente chamados por um cliente. Aqui está um guia sobre como os
 serviços funcionam no ROS 2:
 
-### 2.1. Configuração
+### 1.1. Configuração
 Para começar, você deve iniciar os nós do turtlesim e do turtle_teleop_key:
 ```
 ros2 run turtlesim turtlesim_node
 ros2 run turtlesim turtle_teleop_key
 ```
 
-### 3.2. Listando Serviços
+### 1.2. Listando Serviços
 Para listar todos os serviços ativos no sistema, use o comando:
 ```
 ros2 service list
 ```
 
-### 3.3. Verificando o Tipo de Serviço
+### 1.3. Verificando o Tipo de Serviço
 Cada serviço tem um tipo que descreve a estrutura dos dados de solicitação e
 resposta. Para descobrir o tipo de um serviço,
 use:
@@ -49,13 +49,13 @@ Por exemplo, para o serviço `/clear`, o tipo é `std_srvs/srv/Empty`, indicando
 que não envia ou recebe
 dados.
 
-### 3.4. Encontrando Serviços por Tipo
+### 1.4. Encontrando Serviços por Tipo
 Se você quiser encontrar todos os serviços de um tipo específico, use:
 ```
 ros2 service find <tipo_do_serviço>
 ```
 
-### 3.5. Mostrando a Estrutura do Serviço
+### 1.5. Mostrando a Estrutura do Serviço
 Para entender a estrutura dos argumentos de entrada de um serviço, use:
 ```
 ros2 interface show <tipo_do_serviço>
@@ -63,7 +63,7 @@ ros2 interface show <tipo_do_serviço>
 Por exemplo, para o serviço `/spawn`, a estrutura inclui `x`, `y`, `theta` e
 `name`.
 
-### 3.6. Chamando um Serviço
+### 1.6. Chamando um Serviço
 Agora que você conhece a estrutura dos argumentos, pode chamar um serviço
 usando:
 ```
