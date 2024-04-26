@@ -122,5 +122,10 @@ aprendizado do aluno.
         frameborder="0" 
         allowFullScreen>
     </iframe> -->
-    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQAU3ANYKRSsKWmTEqDPNV0oR_EDranGnTlKSIFvAIZ0UDn1tr_6lVMVbbBfcb2WKpklUUJ1NCfPXdd/embed?start=false&loop=false&delayms=3000" frameborder="0" width="2560" height="1469" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQAU3ANYKRSsKWmTEqDPNV0oR_EDranGnTlKSIFvAIZ0UDn1tr_6lVMVbbBfcb2WKpklUUJ1NCfPXdd/embed?start=false&loop=false&delayms=3000" style={{
+            display: 'block',
+            margin: 'auto',
+            width: '100%',
+            height: '50vh',
+        }}></iframe>
 </div>
