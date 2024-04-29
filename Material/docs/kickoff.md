@@ -1,6 +1,6 @@
 ---
 title: Kickoff
-sidebar_position: 25
+sidebar_position: 30
 slug: /kickoff
 unlisted: true
 ---
