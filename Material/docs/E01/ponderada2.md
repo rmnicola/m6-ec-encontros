@@ -27,8 +27,7 @@ Alguns requisitos pedidos:
 * O script deve sempre fazer o mesmo desenho;
 * O script deve fazer o spawn e kill de ao menos uma tartaruga (pesquise como
   fazer isso); e
-* O script deve utilizar o penUp e penDown ao menos uma vez (pesquise,
-  pesquise).
+* O script deve utilizar o setPen ao menos uma vez.
 
 Além dos requisitos descritos acima, vai receber nota máxima apenas a entrega
 que esteja formatada como um pacote ROS.
