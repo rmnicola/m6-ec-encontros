@@ -28,29 +28,30 @@ desencontros.
 
 ## 2. Plano de aprendizagem
 
-**Retrospectiva sprint 1 - individual** (0 - 20 min)
+**Feedback sala** (0 - 10 min)
+
+O professor orientador deve comentar de forma geral o desempenho da turma no
+decorrer do sprint.
+
+**Retrospectiva sprint 1 - individual** (10 - 50 min)
 
 Os alunos devem preencher o formulário fornecido pelo professor orientador
 individualmente. Nesse formulário estarão perguntas para que o aluno reflita
 sobre o resultado do seu grupo no sprint passado.
 
-**Retrospectiva sprint 1 - grupo** (20 - 60 min)
+**Retrospectiva sprint 1 - grupo** (50 - 80 min)
 
-Após o preenchimento dos formulários, os grupos agora devem discutir juntos e
-responder às perguntas propostas pelo professor orientador.
+Após o preenchimento dos formulários, os grupos agora devem discutir juntos a
+respeito daquilo que deu certo e aquilo que não deu certo no decorrer da sprint
+passada. Aqui também cabe discutir sobre comportamentos que foram positivos e
+negativos de integrantes do grupo e que impactaram no resultado da sprint.
 
-**Retrospectiva sprint 1 - sala** (60 - 80 min)
-
-Agora com uma visão do módulo como um todo, os alunos e o professor orientador
-devem discutir sobre o que funcionou bem e o que não funcionou tão bem na sala
-como um todo.
-
-**Planning sprint 2 - apresentação dos artefatos** (80 - 110 min)
+**Planning sprint 2 - apresentação dos artefatos** (80 - 100 min)
 
 O professor orientador deve apresentar os artefatos que devem ser desenvolvidos
 no decorrer da sprint 2 assim como os seus padrões de qualidade.
 
-**Planning sprint 2 - apresentação dos encontros** (110 - 120 min)
+**Planning sprint 2 - apresentação dos encontros** (100 - 120 min)
 
 O professor orientador deve apresentar os encontros da sprint 2 e comentar
 sobre a sua relação com o projeto e os entregáveis da sprint.
