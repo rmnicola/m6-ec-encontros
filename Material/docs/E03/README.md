@@ -124,12 +124,12 @@ implementação de um sistema de controle.
 
 **Daily** (0 - 15 min)
 
-**Discussão: apresentação das questões centrais** (15 - 45 min)
+**Discussão: apresentação das questões centrais** (15 - 25 min)
 
 O professor irá discutir abertamente as questões centrais envolvidas no
 encontro, apresentando o problema de controle de sistemas de forma intuitiva.
 
-**Expositivo: sistemas de controle e o domínio dos complexos (45 - 60 min)
+**Expositivo: sistemas de controle e o domínio dos complexos (25 - 50 min)
 
 Contando com a exposição mais aprofundada dos autoestudos sobre o assunto, o
 professor deve contextualizar a próxima etapa da instrução utilizando alguns
@@ -137,7 +137,7 @@ slides explicativos sobre o papel da transformada de Laplace na modelagem de
 sistemas e como um sistema de malha fechado pode ser representado no domínio
 dos complexos.
 
-**Atividade: interagindo com o PID** (60 - 90 min)
+**Atividade: interagindo com o PID** (50 - 85 min)
 
 Utilizando um simulador simplificado, os alunos devem interagir com cada
 componente do controlador PID e observar o comportamento do sistema quando um
@@ -146,9 +146,9 @@ componente é adicionado ou tirado e quando uma constante aumenta ou diminui.
 A atividade deve ser dividida em dois momentos:
 
 1. Interação com o PID (20 min)
-2. Discussão do que descobriu com o seu grupo (10 min)
+2. Discussão do que descobriu com o seu grupo (15 min)
 
-**Pop quiz: escolha de controladores** (90 - 110 min)
+**Pop quiz: escolha de controladores** (85 - 105 min)
 
 Utilizando uma ferramenta de enquetes ao vivo, o professor vai apresentar
 algumas perguntas a respeito de cenários em que deve-se escolher uma estratégia
@@ -158,7 +158,7 @@ validar as conclusões que os alunos tiraram da experimentação com o PID. A
 última pergunta será capciosa e servirá como segway para a etapa final do
 encontro.
 
-**Expositivo: a resposta temporal de sistemas de segunda ordem** (110 - 120 min)
+**Expositivo: identificação de sistemas** (105 - 120 min)
 
 Para finalizar o material do encontro, o professor apresentará a resposta
 temporal padrão de sistemas de segunda ordem como uma forma de avaliar sistemas
