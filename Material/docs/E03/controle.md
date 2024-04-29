@@ -47,6 +47,25 @@ estabilidade, desempenho e robustez de um sistema controlado, o que é crucial
 para assegurar que o sistema não apresentará um comportamento indesejado ou
 perigoso em condições reais de operação.
 
+:::warning Autoestudo
+
+<div style={{ textAlign: 'center' }}>
+    <iframe 
+        style={{
+            display: 'block',
+            margin: 'auto',
+            width: '100%',
+            height: '50vh',
+        }}
+        src="https://www.youtube.com/embed/lBC1nEq0_nk" 
+        frameborder="0" 
+        allowFullScreen>
+    </iframe>
+</div>
+
+
+:::
+
 ## Sistemas de malha aberta
 
 <img 
