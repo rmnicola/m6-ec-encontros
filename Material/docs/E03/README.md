@@ -24,17 +24,19 @@ dos conceitos vistos nesse encontro.
 
 ### 1.2. Quais são as questões centrais do encontro?
 
-1. O que é controle de malha aberta? E controle de malha fechada? Como esse
+1. Como eu posso fazer um sistema móvel (e.g. robô) se mover de forma precisa
+   **toda vez**? O que significa um sistema ser controlado?
+2. O que é controle de malha aberta? E controle de malha fechada? Como esse
    conceito influencia na eficácia do controlador e no custo de implementação?
-2. Como é possível fazer com que um sistema móvel (e.g. robô) se mova com
-   precisão de acordo com o comando a ele enviado?
-3. Como eu posso modelar matematicamente o comportamento desses sistemas? Qual
+4. Como eu posso modelar matematicamente o comportamento desses sistemas? Qual
    a relação disso com equações diferenciais e o domínio dos números complexos?
-4. O que exatamente um "controlador" faz? Ele tem dinâmica? Se sim, como essa
+5. O que exatamente um "controlador" faz? Ele tem dinâmica? Se sim, como essa
    dinâmica influencia no comportamento do sistema?
-5. Qual é a técnica de controle que vai me servir em praticamente todos os
+6. Qual é a técnica de controle que vai me servir em praticamente todos os
    casos em que preciso controlar um sistema linear?
-6. Como definir o modelo matemático que rege o comportamento de um sistema
+7. Qual o papel de cada um dos termos do controlador PID? Como cada um deles
+   influencia na dinâmica do sistema?
+8. Como definir o modelo matemático que rege o comportamento de um sistema
    dinâmico através de ensaios experimentais?
 
 ### 1.3. O que o aluno deve compreender?
@@ -126,10 +128,16 @@ implementação de um sistema de controle.
 
 **Discussão: apresentação das questões centrais** (15 - 25 min)
 
+*O que significa um sistema ser controlado?*
+
 O professor irá discutir abertamente as questões centrais envolvidas no
 encontro, apresentando o problema de controle de sistemas de forma intuitiva.
 
-**Expositivo: sistemas de controle e o domínio dos complexos (25 - 50 min)
+**Expositivo: sistemas de controle e o domínio dos complexos** (25 - 50 min)
+
+*O que é controle de malha aberta e de malha fechada*
+*Como e por que modelar o comportamento de sistemas dinâmicos*
+*O que é um controlador? Ele tem dinâmica?*
 
 Contando com a exposição mais aprofundada dos autoestudos sobre o assunto, o
 professor deve contextualizar a próxima etapa da instrução utilizando alguns
@@ -137,7 +145,12 @@ slides explicativos sobre o papel da transformada de Laplace na modelagem de
 sistemas e como um sistema de malha fechado pode ser representado no domínio
 dos complexos.
 
-**Atividade: interagindo com o PID** (50 - 85 min)
+**Atividade: interagindo com o PID** (50 - 90 min)
+
+* Qual é a técnica de controle que vai me servir em praticamente todos os casos
+  em que preciso controlar um sistema linear? *
+* Qual o papel de cada um dos termos do controlador PID? Como cada um deles
+  influencia na dinâmica do sistema? *
 
 Utilizando um simulador simplificado, os alunos devem interagir com cada
 componente do controlador PID e observar o comportamento do sistema quando um
@@ -146,19 +159,22 @@ componente é adicionado ou tirado e quando uma constante aumenta ou diminui.
 A atividade deve ser dividida em dois momentos:
 
 1. Interação com o PID (20 min)
-2. Discussão do que descobriu com o seu grupo (15 min)
+2. Discussão do que descobriu com o seu grupo (20 min)
 
-**Pop quiz: escolha de controladores** (85 - 105 min)
+**Atividade: discutindo as conclusões* (90 - 110 min)
 
-Utilizando uma ferramenta de enquetes ao vivo, o professor vai apresentar
-algumas perguntas a respeito de cenários em que deve-se escolher uma estratégia
-de controle e os alunos devem escolher entre múltiplas opções a estratégia que
-faz mais sentido. Após cada questão, o professor vai discutir a resposta e
-validar as conclusões que os alunos tiraram da experimentação com o PID. A
-última pergunta será capciosa e servirá como segway para a etapa final do
-encontro.
+O professor guiará uma discussão em grupo sobre as conclusões do experimento
+sobre PID. As perguntas que guiarão o debate serão:
 
-**Expositivo: identificação de sistemas** (105 - 120 min)
+* Qual é a técnica de controle que vai me servir em praticamente todos os casos
+  em que preciso controlar um sistema linear? *
+* Qual o papel de cada um dos termos do controlador PID? Como cada um deles
+  influencia na dinâmica do sistema? *
+
+**Expositivo: identificação de sistemas** (110 - 120 min)
+
+* Como definir o modelo matemático que rege o comportamento de um sistema
+  dinâmico através de ensaios experimentais? *
 
 Para finalizar o material do encontro, o professor apresentará a resposta
 temporal padrão de sistemas de segunda ordem como uma forma de avaliar sistemas
