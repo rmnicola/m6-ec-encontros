@@ -7,7 +7,7 @@ slug: /ponderada2
 
 # Desenhando com o turtlesim
 
-**Atividade com prazo de entrega até 02/05**
+**Atividade com prazo de entrega até 06/05**
 
 ## 1. Objetivo
 
