@@ -88,10 +88,10 @@ funcionamento do sistema criado;
     <th>Desalinhado<br/>(0,0 - 1,0)</th>
   </tr>
   <tr>
-    <td>Além da funcionalidade básica de controle e monitoramente de
-    velocidade, o nó ainda conta com um serviço que é responsável por parar o
-    robô e matar o processo de operação. Deve-se criar o cliente e o servidor
-    para esse serviço.</td>
+    <td>Além da funcionalidade básica de controle e monitoramento de
+    velocidade, o nó ainda conta com um serviço de ROS que é responsável por
+    parar o robô e matar o processo de operação. Deve-se criar o cliente e o
+    servidor para esse serviço.</td>
     <td>O nó é capaz de publicar mensagens de comando e se subscreve no tópico
     adequado para fazer a leitura das velocidades do turtlebot</td>
     <td>O nó é capaz de publicar mensagens corretamente no tópico de comando do
