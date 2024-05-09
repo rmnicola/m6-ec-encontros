@@ -53,9 +53,147 @@ sudo apt install base-devel
 
 Agora que temos uma instalação do git, vamos configurá-lo corretamente?
 
-## 2. Configurando o git
+## 2. Criando uma chave ssh
 
-### 2.1. Adicionando seu nome e email
+Desde o começo de 2022, o github não permite mais que você autentique seu
+acesso ao repositório para `push` e `pull` utilizando seu usuário e senha. O
+motivo disso? Segurança. A maneira obrigatória agora passa a ser utilizando
+**criptografia assimétrica**. O que isso significa? Que você precisa configurar
+uma chave privada e uma chave pública. A chave pública deve ser registrada no
+github.
+
+Para criar a chave, você pode seguir [esse
+tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+oficial do github. No entanto, eu criei um script para que você possa fazer
+toda a configuração do git com a chave ssh.
+
+Para usar meu script, clone meu repositório de scripts (aqui tem vários scripts
+úteis. Usem sem parcimônia ~e quebrem seu sistema operacional~).
+
+```bash
+git clone https://github.com/rmnicola/Scripts.git && cd Scripts
+```
+Como eu sou ~preguiçoso~ muito organizado, eu criei um script que basicamente
+pega todos os scripts existentes nessa pasta de scripts e cria um link
+simbólico para que eles fiquem disponíveis em `/usr/bin/`, que é a pasta onde
+ficam os arquivos binários executáveis do seu usuário no Linux. Eu fiz isso
+pois a partir do momento em que essa configuração é feita, todos os scripts
+passam a ser acessíveis de qualquer lugar do sistema, como se fosse um programa
+que você instalou (o motivo disso é porque ele **é** um programa que você
+instalou).
+
+```bash
+sudo ./install.sh
+```
+
+Se o output do comando tiver essa carinha:
+
+```bash
+Symlink created for charm-cli-install
+Symlink created for dotfiles-link
+Symlink created for flatpak-install
+Symlink created for go-install
+Symlink created for starship-install
+Symlink created for zsh-install
+Symlink created for fonts-install
+Symlink created for gnome-pull
+Symlink created for gnome-push
+Symlink created for generate-ssh-key
+Symlink created for git-configure
+Symlink created for node-install
+Symlink created for rust-install
+Symlink created for ilovecandy
+Symlink created for neovim-install
+Symlink created for ros-install
+Symlink created for ros-start
+Symlink created for configure-bt-autosuspend
+Symlink created for logiops-install
+```
+
+Significa que deu tudo certo.
+
+O primeiro passo é instalar a linguagem `go`. Por quê? Porque eu criei uma
+interface amigável que foi feita utilizando uma ferramenta que precisa do go
+instalado no seu sistema (`bubblegum`).
+
+Para instalar o `go`, rode:
+
+```bash
+go-install
+```
+
+Ao final desse comando, você vai ver três linhas que devem ser adicionadas ao
+seu `.bashrc`. Adicione elas e rode `source .bashrc` para poder utilizar o go.
+Se tudo deu certo, o comando a seguir vai mostrar a versão de `go` instalada no
+seu sistema:
+
+```bash
+go version
+```
+
+Legal, agora podemos instalar o `bubblegum`:
+
+```bash
+charm-cli-install
+```
+
+Agora, vamos apenas garantir que outras duas ferramentas necessárias para rodar
+meus scripts estejam instaladas:
+
+```bash
+sudo apt install figlet xclip
+```
+
+Pronto! Agora, rode:
+
+```bash
+generate-ssh-key
+```
+
+E siga as instruções no terminal para gerar sua chave ssh. Sugiro utilizar o
+título padrão e não configurar uma senha para poder dar push sem digitar essa
+senha toda vez.
+
+Ao final da execução desse comando, você vai ver dois links no seu terminal. O
+primeiro deles é o que vai te levar para a página onde você deve adicionar a
+sua chave SSH no github. Segue o [link](https://github.com/settings/keys).
+
+Nessa página, você deve clicar em **New SSH key**. Isso vai te levar para uma
+página onde você deve definir um título e colocar a sua chave pública. Meu
+script foi feito com carinho, então assim que você executa ele, a sua chave
+pública fica disponível no seu `clipboard` para colar a qualquer momento
+utilizando **CTRL V**. De nada!
+
+Sugiro criar duas chaves, uma para **autenticação** e outra para
+**assinatura**. A de assinatura não é exatamente necessária, mas sem ela seus
+commits não vão ter o check verdinho ao lado.
+
+Quer testar se deu certo? Rode o seguinte comando:
+
+```bash
+ssh git@github.com
+```
+
+Legal, agora você tem uma chave ssh configurada e cadastrada no Github. O
+próximo passo é configurar o git.
+
+## 3. Configurando o git
+
+### 3.1. Usando meu script
+
+Essa vai ser rápida. Rode:
+
+```bash
+git-configure
+```
+
+E siga as instruções que vão aparecer no seu terminal.
+
+Quer fazer tudo na mão? Beleza, siga o tutorial que vem a seguir.
+
+### 3.2. Na mão
+
+#### 3.2.1. Adicionando seu nome e email
 
 O git é uma ferramenta que pode ser usada para ~atribuir culpa~ registrar os
 responsáveis por cada parte do código do projeto. Sendo assim, você precisa
@@ -93,92 +231,7 @@ git config --global core.editor "code"
 
 O comando acima configura como editor padrão o **vscode**.
 
-## 2.2. Configurando o acesso aos repositórios remotoso
-
-É **bastante** incomum o uso do git sem um serviço central de repositórios
-remotos. Os principais que temos são o **github** e o **gitlab**. Para
-conseguir sincronizar o acesso do seu git com esses dois serviços, você vai
-precisar gerar e cadastrar uma chave SSH para **autenticar** o seu usuário.
-
-Embora não seja nada
-[difícil](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-fazer isso, eu acabei criando um script que automatiza o processo pois eu
-sempre esquecia como fazer e tinha que ler esse tutorial novamente 😅
-
-Para usar meu script, clone meu repositório de scripts (aqui tem vários scripts
-úteis. Usem sem parcimônia ~e quebrem seu sistema operacional~).
-
-```bash
-git clone https://github.com/rmnicola/Scripts.git && cd Scripts
-```
-
-Como eu sou ~preguiçoso~ muito organizado, eu criei um script que basicamente
-pega todos os scripts existentes nessa pasta de scripts e cria um link
-simbólico para que eles fiquem disponíveis em `/usr/bin/`, que é a pasta onde
-ficam os arquivos binários executáveis do seu usuário no Linux. Eu fiz isso
-pois a partir do momento em que essa configuração é feita, todos os scripts
-passam a ser acessíveis de qualquer lugar do sistema, como se fosse um programa
-que você instalou (o motivo disso é porque ele **é** um programa que você
-instalou).
-
-```bash
-sudo ./install.sh
-```
-
-Se o output do comando tiver essa carinha:
-
-```bash
-Symlink for ilovecandy already exists
-Symlink for configure-bt-autosuspend already exists
-Symlink for configure-git already exists
-Symlink for install-charm-tools already exists
-Symlink for install-fonts already exists
-Symlink for install-go already exists
-Symlink for install-logiops already exists
-Symlink for install-node already exists
-Symlink for install-rust already exists
-Symlink for install-starship already exists
-Symlink for install-zsh already exists
-Symlink for link-configs already exists
-Symlink for set-gpg-key already exists
-Symlink for set-ssh-key already exists
-Symlink for configure-flatpak already exists
-Symlink for gnome-backup already exists
-Symlink for gnome-restore already exists
-Symlink for install-neovim already exists
-Symlink for install-ros already exists
-Symlink for ros-env already exists
-```
-
-Significa que deu tudo certo.
-
-Agora, basta usar o `set-ssh-key` para criar a chave ssh e **já copiar ela para
-o seu clipboard**.
-
-```bash
-set-ssh-key git
-```
-
-Se tudo deu certo, você agora tem uma chave SSH pública prontinha para dar
-**CTRL-V** na interface do Github ou Gitlab. Basta acessar a página de
-configuração por aqui:
-
-[Github](https://github.com/settings/keys)
-[Gitlab](https://gitlab.com/-/profile/keys)
-
-Se tudo der certo, você consegue testar a configuração usando:
-
-```bash
-ssh git@github.com
-```
-
-ou
-
-```bash
-ssh git@gitlab.com
-```
-
-## 3. Tutorial Git
+## 4. Tutorial Git
 
 Para saber mais sobre git, leia [esse livro
 gratuito](https://git-scm.com/book/en/v2)
