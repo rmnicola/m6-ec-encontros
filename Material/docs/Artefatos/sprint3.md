@@ -219,7 +219,7 @@ essencial que todos os detalhes sejam meticulosamente seguidos.
   </tr>
 </table>
 
-#### 2.2.4. Gráficos sugeridos (até 1,0 pontos)
+#### 2.2.4. Gráficos sugeridos (até 1,0 ponto)
 
 <table>
   <tr>
