@@ -15,8 +15,8 @@ O sprint 3 é marcado por duas principais modificações ao projeto:
 Os entregáveis se dividem em:
 
 * Análise Financeira (peso 2);
-* Evolução da interface de usuário (peso 3);
-* Documentação (peso 3).
+* Evolução da interface de usuário (peso 4);
+* Documentação (peso 2).
 
 ## 1. Análise financeira
 
@@ -102,8 +102,9 @@ A evolução da interface de usuário deve contemplar o seguinte:
 
 1. Alteração da interface de usuário considerando o feedback do parceiro e
    adicionando o feed de vídeo em tempo real;
-2. Implementação do software para transmissão de vídeo em tempo real; e
-3. Sugestão de gráficos a partir das informações coletadas pelo sistema
+2. Aprimoramento do sistema de segurança;
+3. Implementação do software para transmissão de vídeo em tempo real; e
+4. Sugestão de gráficos a partir das informações coletadas pelo sistema
    (sugestões de BI).
 
 ### 2.1. Padrão de entrega
@@ -137,14 +138,14 @@ essencial que todos os detalhes sejam meticulosamente seguidos.
 
 ### 2.2. Padrão de qualidade
 
-#### 2.2.1. Nova interface de usuário (até 4,0 pontos)
+#### 2.2.1. Interface de usuário (até 3,0 pontos)
 
 <table>
   <tr>
-    <th>Supera<br/>(3,5 - 4,0)</th>
-    <th>Atende<br/>(2,5 - 3,5)</th>
-    <th>Quase lá<br/>(1,5 - 2,5)</th>
-    <th>Insuficiente<br/>(0,5 - 1,5)</th>
+    <th>Supera<br/>(2,5 - 3,0)</th>
+    <th>Atende<br/>(2,0 - 2,5)</th>
+    <th>Quase lá<br/>(1,0 - 2,0)</th>
+    <th>Insuficiente<br/>(0,5 - 1,0)</th>
     <th>Desalinhado<br/>(0,0 - 0,5)</th>
   </tr>
   <tr>
@@ -164,14 +165,42 @@ essencial que todos os detalhes sejam meticulosamente seguidos.
   </tr>
 </table>
 
-#### 2.2.2. Transmissão de imagens (até 4,0 pontos)
+#### 2.2.2. Sistema de segurança (até 3,0 pontos)
 
 <table>
   <tr>
-    <th>Supera<br/>(3,5 - 4,0)</th>
-    <th>Atende<br/>(2,5 - 3,5)</th>
-    <th>Quase lá<br/>(1,5 - 2,5)</th>
-    <th>Insuficiente<br/>(0,5 - 1,5)</th>
+    <th>Supera<br/>(2,5 - 3,0)</th>
+    <th>Atende<br/>(2,0 - 2,5)</th>
+    <th>Quase lá<br/>(1,0 - 2,0)</th>
+    <th>Insuficiente<br/>(0,5 - 1,0)</th>
+    <th>Desalinhado<br/>(0,0 - 0,5)</th>
+  </tr>
+  <tr>
+    <td>O sistema é capaz de detectar a direção onde está o obstáculo e, assim,
+    permite que o usuário envie comandos para que o robô se mova para longe do
+    obstáculo, mas trava o movimento do robô em direção ao obstáculo.</td>
+    <td>O sistema não só envia um alerta para o usuário quando há um objeto
+    próximo, como faz com que o robô não possa mais se mover através de
+    comandos de velocidade quando há um obstáculo muito próximo.</td>
+    <td>Além do botão de emergência funcional, a interface ainda apresenta
+    alertas para o usuário quando a leitura do LiDAR acusa um objeto muito
+    próximo do robô (e.g. uma parede)</td>
+    <td>O botão de emergência foi integrado à interface de usuário e modificado
+    para agir como um serviço ROS. O cliente envia para o robô um pedido de
+    parada e a resposta é um status de encerramento do processo do
+    turtlebot.</td>
+    <td>Entrega fora de contexto ou não entregou.</td>
+  </tr>
+</table>
+
+#### 2.2.3. Transmissão de imagens (até 3,0 pontos)
+
+<table>
+  <tr>
+    <th>Supera<br/>(2,5 - 3,0)</th>
+    <th>Atende<br/>(2,0 - 2,5)</th>
+    <th>Quase lá<br/>(1,0 - 2,0)</th>
+    <th>Insuficiente<br/>(0,5 - 1,0)</th>
     <th>Desalinhado<br/>(0,0 - 0,5)</th>
   </tr>
   <tr>
@@ -190,19 +219,16 @@ essencial que todos os detalhes sejam meticulosamente seguidos.
   </tr>
 </table>
 
-#### 2.2.3. Gráficos sugeridos (até 2,0 pontos)
+#### 2.2.4. Gráficos sugeridos (até 1,0 pontos)
 
 <table>
   <tr>
-    <th>Supera<br/>(1,75 - 2,0)</th>
-    <th>Atende<br/>(1,25 - 1,75)</th>
-    <th>Quase lá<br/>(0,75 - 1,25)</th>
-    <th>Insuficiente<br/>(0,25 - 0,75)</th>
+    <th>Atende<br/>(0,75 - 1,0)</th>
+    <th>Quase lá<br/>(0,5 - 0,75)</th>
+    <th>Insuficiente<br/>(0,25 - 0,5)</th>
     <th>Desalinhado<br/>(0,0 - 0,25)</th>
   </tr>
   <tr>
-    <td>O grupo foi além e apresentou um exemplo interativo de ao menos um dos
-    gráficos sugeridos.</td>
     <td>Além da descrição clara do que estará disponível em sua API, o grupo
     apresentou sugestões de gráficos para o cliente implementar em sua
     plataforma de BI</td>
