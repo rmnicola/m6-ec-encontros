@@ -9,6 +9,23 @@ slug: /conv
 
 ## 1. O que é uma convolução
 
-## 2. Convolução em imagens
+:::warning Autoestudo
 
-## 3. Exemplos de filtros
+<div style={{ textAlign: 'center' }}>
+    <iframe 
+        style={{
+            display: 'block',
+            margin: 'auto',
+            width: '100%',
+            height: '50vh',
+        }}
+        src="https://www.youtube.com/embed/KuXjwB4LzSA"
+        frameborder="0" 
+        allowFullScreen>
+    </iframe>
+</div>
+<br />
+
+:::
+
+## 2. Exemplos de filtros
