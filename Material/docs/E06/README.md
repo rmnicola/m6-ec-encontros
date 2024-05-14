@@ -8,55 +8,22 @@ slug: /e6
 
 **Encontro em 16/05/2024**
 
-## 1. Para que/quem serve esse encontro?
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+## 1. Resultados desejados
 
-## 2. Objetivos
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+### 1.1. Objetivos estabelecidos
 
-## 3. Roteiro 
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+### 1.2. Quais são as questões centrais do encontro?
+
+### 1.3. O que o aluno deve compreender?
+
+### 1.4. O que o aluno deve ser capaz de fazer?
+
+## 2. Evidências de aprendizado
+
+### 2.1. Evidências de desempenho
+
+### 2.2. Outras evidências
+
+## 3. Plano de aprendizagem
 
 ## 4. Slides 
-
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
