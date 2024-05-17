@@ -32,7 +32,7 @@ neurais modernas.
 
 <img 
   src="img/perceptron.png"
-  alt="Perceptron" 
+  alt="Representação de perceptron" 
   style={{ 
     display: 'block',
     marginLeft: 'auto',
