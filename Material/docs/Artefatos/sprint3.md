@@ -270,8 +270,8 @@ rejeição total do artefato entregue. Atenção é crucial.
 1. O texto desenvolvido pelo grupo deve estar disponível em uma página estática
    gerada pelo framework Docusaurus. A estrutura do repositório deve incluir um
    diretório denominado `docs`, que servirá como raiz para o Docusaurus.
-2. A documentação da sprint 3 deve ser composta e organizada integralmente na
-   seção `Sprint 3`. Cada artefato e sua respectiva descrição devem estar
+2. A documentação da sprint 4 deve ser composta e organizada integralmente na
+   seção `Sprint 4`. Cada artefato e sua respectiva descrição devem estar
    contidos em uma página ou subseção dentro desta seção.
 3. As figuras utilizadas na documentação devem ser claramente referenciadas e
    descritas no texto para garantir uma conexão visual e contextual clara com o
@@ -281,7 +281,7 @@ rejeição total do artefato entregue. Atenção é crucial.
 
 ### 3.2. Padrão de qualidade
 
-#### 3.2.1 Qualidade textual (até 4,0 pontos)
+#### 3.2.1 Qualidade textual (até 2,0 pontos)
 
 :::warning
 
@@ -293,19 +293,15 @@ penalizados pelo professor orientador.
 
 <table>
   <tr>
-    <th>Supera<br/>(3,5 - 4,0)</th>
-    <th>Atende<br/>(2,5 - 3,5)</th>
-    <th>Quase lá<br/>(1,5 - 2,5)</th>
-    <th>Insuficiente<br/>(0,5 - 1,5)</th>
+    <th>Atende<br/>(1,5 - 2,0)</th>
+    <th>Quase lá<br/>(1,0 - 1,5)</th>
+    <th>Insuficiente<br/>(0,5 - 1,0)</th>
     <th>Desalinhado<br/>(0,0 - 0,5)</th>
   </tr>
   <tr>
     <td>Texto correto, coeso e com fluidez. O grupo demonstrou preocupação em
     apresentar os conceitos da forma mais didática possível, escolhendo
     cuidadosamente quando e como utilizar tabelas e imagens.</td>
-    <td>Texto revisado e com quase nenhuma ocorrência de linguagem inadequada
-    ou erros gramaticais. O texto é conciso, ligando de forma adequada os temas
-    apresentados com fluidez.</td>
     <td>Texto razoavelmente bem escrito, com poucos problemas de adequação da
     linguagem ou erros gramaticais.</td>
     <td>O texto escrito tem problemas graves de linguagem, apresentando erros
@@ -341,13 +337,13 @@ penalizados pelo professor orientador.
   </tr>
 </table>
 
-#### 3.2.2 Metodologia (até 4,0 pontos)
+#### 3.2.2 Metodologia (até 6,0 pontos)
 <table>
   <tr>
-    <th>Supera<br/>(3,5 - 4,0)</th>
-    <th>Atende<br/>(2,5 - 3,5)</th>
-    <th>Quase lá<br/>(1,5 - 2,5)</th>
-    <th>Insuficiente<br/>(0,5 - 1,5)</th>
+    <th>Supera<br/>(5,5 - 6,0)</th>
+    <th>Atende<br/>(4,5 - 5,5)</th>
+    <th>Quase lá<br/>(2,5 - 4,5)</th>
+    <th>Insuficiente<br/>(0,5 - 2,5)</th>
     <th>Desalinhado<br/>(0,0 - 0,5)</th>
   </tr>
   <tr>
@@ -368,3 +364,4 @@ penalizados pelo professor orientador.
     <td>Entrega fora de contexto ou não entregou.</td>
   </tr>
 </table>
+
