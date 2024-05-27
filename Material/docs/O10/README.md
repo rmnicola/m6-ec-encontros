@@ -8,57 +8,39 @@ slug: /o10
 
 **Encontro em 27/05/2024**
 
-## 1. Para que/quem serve esse encontro?
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+## 1. Resultados desejados
 
-## 2. Objetivos
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+### 1.1. Objetivos estabelecidos
 
-## 3. Roteiro 
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+A sprint planning 4 serve para aferir nossos resultados até então e planejar o
+que vem pela frente tendo em vista esses resultados.
 
-## 4. Slides 
+### 1.2. Questões centrais do encontro
 
-<div style={{ textAlign: 'center' }}>
-    <iframe 
-        style={{
-            display: 'block',
-            margin: 'auto',
-            width: '100%',
-            height: '50vh',
-        }}
-        src="https://slides.com/rodrigomangoninicola/m6-ec-encontros/embed#/orientacao10"
-        frameborder="0" 
-        allowFullScreen>
-    </iframe>
-</div>
+1. O que deu certo na sprint passada?
+2. O que não deu certo na sprint passada?
+3. Como podemos melhorar o que não deu certo e manter o que deu certo?
+4. O que precisa ser feito nessa nova etapa de projeto?
+
+## 2. Plano de aprendizagem
+
+**Retrospectiva sprint 3 - individuais** (0 - 30 min)
+
+Os alunos vão preencher o formulário de retrospectiva individual da sprint 3.
+
+**Retrospectiva sprint 3 - grupo** (30 - 60 min)
+
+Após o preenchimento dos formulários, os grupos agora devem discutir juntos a
+respeito daquilo que deu certo e aquilo que não deu certo no decorrer da sprint
+passada. Aqui também cabe discutir sobre comportamentos que foram positivos e
+negativos de integrantes do grupo e que impactaram no resultado da sprint.
+
+**Planning sprint 4 - apresentação dos artefatos** (60 - 100 min)
+
+O professor orientador deve apresentar os artefatos que devem ser desenvolvidos
+no decorrer da sprint 3 assim como os seus padrões de qualidade.
+
+**Planning sprint 4 - apresentação dos encontros** (100 - 120 min)
+
+O professor orientador deve apresentar os encontros da sprint 4 e comentar
+sobre a sua relação com o projeto e os entregáveis da sprint.
