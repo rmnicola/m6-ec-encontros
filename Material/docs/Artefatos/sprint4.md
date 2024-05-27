@@ -122,10 +122,21 @@ essencial que todos os detalhes sejam meticulosamente seguidos.
     <th>Desalinhado<br/>(0,0 - 0,5)</th>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Além do backend implementado com as rotas necessária para GET, POST e
+    DELETE, o grupo ainda fez e documentou testes de cada uma das rotas
+    utilizando ferramentas como Postman ou Insomnia.</td>
+    <td>O backend foi implementado e possui as rotas necessárias para
+    implementar as funcionalidades do sistema. Ele está documentado e utiliza
+    os verbos adequados do HTTP, de acordo com a funcionalidade esperada (GET
+    para obter dados, POST para enviar dados, DELETE para deletar dados, apenas
+    para citar alguns).</td>
+    <td>O backend foi implementado e possui as rotas necessárias para
+    implementar as funcionalidades do sistema. Contudo, não existe nenhuma
+    documentação das rotas. Todas elas estão implementadas utilizando apenas o
+    verbo POST do HTTP.</td>
+    <td>Existiu o início da construção da aplicação backend, mas ela não foi
+    além de um template de código com a implementação de algumas rotas, como a
+    rota de hello-world a uma rota de echo.</td>
     <td>Entrega fora de contexto ou não entregou.</td>
   </tr>
 </table>
