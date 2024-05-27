@@ -7,7 +7,7 @@ slug: /ponderada4
 
 # Turtlebot teleoperado pt. 2
 
-**Atividade com prazo de entrega até 27/05**
+**Atividade com prazo de entrega até 29/05**
 
 ## 1. Objetivo
 
