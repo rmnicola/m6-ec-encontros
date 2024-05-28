@@ -41,20 +41,19 @@ O aluno deve ser capaz de:
 
 **Daily** (0 - 15 min)
 
-**Expositivo: conceitos de deep learning** (15 - 45 min)
-
-Apresentação dos conceitos:
-
-* Backpropagation
-* Forward pass
-* Função de perda
-* Função de ativação
-
-**Análise de implementação: perceptron** (45 - 60 min)
+**Análise de implementação: perceptron** (15 - 30 min)
 
 Apresentação da solução da implementação de um perceptron simples (aula
 passada). Nessa implementação já tem o forward pass e a função de ativação por
 degrau.
+
+**Expositivo: conceitos de deep learning** (30 - 60 min)
+
+Apresentação dos conceitos:
+
+* Backpropagation
+* Função de perda
+* Gradiente descendente
 
 **Implementação: função de perda e backpropagation** (60 - 80 min)
 
