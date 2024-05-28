@@ -20,29 +20,58 @@ Considerando a implementação do Perceptron abaixo:
 
 ```python showLineNumbers title=perceptron.py
 class Perceptron:
-    def __init__(self, input_size):
-        self.weights = np.zeros(input_size + 1)  # Including bias
+    def __init__(self, weights=None, bias=-1, activation_threshold=0.5):
+        if weights == None:
+            self.weights = np.array([1, 1])
+        else:
+            self.weights = np.array(weights)
+        self.bias = bias
+        self.activation_threshold = activation_threshold
 
-    def activation(self, x):
-        return 1 if x >= 0 else 0
+    def _heaviside(self, x):
+        """
+        Implementa a função delta de heaviside (famoso degrau)
+        Essa é uma função de ativação possível para os nós da rede neural.
+        """
+        return 1 if x >=  self.activation_threshold else 0
 
-    def predict(self, x):
-        x = np.insert(x, 0, 1)  # Add bias term
-        weighted_sum = np.dot(self.weights, x)
-        return self.activation(weighted_sum)
+    def _sigmoid(self, x):
+        """
+        Implementa a função sigmoide
+        Essa é uma função de ativação possível para os nós da rede neural.
+        """
+        return 1/(1 + math.exp(-x))
 
-    def loss(self, y_true, y_pred):
-        return y_true - y_pred
+    def _activation(self, perceptron_output):
+        """
+        Implementação da função de ativação do perceptron
+        Escolha uma das funções de ativação possíveis
+        """
+        return self._heaviside(perceptron_output)
 
-    def train(self, X, y, epochs=10, lr=0.1):
-        for _ in range(epochs):
-            for xi, target in zip(X, y):
-                error = self.loss(target, self.predict(xi))
-                self.weights += lr * error * np.insert(xi, 0, 1)
+    def forward_pass(self, data):
+        """
+        Implementa a etapa de inferência (feedforward) do perceptron.
+        """
+        weighted_sum = self.bias + np.dot(self.weights, data)
+        return self._activation(weighted_sum)
 ```
 
-Modifique a implementação para que hajam 2 camadas escondidas e, assim, a rede
-passar a conseguir representar uma porta lógica XOR.
+Modifique a implementação para que seja possível treinar o perceptron e de modo
+que ele tenha uma cama escondida. Para isso, deve-se:
+
+1. Implementar uma função de custo para avaliar o resultado da predição
+2. Implementar o processo de treinamento utilizando gradiente descendente e
+   backpropagation
+3. Modificar o perceptron para ter uma camada escondida 
+
+Após essa implementação, valide o MLP criado treinando-o para funcionar como
+uma porta XOR.
+
+Para auxiliar na sua implementação, considere o artigo abaixo:
+
+[How neural networks solve the XOR
+problem](https://towardsdatascience.com/how-neural-networks-solve-the-xor-problem-59763136bdd7)
 
 ## 3. Padrão de entrega
 
@@ -74,8 +103,9 @@ funcionamento do sistema criado;
     <th>Desalinhado<br/>(0,0 - 1,0)</th>
   </tr>
   <tr>
-    <td>Implementou a função de perda de entropia cruzada e a função de
-    ativação sigmoide.</td>
+    <td>Além do MLP conseguir reproduzir consistentemente o comportamento da
+    porta XOR, ainda há uma implementação extra do mesmo MLP utilizando o torch
+    (pyTorch)</td>
     <td>O MLP consistentemente consegue ser treinado para representar uma porta
     lógica XOR.</td>
     <td>O MLP foi implementado corretamente, mas ainda não é capaz de
