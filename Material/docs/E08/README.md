@@ -25,70 +25,60 @@ learning.
    entropia cruzada?
 3. O que são as funções de ativação e por quê elas existem? O que é ReLU e por
    quê é a função de ativação mais utilizada?
-4. 
+4. Como construir uma rede de perceptrons com mais de um perceptron? Ela é
+   capaz de resolver problemas que não são linearmente separáveis?
 
-### 1.3. O que o aluno deve compreender?
+### 1.3. O que o aluno deve ser capaz de fazer?
 
-## 3. Plano de aprendizagem
+O aluno deve ser capaz de:
+
+* Implementar um multi layer perceptron em Python puro, sem utilizar frameworks
+  ou bibliotecas de deep learning.
+* Implementar algoritmos de backpropagation, forward pass, uma implementação de
+  função de perda simples e com uma função de ativação degrau.
+
+## 2. Plano de aprendizagem
 
 **Daily** (0 - 15 min)
 
-**Discussão: apresentação das questões centrais** (15 - 25 min)
+**Expositivo: conceitos de deep learning** (15 - 45 min)
 
-*O que significa um sistema ser controlado?*
+Apresentação dos conceitos:
 
-O professor irá discutir abertamente as questões centrais envolvidas no
-encontro, apresentando o problema de controle de sistemas de forma intuitiva.
+* Backpropagation
+* Forward pass
+* Função de perda
+* Função de ativação
 
-**Expositivo: sistemas de controle e o domínio dos complexos** (25 - 50 min)
+**Análise de implementação: perceptron** (45 - 60 min)
 
-*O que é controle de malha aberta e de malha fechada*
-*Como e por que modelar o comportamento de sistemas dinâmicos*
-*O que é um controlador? Ele tem dinâmica?*
+Apresentação da solução da implementação de um perceptron simples (aula
+passada). Nessa implementação já tem o forward pass e a função de ativação por
+degrau.
 
-Contando com a exposição mais aprofundada dos autoestudos sobre o assunto, o
-professor deve contextualizar a próxima etapa da instrução utilizando alguns
-slides explicativos sobre o papel da transformada de Laplace na modelagem de
-sistemas e como um sistema de malha fechado pode ser representado no domínio
-dos complexos.
+**Implementação: função de perda e backpropagation** (60 - 80 min)
 
-**Atividade: interagindo com o PID** (50 - 90 min)
+Tempo para alunos desenvolverem em cima do perceptron apresentado os algoritmos
+de treinamento por backpropagation. Para isso, deve-se também desenvolver o
+algoritmo de cálculo da função de perda. Para testar a implementação, deve-se
+treinar o perceptron para representar as funções lógicas NAND e OR.
 
-* Qual é a técnica de controle que vai me servir em praticamente todos os casos
-  em que preciso controlar um sistema linear? *
-* Qual o papel de cada um dos termos do controlador PID? Como cada um deles
-  influencia na dinâmica do sistema? *
+**Discussão: o problema do XOR** (80 - 95 min)
 
-Utilizando um simulador simplificado, os alunos devem interagir com cada
-componente do controlador PID e observar o comportamento do sistema quando um
-componente é adicionado ou tirado e quando uma constante aumenta ou diminui.
+Por quê o perceptron não consegue representar um XOR? Solução por lógica e por
+deep learning.
 
-A atividade deve ser dividida em dois momentos:
+**Implementação: Multi-layer perceptron** (95 - 115 min)
 
-1. Interação com o PID (20 min)
-2. Discussão do que descobriu com o seu grupo (20 min)
+Tempo para os alunos desenvolverem o multi-layer perceptron para resolver o
+problema do XOR.
 
-**Atividade: discutindo as conclusões* (90 - 110 min)
+**Fechamento** (115 - 120 min)
 
-O professor guiará uma discussão em grupo sobre as conclusões do experimento
-sobre PID. As perguntas que guiarão o debate serão:
+Apresentação da solução final e discussão dos próximos passos a respeito de
+deep learning.
 
-* Qual é a técnica de controle que vai me servir em praticamente todos os casos
-  em que preciso controlar um sistema linear? *
-* Qual o papel de cada um dos termos do controlador PID? Como cada um deles
-  influencia na dinâmica do sistema? *
-
-**Expositivo: identificação de sistemas** (110 - 120 min)
-
-* Como definir o modelo matemático que rege o comportamento de um sistema
-  dinâmico através de ensaios experimentais? *
-
-Para finalizar o material do encontro, o professor apresentará a resposta
-temporal padrão de sistemas de segunda ordem como uma forma de avaliar sistemas
-através de experimentação, sem precisar modelar precisamente o seu
-comportamento.
-
-## 4. Slides 
+## 3. Slides 
 
 <div style={{ textAlign: 'center' }}>
     <iframe 
@@ -98,7 +88,7 @@ comportamento.
             width: '100%',
             height: '50vh',
         }}
-        src="https://slides.com/rodrigomangoninicola/m6-ec-encontros/embed#/encontro3"
+        src="https://slides.com/rodrigomangoninicola/m6-ec-encontros/embed#/encontro8"
         frameborder="0" 
         allowFullScreen>
     </iframe>
