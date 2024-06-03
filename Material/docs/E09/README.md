@@ -1,5 +1,5 @@
 ---
-title: E9 - Redes neurais convolucionais
+title: E9 - Utilizando a YOLOv8
 sidebar_position: 23
 slug: /e9
 ---
@@ -8,46 +8,44 @@ slug: /e9
 
 **Encontro em 03/06/2024**
 
-## 1. Para que/quem serve esse encontro?
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+## 1. Resultados desejados
 
-## 2. Objetivos
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+### 1.1. Objetivos estabelecidos
 
-## 3. Roteiro 
-<img 
-  src="https://i.redd.it/q0dd3k02unqb1.gif"
-  alt="Construction pikachu" 
-  style={{ 
-    display: 'block',
-    marginLeft: 'auto',
-    maxHeight: '30vh',
-    marginRight: 'auto'
-  }} 
-/>
-<br/>
+Apresentar a ferramenta YOLOv8.
 
-## 4. Slides 
+
+### 1.2. O que o aluno deve ser capaz de fazer?
+
+O aluno deve ser capaz de:
+
+* Instalar o pacote ultralytics
+* Utilizar as ferramentas de CLI da YOLOv8
+* Utilizar o módulo Python da YOLOv8
+
+## 2. Plano de aprendizagem
+
+**Daily** (0 - 15 min)
+
+**Expositivo: o que são redes neurais convolucionais?** (15 - 30 min)
+
+Sem entrar em muitos detalhes, o professor vai explicar como funciona uma rede
+neural com camadas convolucionais.
+
+**Demonstração: instalando e utilizando a YOLOv8** (30 - 60 min)
+
+Demonstração rápida de instalação e utilização do módulo `ultralytics`. Também
+será mostrado o site roboflow, onde é possível encontrar datasets para a
+YOLOv8.
+
+**Atividade: desenvolvimento** (60 - 120 min)
+
+Os alunos devem continuar a busca por um dataset compatível com o problema do
+projeto, criando o script de fine tuning e integrando-o com o sistema do
+projeto.
+
+
+## 3. Slides 
 
 <div style={{ textAlign: 'center' }}>
     <iframe 
@@ -62,4 +60,5 @@ slug: /e9
         allowFullScreen>
     </iframe>
 </div>
+
 
