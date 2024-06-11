@@ -1,5 +1,5 @@
 ---
-title: E10 - Arquitetura YOLO
+title: E10 - Redes Neurais Convolucionais
 sidebar_position: 24
 slug: /e10
 ---
