@@ -8,7 +8,7 @@ unlisted: true
 # PSUB Módulo 6 EC 2024
 
 <img 
-  src="https://64.media.tumblr.com/236f136f7878c4599ca846d2745e1f7e/tumblr_mxt1qu2mzO1src1c6o1_500.gif"
+  src="https://media1.tenor.com/m/t9m4GS2GipoAAAAC/apo-space-brothers.gif"
   alt="Pretty dog" 
   style={{ 
     display: 'block',
