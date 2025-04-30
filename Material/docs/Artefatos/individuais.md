@@ -6,15 +6,10 @@ slug: /individuais
 ---
 # Avaliação individual
 
-Com início neste módulo, as avaliações individuais passarão a representar 60%
-da nota total. O objetivo desta seção é estabelecer um barema claro,
-facilitando a compreensão das expectativas quanto à atuação individual de cada
-aluno dentro do grupo.
-
 A nota individual de cada sprint será composta avaliando-se os seguintes eixos:
 
-1. Comunicação (até 4,0 pontos);
-2. Contribuições técnicas (até 6,0 pontos).
+1. Comunicação e planejamento (40% da nota); e
+2. Contribuições técnicas (60% da nota).
 
 **Avaliação baseada em evidências**
 
@@ -27,47 +22,51 @@ orientador não pode avaliar aquilo que não é evidente ou documentado.
 
 :::
 
-## 1. Comunicação (até 4,0 pontos)
+## 1. Comunicação e planejamento (40% da nota)
 
-**[0,0 - 1,0]**
-O aluno não participou efetivamente nas comunicações do grupo durante a sprint,
-demonstrando falta de engajamento.
+**[0 - 10%]**
+Houve **falhas graves** de comunicação e/ou planejamento. Exemplos:
+   * Não participou do planejamento das atividades da equipe;
+   * Não se comunicou com a equipe;
+   * Deixou de fazer uma ou mais tarefas que lhe foram atribuídas.
 
-**[1,0 - 2,0]**
-O aluno participou das comunicações esporadicamente e suas interações, embora
-construtivas, foram limitadas e não consistentemente engajadas com o progresso
-do projeto.
+**[10 - 20%]**
+Teve participação na comunicação e planejamento da equipe, porém com **falhas
+significativas**. Exemplos:
+   * Entregou com atraso as tarefas que lhe foram atribuídas;
+   * Comunicação inconstante, com *sumiços* durante o período de desenvolvimento;
+   * Participou da sessão de planejamento, mas não das discussões subsequentes
+   a respeito da execução das atividades;
+   * Deixou de informar o grupo sobre potenciais impedimentos e/ou necessidade
+   de replanejar alguma de suas tarefas.
 
-**[2,0 - 3,0]**
-O aluno participou ativamente das comunicações, contribuindo de forma
-construtiva e relevante para o avanço do projeto durante a sprint.
+**[20 - 30%]**
+Participou ativamente no processo de comunicação e planejamento da equipe, mas
+há **falhas pontuais**. Exemplos:
+   * Faltou pontualidade na entrega de algumas (não todas) as suas atividades;
+   * Deixou de informar o grupo a respeito do status de uma ou mais das suas
+   atividades;
 
-**[3,0 - 4,0]**
-O aluno foi um comunicador exemplar, mantendo o grupo constantemente informado
-sobre suas atividades, progressos e desafios, e facilitando o fluxo de
-informações essenciais para o desenvolvimento do projeto.
+**[30 - 40%]**
+Apresentou uma comunicação efetiva e constante sobre o desenvolvimento de suas
+tarefas, participou ativamente durante o planejamento e todas as decisões
+importantes da equipe e cumpriu o prazo das tarefas que lhe foram atribuídas.
 
-## 2. Contribuições técnicas (até 6,0 pontos)
+## 2. Contribuições técnicas (60% da nota)
 
-**[0,0 - 1,0]**
-A contribuição do aluno foi mínima, não adicionando valor significativo ao
-progresso do projeto durante a sprint.
+**[0 - 10%]**
+Não há evidências de contribuições relevantes para o desenvolvimento do projeto.
 
-**[1,0 - 2,5]**
-O aluno realizou algumas das tarefas alocadas, mas suas contribuições foram
-limitadas e não impactaram significativamente o desenvolvimento do projeto.
+**[10 - 30%]**
+Há evidências de contribuições relevantes, mas elas não servem para demonstrar
+o domínio técnico sobre os assuntos abordados no módulo. Exemplos:
+   * Trabalhou apenas na documentação;
+   * Fez modificações no código que são apenas de estilo e/ou em *boilerplate*.
 
-**[2,5 - 4,0]**
-O aluno completou todas as tarefas que lhe foram atribuídas, cumprindo os
-requisitos básicos, porém sem agregar um impacto notável ao projeto.
+**[30 - 50%]**
+As contribuições evidenciadas são relevantes e abordam aspectos técnicos
+abordados no módulo, porém há erros em sua implementação.
 
-**[4,0 - 5,0]**
-O aluno não apenas completou todas as suas tarefas, mas também contribuiu de
-maneira significativa para o desenvolvimento do projeto, trazendo inovações ou
-melhorias importantes.
-
-**[5,0 - 6,0]**
-O aluno foi excepcionalmente proativo, completando todas as suas tarefas,
-impactando significativamente o desenvolvimento do projeto e contribuindo
-ativamente para o trabalho de outros membros do grupo ou identificando e
-executando tarefas adicionais essenciais para o sucesso do projeto.
+**[50 - 60%]**
+As atividades desenvolvidas demonstraram perícia técnica e foram relevantes no
+desenvolvimento da solução entregue.
