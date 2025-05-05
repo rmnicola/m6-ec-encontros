@@ -1,47 +1,54 @@
 ---
-title: Sprint 2
+title: Sprints 2
 sidebar_position: 3
 sidebar_class_name: artefato
 slug: /sprint2
 ---
 
-# Artefatos Sprint 1
+# Artefatos Sprint 2
 
-Esse é o sprint em que será necessário apresentar a primeira versão da **prova
-de conceito**. Os artefatos orbitam em torno dessa implementação. O que o
-sistema deve ser capaz de fazer ao final dessa sprint?
+Para um desenvolvimento verdadeiramente agil, a sprint 2 deve ter apenas duas
+entregas obrigatórias:
 
-1. Comunicação por rede local com o robô;
-2. Interface simplificada (terminal ou UI simples) para que um operador possa
-   mover o robô à distância;
-3. Operação limitada a quando o operador tem o robo dentro de seu campo de
-   visão. Sem câmeras por enquanto.
-4. Deve haver um sinal de emergência que o operador é capaz de enviar usando o
-   ROS para que o robô pare imediatamente o que está fazendo.
+1. Implementação técnica; e
+2. Documentação
 
-Quais são os entregáveis?
+Para isso, considerem o que pode ser implementado de modo que, ao final de cada
+sprint, exista **um sistema funcional** com **clara evolução** com relação à
+sprint passada. Percebam que essa evolução não pode ser algo desacoplado da
+motivação do projeto. Sendo assim, toda e qualquer evolução deve ser
+justificada levando em consideração a proposta de valor e as personas
+desenvolvidos pelo grupo na sprint 1. Reconsiderar o escopo do projeto quando
+necessário é mais do que permitido, **é recomendável**. No entanto, essa
+mudança deve ser **claramente explicada** na documentação do projeto. Caso
+contrário, será considerado que o novo escopo está fora do contexto definido
+pelo grupo.
 
-* Robô operado à distância; e
-* Documentação.
+Como forma de auxiliar no processo de tomada de decisão,
+considerem as tarefas que podem estar no backlog de projeto (por favor, usem o
+bom senso para decidir se: 1. o que está aqui é o suficiente para o projeto de
+vocês e 2. se o que está aqui sequer se encaixa no projeto de vocês):
 
-## 1. Robô operado à distância
+* Teste e validação da locomoção do robô/drone
+* Treinamento do sistema de visão computacional
+* Transmissão de imagens em tempo real
+* Sistemas de mensageria em tempo real (e.g. ROS)
+* Interface de usuário
+* Armazenamento de dados de inferência e/ou modelo e/ou imagens
+* API para interface com o(s) sistema(s) de armazenamento de dados
+* Deploy do modelo de visão computacional (hospedagem e armazenamento)
+* Esteira de desenvolvimento para o modelo de visão
 
-### 1.1. Enunciado
+Notem que o que está acima são **exemplos** que podem ou não se encaixar no
+projeto de vocês. Além disso, a maioria dessas tarefas é complexa demais para
+ser apenas um item de backlog. Por fim, notem também que a maioria dessas
+tarefas permite implementações incrementais (e.g. interface de usuário primeiro
+em terminal, depois em um web app; modelo de visão usando apenas detecção da
+YOLO, depois modelos de segmentação ou classificação)
 
-Neste sprint, o grupo é desafiado a desenvolver e apresentar a primeira versão
-da prova de conceito para um robô operado à distância. A comunicação com o robô
-deve ser realizada através de uma rede local utilizando o ROS (Robot Operating
-System). O operador deve ser capaz de controlar o robô utilizando uma interface
-de usuário simplificada, que pode ser um terminal básico ou uma interface
-gráfica simples, conforme a escolha da equipe. Importante destacar que, nesta
-fase, a operação do robô deve ser realizada enquanto o operador mantém o robô
-dentro de seu campo de visão direto, uma vez que o uso de câmeras não será
-implementado até uma sprint futura. Além disso, deve ser implementado um
-mecanismo de emergência eficaz, permitindo que o operador envie um comando de
-parada imediata ao robô através do ROS em caso de qualquer eventualidade ou
-risco observado.
+## 1. Padrão de entrega
 
-### 1.2. Padrão de entrega
+### 1.1. Implementação técnica/código
 
 :::warning
 
@@ -70,63 +77,7 @@ essencial que todos os detalhes sejam meticulosamente seguidos.
    resultados dos testes devem ser claramente apresentados durante a revisão
    com os parceiros do projeto.
 
-### 1.3. Padrão de qualidade
-
-#### 1.3.1. Teleoperação (até 6,0 pontos)
-
-**[0,0 - 1,0]**  
-A teleoperação é ineficaz ou não funcionando, com falhas críticas que impedem
-qualquer forma de controle remoto.
-
-**[1,0 - 3,0]**  
-O controle remoto do robô é possível, mas apresenta resposta lenta ou
-inconsistente, limitando a eficácia da operação.
-
-**[3,0 - 5,0]**  
-A teleoperação é funcional com resposta estável e controle eficaz, mas ainda há
-margem para refinamento na precisão e na reatividade.
-
-**[5,0 - 6,0]**  
-O controle remoto é excepcionalmente fluido e preciso, permitindo operações
-detalhadas e reativas em tempo real.
-
-#### 1.3.2. Interface de usuário (até 2,0 pontos)
-
-**[0,0 - 0,5]**  
-A interface é extremamente básica ou difícil de usar, afetando negativamente a
-operação do robô.
-
-**[0,5 - 1,5]**  
-A interface é funcional, mas pode ser mais intuitiva ou detalhada para melhorar
-a experiência do usuário.
-
-**[1,5 - 2,0]**  
-A interface é bem projetada, intuitiva e facilita o controle eficaz e imediato
-do robô.
-
-#### 1.3.3. Sistema de emergência (até 2,0 pontos)
-
-**[0,0 - 0,5]**  
-O sistema de emergência é inexistente ou falha ao ser acionado, não oferecendo
-segurança adequada.
-
-**[0 ,5 - 1,5]**  
-O sistema de emergência funciona, mas pode ser mais rápido ou mais acessível
-durante a operação.
-
-**[1,5 - 2,0]**  
-O sistema de emergência é altamente eficiente, com ativação imediata e fácil
-acessibilidade, garantindo máxima segurança durante a operação.
-
-## 2. Documentação 
-
-### 2.1. Enunciado
-
-O grupo deve registrar e analisar o desenvolvimento da primeira versão da prova
-de conceito para o robô operado à distância. Este registro deve incluir as
-decisões de design, desafios enfrentados e soluções adotadas.
-
-### 2.2. Padrão de entrega
+### 1.2. Documentação
 
 :::warning
 
@@ -149,76 +100,72 @@ rejeição total do artefato entregue. Atenção é crucial.
 4. Todas as imagens empregadas na documentação devem ser armazenadas dentro do
    diretório `docs`, especificamente em um subdiretório chamado `static`.
 
-### 2.3. Padrão de qualidade
+## 2. Padrão de qualidade
 
-#### 2.3.1 Qualidade textual (até 4,0 pontos)
+### 2.1. Implementação técnica (até 6,0 pontos)
 
-:::warning
+**[0,0 - 1,0]**  
+Implementação fora do contexto do projeto ou insuficiente.
 
-A qualidade textual avalia o conteúdo documentado durante a sprint corrente.
-Defeitos textuais remanescentes de sprints anteriores também podem ser
-penalizados pelo professor orientador.
+**[1,0 - 3,0]**  
+A implementação feita pelo grupo está dentro do contexto do projeto, mas há
+falhas como:
+* O sistema apresenta **falhas de funcionamento**;
+* Não ficou completamente claro como essa evolução do sistema pode **trazer
+valor** para o parceiro;
+* A implementação apresentada não está inteiramente contida no **repositório do
+grupo**;
+* O sistema **evoluiu pouco** com relação à entrega anterior;
 
-:::
+**[3,0 - 5,0]**  
+A entrega é relevante e apresenta evolução clara, mas ainda não está perfeita.
+Alguns exemplos do que pode estar faltando:
+* O sistema está funcional, mas ainda há **bugs pontuais** que afetam as principais funcionalidades;
+* Código com **gambiarra**, sem usar boas práticas de arquitetura e desenvolvimento de software;
+* Pequenas partes do sistema ficaram de fora do **release**;
+* A **apresentação** ao parceiro não foi **clara** por não mostrar o sistema
+funcional ou por não deixar clara a proposta de valor da implementação;
+
+**[5,0 - 6,0]**  
+A implementação feita pelo grupo:
+* Contem um sistema **funcional**;
+* Entrega **valor** para o parceiro;
+* Está inteiramente contida no repositório do grupo **em um release**; 
+* Apresenta uma **evolução significativa** sobre a última entrega;
+* Foi **apresentada ao parceiro** de forma clara, permitindo o seu feedback.
+
+### 2.2. Documentação (até 4,0 pontos)
 
 **[0,0 - 1,0]**
 A documentação está fora de contexto ou significativamente incompleta.
 
 **[1,0 - 2,0]**
-A documentação cobre todos os artefatos obrigatórios, mas apresenta-os de forma
-incoesa, dificultando a visão do objetivo global do projeto. O documento
-utiliza uma linguagem inadequada para um contexto técnico ou exibe
-inconsistência estilística.
+A documentação apresentada está dentro do contexto do projeto, mas há falhas
+graves como:
+* Não apresenta **instruções de uso** do sistema;
+* Apresenta o sistema de forma incompleta;
+* Está **mal escrita**, com problemas claros de coesão e/ou frequentes erros
+gramaticais;
 
 **[2,0 - 3,0]**
-A documentação cobre todos os temas necessários com alguma coesão, oferecendo
-uma visão parcialmente integrada do projeto. A linguagem é adequada com mínimas
-falhas, mantendo uma consistência de estilo.
+A documentação está minimamente bem escrita, apresenta instruções de uso e
+apresenta todos os novos elementos do sistema, mas ainda há imperfeições.
+Exemplos:
+* Não está suficientemente claro o **escopo** da entrega;
+* A **proposta de valor** da entrega não está clara;
+* Há falhas nas **instruções de uso** apresentadas;
+* Apresenta elementos textuais/não-textuais desnecessários, se tornando
+**prolixa** e difícil de ler;
+* O texto **não está coeso**. Cada seção tem uma forma de escrita distinta e/ou
+não há uma sequência lógica de uma seção para a outra;
+* Não apresenta de forma clara quando há **mudanças de escopo** no projeto;
 
 **[3,0 - 4,0]**
-A documentação é completa, coesa e detalhada, refletindo todos os aspectos do
-projeto desenvolvido. A linguagem é apropriada e técnica, adequada ao tipo de
-documento produzido.
-
-#### 2.3.2 Metodologia (até 4,0 pontos)
-
-**[0,0 - 1,0]**
-A metodologia descrita é vaga ou praticamente inexistente, com falhas críticas
-que impedem a compreensão do processo de desenvolvimento.
-
-**[1,0 - 2,0]**
-A metodologia é descrita, mas de forma superficial ou incompleta. Falta clareza
-nos processos e nas etapas de desenvolvimento, e há pouca descrição das
-técnicas e ferramentas utilizadas.
-
-**[2,0 - 3,0]**
-A metodologia está bem explicada e detalhada para a maioria das etapas de
-desenvolvimento, com descrição adequada das técnicas e ferramentas utilizadas.
-Algumas pequenas omissões podem estar presentes, mas não comprometem a
-compreensão geral.
-
-**[3,0 - 4,0]**
-A metodologia é detalhadamente descrita, incluindo todas as etapas do
-desenvolvimento do projeto. As técnicas e ferramentas são explicadas com
-precisão, permitindo uma compreensão completa e replicação do processo.
-
-#### 2.3.3 Instruções para execução (até 2,0 pontos)
-
-**[0,0 - 0,5]**
-Instruções para execução do projeto são escassas ou ausentes, deixando muitas
-questões sem resposta.
-
-**[0,5 - 1,0]**
-As instruções de execução são básicas e gerais, faltando detalhes essenciais e
-exemplos práticos para facilitar a compreensão.
-
-**[1,0 - 1,5]**
-Instruções detalhadas e claras são fornecidas, com alguns exemplos práticos. A
-documentação inclui a maior parte das informações necessárias, mas pode ser
-ligeiramente incompleta em relação à compatibilidade.
-
-**[1,5 - 2,0]**
-Instruções completas e detalhadas, incluindo exemplos comuns e comandos
-específicos para execução. Informações detalhadas sobre compatibilidade com
-diferentes linguagens de programação, bibliotecas e sistemas operacionais são
-fornecidas.
+A documentação apresentada:
+* Define claramente o **escopo** da entrega da sprint;
+* Explica as **decisões arquiteturais** de implementação do sistema;
+* Apresenta de forma clara as **instruções de uso** da versão atual do sistema;
+* Deixa clara a **proposta de valor** da entrega;
+* Apresenta claramente as **mudanças de escopo** propostas (quando cabível);
+* Utiliza **português correto**, prezando pela **coesão textual**;
+* É **concisa** na medida certa.
