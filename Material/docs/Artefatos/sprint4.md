@@ -5,30 +5,55 @@ sidebar_class_name: artefato
 slug: /sprint4
 ---
 
-Para a sprint 4, espera-se o desenvolvimento de três aspectos do projeto:
+# Artefatos Sprint 4
 
-1. O sistema de visão computacional/inteligência artificial;
-2. O backend e o banco de dados capaz de armazenar os dados coletados; e
-3. Implementação de pelo menos um teste de funcionalidade e três testes de
-   validação para requisitos não funcionais (pode revisar os requisitos
-   escritos na sprint 1).
+A sprint 4 conta com a seguinte estrutura de entregáveis:
 
-Sendo assim, os entregáveis se dividem em:
+1. Implementação técnica; e
+2. Documentação, sendo que aqui é obrigatório ter dois resultados em
+   particular:
 
-* Sistema de visão computacional e backend (peso 4);
-* Implementação dos testes (peso 2); e
-* Documentação (peso 2).
+    2.1. Análise financeira do projeto; e
+    2.2. Relatório de testes com o usuário.
 
-## 1. Sistema de visão computacional e backend
+Ao final desta sprint, deve existir **um sistema funcional** com **clara
+evolução** com relação à sprint passada. Percebam que essa evolução não pode
+ser algo desacoplado da motivação do projeto. Sendo assim, toda e qualquer
+evolução deve ser justificada levando em consideração a proposta de valor e as
+personas desenvolvidos pelo grupo na sprint 1. Reconsiderar o escopo do projeto
+quando necessário é mais do que permitido, **é recomendável**. No entanto, essa
+mudança deve ser **claramente explicada** na documentação do projeto. Caso
+contrário, será considerado que o novo escopo está fora do contexto definido
+pelo grupo.
 
-Agora que você tem um sistema capaz de permitir a um usuário pilotar o robô à
-distância com transmissão de imagens em tempo real, vamos começar a coletar e
-processar dados para auxiliar o operador do sistema. Para isso, será necessário
-treinar e implementar um modelo de visão computacional, modelar e criar um
-banco de dados para armazenar essas informações e uma API para que seja
-possível acessar esses dados para posterior análise.
+A **Análise financeira** deve fornecer insumos para o estudo da viabilidade do
+*projeto final* (**NÃO da prova de conceito**). Sendo assim, deve-se estimar:
+* Tempo de desenvolvimento e/ou implantação e suas despesas relacionadas;
+* Custo com funcionários e infraestrutura;
+* Investimentos em equipamentos e seu tempo de duração;
+* Custo de manutenção;
+* Resultados esperados (por economia e/ou novas fontes de renda);
 
-### 1.1. Padrão de entrega
+Para isso, pode ser necessário validar algumas informações com o parceiro de
+projeto. Sabendo que nem sempre estas informações vão existir ou serem
+disponibilizadas, entende-se que a *estimativa* do grupo pode tomar outras
+fontes como forma de embasamento. O que é imprescindível é que **haja um
+embasamento** para a estimativa. Este aspecto será considerado na avaliação do
+projeto.
+
+O **Relatório de testes** deve contemplar:
+* A revisão dos requisitos funcionais e não funcionais, caso seja necessário;
+* O planejamento detalhado dos testes, separando com clareza aqueles que
+dependem de validação do usuário daqueles que tratam-se de testes objetivos de
+validação de métricas;
+* Relatórios de implementação de cada um dos testes executados e os seus
+resultados; e
+* Uma análise crítica dos resultados obtidos, discorrendo sobre a adequação do
+sistema desenvolvido e possíveis pontos de melhoria.
+
+## 1. Padrão de entrega
+
+### 1.1. Implementação técnica/código
 
 :::warning
 
@@ -57,169 +82,7 @@ essencial que todos os detalhes sejam meticulosamente seguidos.
    resultados dos testes devem ser claramente apresentados durante a revisão
    com os parceiros do projeto.
 
-### 1.2. Padrão de qualidade
-
-#### 1.2.1. Modelo de visão computacional (até 4,0 pontos)
-
-<table>
-  <tr>
-    <th>Supera<br/>(3,5 - 4,0)</th>
-    <th>Atende<br/>(3,0 - 3,5)</th>
-    <th>Quase lá<br/>(2,0 - 3,0)</th>
-    <th>Insuficiente<br/>(0,5 - 2,0)</th>
-    <th>Desalinhado<br/>(0,0 - 0,5)</th>
-  </tr>
-  <tr>
-    <td>Além de ter sido ajustado para o problema do parceiro, o modelo foi
-    validado com uma aplicação em tempo real e capturando imagens reais através
-    da câmera do robô.</td>
-    <td>O modelo implementado apresenta performance aceitável e passou pelo
-    processo de fine tuning para que faça sentido no contexto do projeto.
-    Alternativamente, o modelo foi treinado do zero com um dataset condizente
-    com o problema do parceiro.</td>
-    <td>O modelo implementado apresenta performance (latência) condizente com
-    os objetivos do projeto, porém ele não está ajustado para o contexto do
-    parceiro.</td>
-    <td>Há um modelo de visão computacional implementado, porém ele apresenta
-    resultados e/ou performance que não condizem com os objetivos do
-    projeto.</td>
-    <td>Entrega fora de contexto ou não entregou.</td>
-  </tr>
-</table>
-
-#### 1.2.2. Banco de dados (até 2,0 pontos)
-
-<table>
-  <tr>
-    <th>Atende I<br/>(1,0 - 2,0)</th>
-    <th>Atende II<br/>(1,0 - 2,0)</th>
-    <th>Quase lá I<br/>(0,5 - 1,0)</th>
-    <th>Quase lá II<br/>(0,5 - 1,0)</th>
-    <th>Desalinhado<br/>(0,0 - 0,5)</th>
-  </tr>
-  <tr>
-    <td>O banco de dados implementado é coerente com o armazenamento de
-    documentos e apresenta uma modelagem clara para os dados que devem ser
-    inseridos nele.</td>
-    <td>Há um banco de dados relacional implementado com normalização até 2NF
-    no mínimo.</td>
-    <td>O banco de dados não relacional foi implementado corretamente, mas sem
-    qualquer preocupaçõa com a modelagem dos documentos nele inseridos.</td>
-    <td>Há um banco de dados relacional implementado, mas ele não apresenta
-    normalização alguma nas tabelas criadas.</td>
-    <td>Entrega fora de contexto ou não entregou.</td>
-  </tr>
-</table>
-
-#### 1.2.3. API e Backend (até 4,0 pontos)
-
-<table>
-  <tr>
-    <th>Supera<br/>(3,5 - 4,0)</th>
-    <th>Atende<br/>(3,0 - 3,5)</th>
-    <th>Quase lá<br/>(2,0 - 3,0)</th>
-    <th>Insuficiente<br/>(0,5 - 2,0)</th>
-    <th>Desalinhado<br/>(0,0 - 0,5)</th>
-  </tr>
-  <tr>
-    <td>Além do backend implementado com as rotas necessária para GET, POST e
-    DELETE, o grupo ainda fez e documentou testes de cada uma das rotas
-    utilizando ferramentas como Postman ou Insomnia.</td>
-    <td>O backend foi implementado e possui as rotas necessárias para
-    implementar as funcionalidades do sistema. Ele está documentado e utiliza
-    os verbos adequados do HTTP, de acordo com a funcionalidade esperada (GET
-    para obter dados, POST para enviar dados, DELETE para deletar dados, apenas
-    para citar alguns).</td>
-    <td>O backend foi implementado e possui as rotas necessárias para
-    implementar as funcionalidades do sistema. Contudo, não existe nenhuma
-    documentação das rotas. Todas elas estão implementadas utilizando apenas o
-    verbo POST do HTTP.</td>
-    <td>Existiu o início da construção da aplicação backend, mas ela não foi
-    além de um template de código com a implementação de algumas rotas, como a
-    rota de hello-world a uma rota de echo.</td>
-    <td>Entrega fora de contexto ou não entregou.</td>
-  </tr>
-</table>
-
-## 2. Testes
-
-Deve-se implementar ao menos:
-
-* Um teste de funcionalidade (requisito funcional) relacionado à operação do
-  robô; e
-* Três testes de validação de requisitos não funcionais.
-
-### 2.1. Padrão de entrega
-
-### 2.2. Padrão de qualidade
-
-#### 2.2.1. Teste de funcionalidade (até 6,0 pontos)
-
-<table>
-  <tr>
-    <th>Supera<br/>(5,0 - 6,0)</th>
-    <th>Atende<br/>(4,0 - 5,0)</th>
-    <th>Quase lá<br/>(2,5 - 4,0)</th>
-    <th>Insuficiente<br/>(0,5 - 2,5)</th>
-    <th>Desalinhado<br/>(0,0 - 0,5)</th>
-  </tr>
-  <tr>
-    <td>Além do teste coerente e relatório detalhado, o teste foi feito com ao
-    menos 4 usuários diferentes.</td>
-    <td>O teste implementado é consistente com a funcionalidade e o roteiro e o
-    relatório do teste foi detalhado, com anotações detalhando as interações do
-    usuário com o sistema e conclusões sólidas que levam à propostas melhoria
-    do sistema desenvolvido.</td>
-    <td>O teste implementado está consistente com a funcionalidade descrita e o
-    roteiro de teste definido, porém faltam detalhes no relatório de execução
-    dos testes e/ou nas conclusões tiradas a partir dos testes.</td>
-    <td>Há inconsistências significativas entre o teste realizado e a descrição
-    de funcionalidade feita e/ou o roteiro de teste definido.</td>
-    <td>Entrega fora de contexto ou não entregou.</td>
-  </tr>
-</table>
-
-#### 2.2.2. Validação de RNFs (até 4,0 pontos)
-
-<table>
-  <tr>
-    <th>Supera<br/>(3,5 - 4,0)</th>
-    <th>Atende<br/>(2,0 - 3,5)</th>
-    <th>Quase lá<br/>(1,5 - 2,5)</th>
-    <th>Insuficiente<br/>(0,5 - 1,5)</th>
-    <th>Desalinhado<br/>(0,0 - 0,5)</th>
-  </tr>
-  <tr>
-    <td>Além dos testes estarem de acordo com os RNFs apresentados, o grupo
-    implementou melhorias aos sistemas que não atendiam os requisitos descritos
-    de modo a melhorar suas métricas (caso todos os RNFs passem de primeira,
-    deve-se melhorar a métrica de ao menos um dos sistemas medidos)</td>
-    <td>Todos os testes estão de acordo com os RNFs relacionados.</td>
-    <td>Ao menos dois dos três testes apresentados verdadeiramente medem os
-    RNFs descritos. Isso significa apresentar claramente uma descrição
-    detalhada dos testes feitos e um relatório de sua execução.</td>
-    <td>Os testes apresentados possuem inconsistências significativas técnicas
-    e/ou não medem verdadeiramente os RNFs descritos.</td>
-    <td>Entrega fora de contexto ou não entregou.</td>
-  </tr>
-</table>
-
-## 3. Documentação 
-
-Registro do processo de desenvolvimento dos artefatos da sprint. Os itens
-obrigatórios para uma boa documentação são:
-
-1. Manter uma **qualidade textual** adequada, sem cometer erros graves de
-   português e nem utilizar uma linguagem completamente inadequada.
-2. Apresentar de forma clara as **instruções para execução** do projeto. Esse
-   item é importante para que o parceiro consiga utilizar sua solução.
-3. Descrever a **metodologia** de desenvolvimento do projeto. Aqui deve ficar
-   claro quais foram as principais decisões de desenvolvimento e **como** vocês
-   implementaram o sistema. Pense que o cliente pode decidir integrar o projeto
-   de vocês no sistema dele e isso só é possível se ele for capaz de
-   compreender completamente como o sistema foi construído.
-
-### 3.1. Padrão de entrega
+### 1.2. Documentação
 
 :::warning
 
@@ -242,88 +105,140 @@ rejeição total do artefato entregue. Atenção é crucial.
 4. Todas as imagens empregadas na documentação devem ser armazenadas dentro do
    diretório `docs`, especificamente em um subdiretório chamado `static`.
 
-### 3.2. Padrão de qualidade
+## 2. Padrão de qualidade
 
-#### 3.2.1 Qualidade textual (até 2,0 pontos)
+### 2.1. Implementação técnica (peso 5)
 
-:::warning
+**[0,0 - 1,0]**  
+Implementação fora do contexto do projeto ou insuficiente.
 
-A qualidade textual avalia o conteúdo documentado durante a sprint corrente.
-Defeitos textuais remanescentes de sprints anteriores também podem ser
-penalizados pelo professor orientador.
+**[1,0 - 6,0]**  
+A implementação feita pelo grupo está dentro do contexto do projeto, mas há
+falhas como:
+* O sistema apresenta **falhas de funcionamento**;
+* Não ficou completamente claro como essa evolução do sistema pode **trazer
+valor** para o parceiro;
+* A implementação apresentada não está inteiramente contida no **repositório do
+grupo**;
+* O sistema **evoluiu pouco** com relação à entrega anterior;
 
-:::
+**[6,0 - 9,0]**  
+A entrega é relevante e apresenta evolução clara, mas ainda não está perfeita.
+Alguns exemplos do que pode estar faltando:
+* O sistema está funcional, mas ainda há **bugs pontuais** que afetam as principais funcionalidades;
+* Código com **gambiarra**, sem usar boas práticas de arquitetura e desenvolvimento de software;
+* Pequenas partes do sistema ficaram de fora do **release**;
+* A **apresentação** ao parceiro não foi **clara** por não mostrar o sistema
+funcional ou por não deixar clara a proposta de valor da implementação;
 
-<table>
-  <tr>
-    <th>Atende<br/>(1,5 - 2,0)</th>
-    <th>Quase lá<br/>(1,0 - 1,5)</th>
-    <th>Insuficiente<br/>(0,5 - 1,0)</th>
-    <th>Desalinhado<br/>(0,0 - 0,5)</th>
-  </tr>
-  <tr>
-    <td>Texto correto, coeso e com fluidez. O grupo demonstrou preocupação em
-    apresentar os conceitos da forma mais didática possível, escolhendo
-    cuidadosamente quando e como utilizar tabelas e imagens.</td>
-    <td>Texto razoavelmente bem escrito, com poucos problemas de adequação da
-    linguagem ou erros gramaticais.</td>
-    <td>O texto escrito tem problemas graves de linguagem, apresentando erros
-    gramaticais graves e constantes e/ou apresenta linguagem inadequada para um
-    texto técnico.</td>
-    <td>Entrega fora de contexto ou não entregou.</td>
-  </tr>
-</table>
+**[9,0 - 10,0]**  
+A implementação feita pelo grupo:
+* Contem um sistema **funcional**;
+* Entrega **valor** para o parceiro;
+* Está inteiramente contida no repositório do grupo **em um release**; 
+* Apresenta uma **evolução significativa** sobre a última entrega;
+* Foi **apresentada ao parceiro** de forma clara, permitindo o seu feedback.
 
-#### 3.2.2 Instruções para execução (até 2,0 pontos)
+### 2.2. Documentação (peso 3)
 
-<table>
-  <tr>
-    <th>Supera<br/>(1,75 - 2,0)</th>
-    <th>Atende<br/>(1,25 - 1,75)</th>
-    <th>Quase lá<br/>(0,75 - 1,25)</th>
-    <th>Insuficiente<br/>(0,25 - 0,75)</th>
-    <th>Desalinhado<br/>(0,0 - 0,25)</th>
-  </tr>
-  <tr>
-    <td>Instruções completas e apresentadas de forma amigável ao usuário. Ficou
-    claro que o grupo considerou genuinamente as dúvidas que podem surgir e a
-    melhor forma de apresentá-las (imagens, vídeos, texto, trechos de
-    código)</td>
-    <td>Todas as principais ações do usuário foram contempladas no guia de
-    execução do sistema.</td>
-    <td>As instruções para execução do projeto estão presentes, mas ainda
-    bastante incompletas. O usuário vai precisar procurar informações por fora
-    para conseguir utilizar o sistema.</td>
-    <td>Instruções escassas ou ausentes, de modo que o usuário não consiga
-    extrair praticamente nada do guia.</td>
-    <td>Entrega fora de contexto ou não entregou.</td>
-  </tr>
-</table>
+#### 2.2.1. Documentação base (até 4,0 pontos)
 
-#### 3.2.2 Metodologia (até 6,0 pontos)
-<table>
-  <tr>
-    <th>Supera<br/>(5,5 - 6,0)</th>
-    <th>Atende<br/>(4,5 - 5,5)</th>
-    <th>Quase lá<br/>(2,5 - 4,5)</th>
-    <th>Insuficiente<br/>(0,5 - 2,5)</th>
-    <th>Desalinhado<br/>(0,0 - 0,5)</th>
-  </tr>
-  <tr>
-    <td>Não só todas as etapas foram descritas de forma precisa e sem omitir
-    etapas, como ficou claro que o grupo se preocupou em utilizar recursos para
-    facilitar a compreensão da metodologia. Imagens, vídeos, trechos de código
-    foram usados para as partes mais complexas.</td>
-    <td>Todas as etapas do desenvolvimento foram descritas com precisão e de
-    forma completa.</td>
-    <td>Quase todas as etapas foram descritas com precisão e de forma completa.
-    No entanto, ainda tem um ou mais etapas mal definidas, de modo que ainda
-    não seja possível reproduzir o projeto apenas com a leitura dessa
-    seção</td>
-    <td>As etapas de desenvolvimento foram descritas de forma superficial ou
-    incompleta. Falta clareza nos processos e etapas de desenvolvimento. É
-    impossível reproduzir o projeto apenas seguindo as etapas descritas no
-    texto.</td>
-    <td>Entrega fora de contexto ou não entregou.</td>
-  </tr>
-</table>
+**[0,0 - 0,5]**
+A documentação está fora de contexto ou significativamente incompleta.
+
+**[0,5 - 2,0]**
+A documentação apresentada está dentro do contexto do projeto, mas há falhas
+graves como:
+* Não apresenta **instruções de uso** do sistema;
+* Apresenta o sistema de forma incompleta;
+* Está **mal escrita**, com problemas claros de coesão e/ou frequentes erros
+gramaticais;
+
+**[2,0 - 3,5]**
+A documentação está minimamente bem escrita, apresenta instruções de uso e
+apresenta todos os novos elementos do sistema, mas ainda há imperfeições.
+Exemplos:
+* Não está suficientemente claro o **escopo** da entrega;
+* A **proposta de valor** da entrega não está clara;
+* Há falhas nas **instruções de uso** apresentadas;
+* Apresenta elementos textuais/não-textuais desnecessários, se tornando
+**prolixa** e difícil de ler;
+* O texto **não está coeso**. Cada seção tem uma forma de escrita distinta e/ou
+não há uma sequência lógica de uma seção para a outra;
+* Não apresenta de forma clara quando há **mudanças de escopo** no projeto;
+
+**[3,5 - 4,0]**
+A documentação apresentada:
+* Define claramente o **escopo** da entrega da sprint;
+* Explica as **decisões arquiteturais** de implementação do sistema;
+* Apresenta de forma clara as **instruções de uso** da versão atual do sistema;
+* Deixa clara a **proposta de valor** da entrega;
+* Apresenta claramente as **mudanças de escopo** propostas (quando cabível);
+* Utiliza **português correto**, prezando pela **coesão textual**;
+* É **concisa** na medida certa.
+
+#### 2.2.2. Análise financeira (até 3,0 pontos)
+
+**[0,0 - 0,5]**
+A análise financeira está fora de contexto ou significativamente incompleta.
+
+**[0,5 - 1,5]**
+A análise financeira apresentada não torna clara a proposta de valor do projeto
+por um ou mais dos motivos abaixo:
+* Os resultados esperados não são realistas e/ou não tem base;
+* Os custos/investimentos/despesas estimados não são realistas e/ou não tem
+base;
+* O cronograma apresentado não é realista e/ou não tem base; 
+
+**[1,5 - 2,5]**
+A análise financeira é sólida, mas há falhas conceituais e/ou inconsistências
+tais como:
+* Confusão entre custos, investimentos e despesas;
+* Não diferencia claramente as etapas de p&d e implantação dos custos
+operacionais;
+* Algumas estimativas apresentadas não são verossímeis (sem grande impacto no
+resultado da análise);
+
+**[2,5 - 3,0]**
+A análise financeira apresentada:
+* Contém uma estimativa embasada do **cronograma** de desenvolvimento e/ou
+implantação do projeto;
+* Diferencia claramente a **previsão de custos, investimentos e despesas**,
+oferecendo justificativas embasadas para cada um deles;
+* Apresenta uma composição de **equipe de desenvolvimento e operacional** com
+uma *justificativa* para cada um dos integrantes;
+* Demonstra claramente o valor do projeto através dos resultados esperados;
+
+#### 2.2.3. Relatório de testes
+
+**[0,0 - 0,5]**
+O relatório de testes está fora de contexto ou significativamente incompleta.
+
+**[0,5 - 1,5]**
+Os testes propostos apresentam falhas significativas, como:
+* Não contemplam os requisitos do projeto adequadamente;
+* Falta clareza em seu planejamento;
+* Não há evidências de sua execução conforme o planejado;
+
+**[1,5 - 2,5]**
+Os testes propostos são coerentes com os requisitos de projeto e foram
+executados conforme o planejado. No entanto, há problemas a serem resolvidos,
+como:
+* A análise dos resultados é rasa, limitando-se a constatar se o projeto atende
+ou não os requisitos sem que haja uma discussão das causas e consequências
+envolvidas;
+* O plano de melhorias é genérico e/ou pouco realista;
+* Nem todos os testes apresentam evidências claras de sua execução;
+* Os testes não foram feitos com usuários que atendem o perfil descrito pelas
+personas do projeto;
+
+**[2,5 - 3,0]**
+O relatório de testes contempla:
+* A revisão dos requisitos do projeto;
+* Um plano de testes com usuários com um roteiro bem definido e uma expectativa
+clara do que cada teste deve avaliar;
+* Um plano de testes para validação de métricas de sistema;
+* O relatório completo de execução dos testes;
+* Uma análise coerente que aponta aspectos de adequação do sistema aos
+requisitos propostos;
+* Melhorias planejadas a partir da análise;

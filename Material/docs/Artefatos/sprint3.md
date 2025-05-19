@@ -102,12 +102,12 @@ rejeição total do artefato entregue. Atenção é crucial.
 
 ## 2. Padrão de qualidade
 
-### 2.1. Implementação técnica (até 6,0 pontos)
+### 2.1. Implementação técnica (peso 5)
 
 **[0,0 - 1,0]**  
 Implementação fora do contexto do projeto ou insuficiente.
 
-**[1,0 - 3,0]**  
+**[1,0 - 6,0]**  
 A implementação feita pelo grupo está dentro do contexto do projeto, mas há
 falhas como:
 * O sistema apresenta **falhas de funcionamento**;
@@ -117,7 +117,7 @@ valor** para o parceiro;
 grupo**;
 * O sistema **evoluiu pouco** com relação à entrega anterior;
 
-**[3,0 - 5,0]**  
+**[6,0 - 9,0]**  
 A entrega é relevante e apresenta evolução clara, mas ainda não está perfeita.
 Alguns exemplos do que pode estar faltando:
 * O sistema está funcional, mas ainda há **bugs pontuais** que afetam as principais funcionalidades;
@@ -126,7 +126,7 @@ Alguns exemplos do que pode estar faltando:
 * A **apresentação** ao parceiro não foi **clara** por não mostrar o sistema
 funcional ou por não deixar clara a proposta de valor da implementação;
 
-**[5,0 - 6,0]**  
+**[9,0 - 10,0]**  
 A implementação feita pelo grupo:
 * Contem um sistema **funcional**;
 * Entrega **valor** para o parceiro;
@@ -134,12 +134,12 @@ A implementação feita pelo grupo:
 * Apresenta uma **evolução significativa** sobre a última entrega;
 * Foi **apresentada ao parceiro** de forma clara, permitindo o seu feedback.
 
-### 2.2. Documentação (até 4,0 pontos)
+### 2.2. Documentação (peso 3)
 
 **[0,0 - 1,0]**
 A documentação está fora de contexto ou significativamente incompleta.
 
-**[1,0 - 2,0]**
+**[1,0 - 6,0]**
 A documentação apresentada está dentro do contexto do projeto, mas há falhas
 graves como:
 * Não apresenta **instruções de uso** do sistema;
@@ -147,7 +147,7 @@ graves como:
 * Está **mal escrita**, com problemas claros de coesão e/ou frequentes erros
 gramaticais;
 
-**[2,0 - 3,0]**
+**[6,0 - 9,0]**
 A documentação está minimamente bem escrita, apresenta instruções de uso e
 apresenta todos os novos elementos do sistema, mas ainda há imperfeições.
 Exemplos:
@@ -160,7 +160,7 @@ Exemplos:
 não há uma sequência lógica de uma seção para a outra;
 * Não apresenta de forma clara quando há **mudanças de escopo** no projeto;
 
-**[3,0 - 4,0]**
+**[9,0 - 10,0]**
 A documentação apresentada:
 * Define claramente o **escopo** da entrega da sprint;
 * Explica as **decisões arquiteturais** de implementação do sistema;
