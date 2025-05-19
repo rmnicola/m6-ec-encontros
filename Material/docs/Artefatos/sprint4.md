@@ -107,7 +107,7 @@ rejeição total do artefato entregue. Atenção é crucial.
 
 ## 2. Padrão de qualidade
 
-### 2.1. Implementação técnica (peso 5)
+### 2.1. Implementação técnica (peso 4)
 
 **[0,0 - 1,0]**  
 Implementação fora do contexto do projeto ou insuficiente.
@@ -139,7 +139,7 @@ A implementação feita pelo grupo:
 * Apresenta uma **evolução significativa** sobre a última entrega;
 * Foi **apresentada ao parceiro** de forma clara, permitindo o seu feedback.
 
-### 2.2. Documentação (peso 3)
+### 2.2. Documentação (peso 4)
 
 #### 2.2.1. Documentação base (até 4,0 pontos)
 
@@ -209,7 +209,7 @@ oferecendo justificativas embasadas para cada um deles;
 uma *justificativa* para cada um dos integrantes;
 * Demonstra claramente o valor do projeto através dos resultados esperados;
 
-#### 2.2.3. Relatório de testes
+#### 2.2.3. Relatório de testes (até 3,0 pontos)
 
 **[0,0 - 0,5]**
 O relatório de testes está fora de contexto ou significativamente incompleta.
