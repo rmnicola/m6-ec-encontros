@@ -26,13 +26,17 @@ mudança deve ser **claramente explicada** na documentação do projeto. Caso
 contrário, será considerado que o novo escopo está fora do contexto definido
 pelo grupo.
 
-A **Análise financeira** deve fornecer insumos para o estudo da viabilidade do
-*projeto final* (**NÃO da prova de conceito**). Sendo assim, deve-se estimar:
-* Tempo de desenvolvimento e/ou implantação e suas despesas relacionadas;
-* Custo com funcionários e infraestrutura;
-* Investimentos em equipamentos e seu tempo de duração;
-* Custo de manutenção;
-* Resultados esperados (por economia e/ou novas fontes de renda);
+A **Análise financeira** deve fornecer subsídios para avaliar a viabilidade do
+*projeto final* (e não da prova de conceito). Para isso, é necessário estimar:
+* Despesas com equipe, marketing, etc (considere 30% do custo para despesas
+gerais);
+* Custos de manutenção projetadas para um ano (se houver manutenção);
+* Lucro (20%) e Impostos (18%);
+* O cronograma de desenvolvimento do projeto.
+
+Lembrando que a análise financeira deve estar alinhada ao modelo de negócios
+que o grupo desenvolveu na Sprint 1. A pergunta que pretende-se responder é
+**qual o preço de venda do projeto**.
 
 Para isso, pode ser necessário validar algumas informações com o parceiro de
 projeto. Sabendo que nem sempre estas informações vão existir ou serem
@@ -185,7 +189,8 @@ A análise financeira está fora de contexto ou significativamente incompleta.
 **[0,5 - 1,5]**
 A análise financeira apresentada não torna clara a proposta de valor do projeto
 por um ou mais dos motivos abaixo:
-* Os resultados esperados não são realistas e/ou não tem base;
+* O preço de venda apresentado não é realista e/ou não tem base em dados
+estimados;
 * Os custos/investimentos/despesas estimados não são realistas e/ou não tem
 base;
 * O cronograma apresentado não é realista e/ou não tem base; 
@@ -194,8 +199,7 @@ base;
 A análise financeira é sólida, mas há falhas conceituais e/ou inconsistências
 tais como:
 * Confusão entre custos, investimentos e despesas;
-* Não diferencia claramente as etapas de p&d e implantação dos custos
-operacionais;
+* Não diferencia claramente os investimentos dos custos e despesas;
 * Algumas estimativas apresentadas não são verossímeis (sem grande impacto no
 resultado da análise);
 
